@@ -8,7 +8,7 @@ import { use } from 'react';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 
-function HowItWorks() {
+function functioning() {
     return (
         <>
             <Header />
@@ -32,4 +32,4 @@ function HowItWorks() {
     );
 }
 
-export default HowItWorks;
+export default functioning;

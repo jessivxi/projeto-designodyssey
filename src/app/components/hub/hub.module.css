@@ -75,22 +75,22 @@
     width: 65%;
     color: white;
     padding: 4%;
-    border-radius: 90px;
-    -webkit-border-radius: 90px;
-    -moz-border-radius: 90px;
-    -ms-border-radius: 90px;
-    -o-border-radius: 90px;
+    border-radius: 60px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    -ms-border-radius: 70px;
+    -o-border-radius: 70px;
 }
 
 .about_box_title {
     font-weight: bolder;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 4vw;
     width: 60%;
 }
 
 .about_text {
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 1.8vh;
 }
 

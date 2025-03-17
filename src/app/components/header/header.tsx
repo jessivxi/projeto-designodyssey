@@ -15,8 +15,7 @@ function Header() {
             <div className={styles.header_list_container}>
                 <ul className={styles.header_list}>
                     <Link className={styles.header_list_button} href="/">Home</Link>
-                    <Link className={styles.header_list_button} href="/teste">Sobre</Link>
-                    <Link className={styles.header_list_button} href="/">Como Funciona</Link>
+                    <Link className={styles.header_list_button} href="/functioning">Como Funciona</Link>
                     <Link className={styles.header_list_button} href="/listing">Gráfico e Design</Link>
                 </ul>
             </div>

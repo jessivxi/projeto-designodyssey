@@ -1,21 +1,22 @@
-.functioning_main{
+.functioning_main {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 60vh;
+    height: auto;
     margin-bottom: 20vh;
+    flex-direction: column;
 }
 
-.functioning_content{
+.functioning_content {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 85%;
-    min-height: 55vh;   
+    min-height: 55vh;
 }
 
-.functioning_content_box{
+.functioning_content_box {
     display: flex;
     margin: auto;
     flex-direction: column;
@@ -25,22 +26,24 @@
     color: white;
     padding: 4%;
     border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
 }
-.functioning_content_title_box{
+
+.functioning_content_title{
+    display: flex;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 0px;
+    color: white;
     line-height: 4vw;
-    width: 60%;
+    width: 60%; 
 }
-.functioning_content_text{
+
+.functioning_content_text {
     display: flex;
     color: white;
     font-size: 1rem;
+    flex-direction: column;
 }
+
 .functioning_content_button {
     display: flex;
     justify-content: center;
@@ -48,49 +51,70 @@
     width: 23%;
     height: 6vh;
     font-weight: bold;
-
     background-color: #0096D1;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     margin-top: 3vh;
     border-radius: 20px;
     font-size: 15px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
 }
 
 .functioning_content_button:hover {
     background-color: #00adf2;
     color: white;
     transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-    -moz-transform: scale(1.0);
-    -ms-transform: scale(1.0);
-    -o-transform: scale(1.0);
 }
-.functioning_apresention_main{
+
+.functioning_apresention_main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 60vh;
-    padding: 0% 0% 290% 16%;
-    margin-bottom: 20vh;
-}
-.functioning_apresention_container{
-    display: flex;
-    justify-content: center;
+    width: 100%; /* Alterado para 100% para ocupar toda a largura */
+    height: auto;
     flex-direction: column;
-    width: 85%;
-    min-height: 55vh;   
+    margin-top: 5vh; /* Adicionado espaçamento superior */
 }
-.functioning_apresention_texts{
+
+.functioning_apresention_content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center; /* Centraliza o conteúdo */
+}
+
+.functioning_apresention_texts {
     font-weight: bolder;
     font-size: 30px;
-    line-height: 4vw;
-    width: 60%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
+.functiong_service_content {
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço entre as colunas */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 0 10%; /* Adiciona padding nas laterais */
+    flex-wrap: wrap; /* Permite que as colunas quebrem em telas menores */
+}
 
+.functiong_service_colune1,
+.functiong_service_colune2,
+.functiong_service_colune3 {
+    display: flex;
+    flex-direction: column;
+    width: 30%; /* Define a largura das colunas */
+    margin-bottom: 5%;
+}
 
+.functiong_service_title {
+    padding: 40px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.functiong_service_text {
+    font-size: 1rem;
+    color: white; /* Adicionado para garantir legibilidade */
+
+    }

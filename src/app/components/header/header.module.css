@@ -1,3 +1,4 @@
+
 .header_main {
     display: flex;
     justify-content: space-between;
@@ -23,6 +24,7 @@
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
+
 }
 
 .header_list {
@@ -30,6 +32,7 @@
     justify-content: space-around;
     width: 80%;
     height: auto;
+    font-weight: bold;
 }
 
 .header_list_button {

@@ -1,3 +1,4 @@
+
 .hub_main {
     display: flex;
     justify-content: center;
@@ -91,6 +92,7 @@
 
 .about_text {
     font-size: 17px;
+    font-style: bold;
     margin-top: 1.8vh;
 }
 
@@ -103,6 +105,8 @@
     background-color: #0096D1;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     margin-top: 3vh;
+    font-weight: bold;
+   
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;

@@ -32,6 +32,7 @@
   justify-content: space-around;
   width: 80%;
   height: auto;
+  font-weight: bold;
 }
 
 .header-module__MIcRHW__header_list_button {
@@ -205,6 +206,7 @@
 
 .hub-module__LVsAYa__about_text {
   font-size: 17px;
+  font-style: bold;
   margin-top: 1.8vh;
 }
 
@@ -217,6 +219,7 @@
   background-color: #0096d1;
   transition: background-color .3s, color .3s, transform .3s;
   margin-top: 3vh;
+  font-weight: bold;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;

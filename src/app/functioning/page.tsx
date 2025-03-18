@@ -11,15 +11,15 @@ import Footer from '../components/footer/footer';
 function functioning() {
     return (
         <>
-            <Header />
+        <Header />
             <div className={styles.functioning_main}>
                 <div className={styles.functioning_content}>
                     <div className={styles.functioning_content_box}>
                         <div className={styles.functioning_content_title_box}>
-                           <h1 className={styles.functioning_content_title}>Bem-vindo ao DesignOdyssey!</h1>
+                            <h1 className={styles.functioning_content_title}>Bem-vindo ao DesignOdyssey!</h1>
                         </div>
-                           <p className={styles.functioning_content_text}>O DesignOdyssey conecta freelancers de design e clientes de forma simples e eficiente. Freelancers podem divulgar seus serviços especializados, como design de logos, arte digital, design de sites e design gráfico, organizados por categorias</p>
-                           <div className={styles.functioning_content_button}>
+                            <p className={styles.functioning_content_text}>O DesignOdyssey conecta freelancers de design e clientes de forma simples e eficiente. Freelancers podem divulgar seus serviços especializados, como design de logos, arte digital, design de sites e design gráfico, organizados por categorias</p>
+                            <div className={styles.functioning_content_button}>
                         <Link href="/listing">
                             <button className={styles.functioning_button}>Encontre um freelancer</button>
                         </Link>
@@ -27,7 +27,17 @@ function functioning() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <div className={styles.functioning_apresention_main}>
+                <div className={styles.functioning_apresention_container}>
+                    <div className={styles.functioning_apresention_texts}>
+                        <h1 className={styles.functioning_apresention_title}>Quer ser um Freelancer?</h1>
+                        <p className={styles.functioning_apresention_text}></p>
+                    </div>
+                </div>
+
+            </div>
+            
+        <Footer />
         </>
     );
 }

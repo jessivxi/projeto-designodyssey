@@ -244,7 +244,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("../media/logotipo_1.c1ad0032.gif");
+  background-image: url("/_next/static/media/logotipo_1.c1ad0032.gif");
   cursor: pointer;
 }
 
@@ -261,7 +261,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../media/logotipo_2.8d3c166d.gif");
+  background-image: url("/_next/static/media/logotipo_2.8d3c166d.gif");
   cursor: pointer;
 }
 
@@ -278,7 +278,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../media/logotipo_3.62e9a420.gif");
+  background-image: url("/_next/static/media/logotipo_3.62e9a420.gif");
   cursor: pointer;
 }
 
@@ -295,7 +295,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../media/logotipo_4.c8b69bc5.gif");
+  background-image: url("/_next/static/media/logotipo_4.c8b69bc5.gif");
   cursor: pointer;
 }
 
@@ -321,7 +321,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: 200px 0 0;
-  background-image: url("../media/logotipo_5.35171dd4.gif");
+  background-image: url("/_next/static/media/logotipo_5.35171dd4.gif");
   cursor: pointer;
 }
 
@@ -339,7 +339,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: 200px 0 0;
-  background-image: url("../media/logotipo_6.0b705806.gif");
+  background-image: url("/_next/static/media/logotipo_6.0b705806.gif");
   cursor: pointer;
 }
 
@@ -357,7 +357,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: 200px 0 0;
-  background-image: url("../media/logotipo_7.c94d7417.gif");
+  background-image: url("/_next/static/media/logotipo_7.c94d7417.gif");
   cursor: pointer;
 }
 
@@ -375,7 +375,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: 200px 0 0;
-  background-image: url("../media/logotipo_8.e0e4b4d8.gif");
+  background-image: url("/_next/static/media/logotipo_8.e0e4b4d8.gif");
   cursor: pointer;
 }
 
@@ -452,7 +452,6 @@
   justify-content: space-around;
   width: 80%;
   height: auto;
-  font-weight: bold;
 }
 
 .header-module__MIcRHW__header_list_button {
@@ -532,4 +531,29 @@
 }
 
 
-/*# sourceMappingURL=src_app_400677._.css.map*/
+/* [project]/src/app/components/footer/footer.module.css [app-client] (css) */
+.footer-module__1jeW9a__footer_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 1% 16%;
+  box-shadow: 0 -.1px #000;
+}
+
+.footer-module__1jeW9a__footer_text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-module__1jeW9a__footer_social_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 15%;
+}
+
+
+/*# sourceMappingURL=src_app_c93e1a._.css.map*/

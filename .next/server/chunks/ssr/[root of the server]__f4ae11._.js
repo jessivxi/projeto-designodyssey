@@ -13,6 +13,9 @@ module.exports = mod;
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: require } = __turbopack_context__;
 {
 __turbopack_export_value__({
+  "functioning_apresention_container": "functioning-module__EK0Zcq__functioning_apresention_container",
+  "functioning_apresention_main": "functioning-module__EK0Zcq__functioning_apresention_main",
+  "functioning_apresention_texts": "functioning-module__EK0Zcq__functioning_apresention_texts",
   "functioning_content": "functioning-module__EK0Zcq__functioning_content",
   "functioning_content_box": "functioning-module__EK0Zcq__functioning_content_box",
   "functioning_content_button": "functioning-module__EK0Zcq__functioning_content_button",
@@ -458,7 +461,7 @@ function functioning() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/functioning/page.tsx",
                 lineNumber: 14,
-                columnNumber: 13
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$functioning$2f$functioning$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].functioning_main,
@@ -475,7 +478,7 @@ function functioning() {
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/functioning/page.tsx",
                                     lineNumber: 19,
-                                    columnNumber: 28
+                                    columnNumber: 29
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/functioning/page.tsx",
@@ -488,7 +491,7 @@ function functioning() {
                             }, void 0, false, {
                                 fileName: "[project]/src/app/functioning/page.tsx",
                                 lineNumber: 21,
-                                columnNumber: 28
+                                columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$functioning$2f$functioning$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].functioning_content_button,
@@ -510,7 +513,7 @@ function functioning() {
                             }, void 0, false, {
                                 fileName: "[project]/src/app/functioning/page.tsx",
                                 lineNumber: 22,
-                                columnNumber: 28
+                                columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
@@ -528,10 +531,48 @@ function functioning() {
                 lineNumber: 15,
                 columnNumber: 13
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$footer$2f$footer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$functioning$2f$functioning$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].functioning_apresention_main,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$functioning$2f$functioning$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].functioning_apresention_container,
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$functioning$2f$functioning$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].functioning_apresention_texts,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$functioning$2f$functioning$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].functioning_apresention_title,
+                                children: "Quer ser um Freelancer?"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/functioning/page.tsx",
+                                lineNumber: 33,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$functioning$2f$functioning$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].functioning_apresention_text
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/functioning/page.tsx",
+                                lineNumber: 34,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/functioning/page.tsx",
+                        lineNumber: 32,
+                        columnNumber: 21
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/app/functioning/page.tsx",
+                    lineNumber: 31,
+                    columnNumber: 17
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/src/app/functioning/page.tsx",
                 lineNumber: 30,
                 columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$footer$2f$footer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/src/app/functioning/page.tsx",
+                lineNumber: 40,
+                columnNumber: 9
             }, this)
         ]
     }, void 0, true);

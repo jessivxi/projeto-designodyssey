@@ -183,6 +183,7 @@ __turbopack_export_value__({
   "box2_content_text": "hub-module__LVsAYa__box2_content_text",
   "box2_home_container": "hub-module__LVsAYa__box2_home_container",
   "box2_home_main": "hub-module__LVsAYa__box2_home_main",
+  "boxHomeHoverAnimation": "hub-module__LVsAYa__boxHomeHoverAnimation",
   "box_2": "hub-module__LVsAYa__box_2",
   "box_home_1": "hub-module__LVsAYa__box_home_1",
   "box_home_2": "hub-module__LVsAYa__box_home_2",

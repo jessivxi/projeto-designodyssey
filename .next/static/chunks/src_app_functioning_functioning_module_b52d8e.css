@@ -32,7 +32,7 @@
 .functioning-module__EK0Zcq__functioning_content_title {
   display: flex;
   font-weight: bolder;
-  font-size: 0;
+  font-size: 35px;
   color: #fff;
   line-height: 4vw;
   width: 60%;
@@ -41,7 +41,7 @@
 .functioning-module__EK0Zcq__functioning_content_text {
   display: flex;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.1rem;
   flex-direction: column;
 }
 
@@ -67,7 +67,6 @@
 
 .functioning-module__EK0Zcq__functioning_apresention_main {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
@@ -84,10 +83,9 @@
 
 .functioning-module__EK0Zcq__functioning_apresention_texts {
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 37px;
   margin: 0;
-  padding: 0;
-  text-align: center;
+  padding: 0 43% 30px 140px;
 }
 
 .functioning-module__EK0Zcq__functiong_service_content {
@@ -102,19 +100,20 @@
 .functioning-module__EK0Zcq__functiong_service_colune1, .functioning-module__EK0Zcq__functiong_service_colune2, .functioning-module__EK0Zcq__functiong_service_colune3 {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 37%;
   margin-bottom: 5%;
+  padding: 30px 0 0 50px;
 }
 
 .functioning-module__EK0Zcq__functiong_service_title {
-  padding: 40px 0 10px;
+  padding: 40px 0 6px;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .functioning-module__EK0Zcq__functiong_service_text {
   font-size: 1rem;
-  color: #fff;
+  color: #000;
 }
 
 /*# sourceMappingURL=src_app_functioning_functioning_module_b52d8e.css.map*/

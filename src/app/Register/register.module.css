@@ -1,0 +1,109 @@
+.login_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.login_content_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.login_content_right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login_right_top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: fit-content;
+}
+
+.login_right_voltar {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    width: fit-content;
+    position: relative;
+    left: 10%;
+}
+
+.login_right_bemvindo {
+    font-size: 30px;
+    margin-top: 15px;
+    width: fit-content;
+    position: relative;
+    left: 10%;
+}
+
+.login_right_bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login_credenciais {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 60%;
+    padding: 0 20px 0 20px;
+}
+
+.login_email_box {
+    display: flex;
+    background-color: white;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 0 20px 0 20px;
+    border-radius: 5px;
+}
+
+.login_email {
+    display: flex;
+    flex-direction: column;
+
+
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login_email_input {
+    outline: none;
+    padding: 18px 5px 18px 5px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.login_entrar_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0096D1;
+    color: white;
+    padding: 15px 0 15px 0;
+    border-radius: 5px;
+    margin-top: 30px;
+}

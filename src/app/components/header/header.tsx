@@ -21,7 +21,7 @@ function Header() {
             </div>
             <div className={styles.header_login}>
                 <Link href="/login" className={styles.header_login_button}>Login</Link>
-                <Link href="/cadastro" className={styles.header_signup_button}>Cadastre-se</Link>
+                <Link href="/Register" className={styles.header_signup_button}>Cadastre-se</Link>
             </div>
         </div>
     );

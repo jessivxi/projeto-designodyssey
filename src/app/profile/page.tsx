@@ -4,8 +4,8 @@ import React from 'react';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import styles from './profile.module.css';
-import usuario from '../../images/fotos/usuario.jpg';
 import Image from 'next/image';
+import chat  from './../../images/icones/chat-fill.svg'
 
 function Profile() {
     return (
@@ -28,6 +28,28 @@ function Profile() {
                         <button className={styles.profile_button}>Editar Perfil</button>
                     </div>
                     <button className={styles.profile_button_explorer}>Explorar DesignOdyssey</button>
+                </div>
+                <div className={styles.profile_right_column}>
+                    <div className={styles.profile_right_column_text}>
+                        <h1 className={styles.profile_right_column_text_title}>Aproveite ao máximo o DesignOdyssey compartilhando um pouco mais sobre você e como você prefere trabalhar com freelancers.</h1>
+                    </div>
+                    <div className={styles.profile_rigth_column_box_one}>
+                        <p className={styles.profile_rigth_column_box_one_title}>Compartilhe como você planeja usar o DesignOdyssey</p>
+                        <p className={styles.profile_rigth_column_box_one_text}>Diga-nos se você está aqui para encontrar serviços ou oferecê-los.</p>
+                    </div>
+                    <div className={styles.profile_rigth_column_box_one}>
+                        <p className={styles.profile_rigth_column_box_one_title}>Transforme sua visão em realidade. </p>
+                        <p className={styles.profile_rigth_column_box_one_text}>Encontre o designer perfeito para o seu projeto aqui.</p>
+                    </div>
+                    <div className={styles.profile_rigth_column_box_one}>
+                        <p className={styles.profile_rigth_column_box_one_title}>Fale sobre você ou seu negócio</p>
+                        <p className={styles.profile_rigth_column_box_one_text}>Descreva sua necessidade e receba soluções sob medida.</p>
+                    </div>
+                    <div className={styles.profile_right_column_evaluation}>
+                        <h1 className={styles.profile_rigth_column_evaluation_title}>Avaliações de Clientes</h1>
+                        <Image src={chat} height={70} width={70} alt="ícone-tela" />
+                        <p className={styles.profile_right_column_evaluation_text}>jessivxi ainda não tem nenhuma avaliação</p>
+                    </div>
                 </div>
             </div>
             <Footer />

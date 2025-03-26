@@ -109,7 +109,7 @@ export default function Login() {
                                 </div>
                                 
                                 <div className={styles.login_actions}>
-                                    <Link href="/perfil" className={styles.login_button}>
+                                    <Link href="/profile" className={styles.login_button}>
                                         Entrar
                                     </Link>
                                     

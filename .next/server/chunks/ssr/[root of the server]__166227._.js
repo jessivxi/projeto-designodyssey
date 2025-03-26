@@ -508,7 +508,7 @@ function Login() {
                                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$login$2f$login$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].login_actions,
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                    href: "/perfil",
+                                                    href: "/profile",
                                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$login$2f$login$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].login_button,
                                                     children: "Entrar"
                                                 }, void 0, false, {

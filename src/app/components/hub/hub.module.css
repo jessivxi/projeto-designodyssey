@@ -1,467 +1,455 @@
-
 .hub_main {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .hub_content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 85%;
-    min-height: 55vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 85%;
+  min-height: 55vh;
 }
 
 .hub_hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 65vh;
-    width: 100%;
-    padding: 0px 8% 0 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 65vh;
+  width: 100%;
+  padding: 0px 8% 0 8%;
 }
 
 .hub_hero_text {
-    display: flex;
-    font-weight: bolder;
-    font-size: 300%;
-    text-align: center;
-    flex-direction: column;
-    padding: 15px 0px 0px 0px;
+  display: flex;
+  font-weight: bolder;
+  font-size: 300%;
+  text-align: center;
+  flex-direction: column;
+  padding: 15px 0px 0px 0px;
 }
 
 .hub_hero_searchbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    margin-top: 1%;
-    height: 12%;
-    width: 60%;
-    border: 1px solid black;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 1%;
+  height: 12%;
+  width: 60%;
+  border: 1px solid black;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
 
 .hub_hero_textinput {
-    width: 90%;
-    height: 100%;
-    outline: none;
-    background: none;
+  width: 90%;
+  height: 100%;
+  outline: none;
+  background: none;
 }
 
 .hero_text_hub {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .about_main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 60vh;
-    margin-bottom: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 20vh;
 }
 
 .about_box {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    height: 100%;
-    width: 65%;
-    color: white;
-    padding: 4%;
-    border-radius: 60px;
-    -webkit-border-radius: 70px;
-    -moz-border-radius: 70px;
-    -ms-border-radius: 70px;
-    -o-border-radius: 70px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  height: 100%;
+  width: 65%;
+  color: white;
+  padding: 4%;
+  border-radius: 90px;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  -ms-border-radius: 90px;
+  -o-border-radius: 90px;
 }
 
 .about_box_title {
-    font-weight: bolder;
-    font-size: 50px;
-    line-height: 4vw;
-    width: 60%;
+  font-weight: bolder;
+  font-size: 60px;
+  line-height: 4vw;
+  width: 60%;
 }
 
 .about_text {
-    font-size: 18px;
-    font-style: bold;
-    margin-top: 1.8vh;
+  font-size: 18px;
+  margin-top: 1.8vh;
 }
 
 .button_style {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 23%;
-    height: 6vh;
-    background-color: #0096D1;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    margin-top: 3vh;
-    font-weight: bold;
-   
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23%;
+  height: 6vh;
+  background-color: #0096d1;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  margin-top: 3vh;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .button_style:hover {
-    background-color: #00adf2;
-    color: white;
-    transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-    -moz-transform: scale(1.0);
-    -ms-transform: scale(1.0);
-    -o-transform: scale(1.0);
+  background-color: #00adf2;
+  color: white;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
 }
 
 .box_home_main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35vh;
-    width: 100%;
-    margin-bottom: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  width: 100%;
+  margin-bottom: 15vh;
 }
 
 .box_home_container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 70%;
-    height: 100%;
-    
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
 
- }
-    @keyframes boxHomeHoverAnimation {
-        0% {
-            transform: scale(1);
-            box-shadow: inset 0px 100px 30px rgba(134, 134, 134, 0.514);
-        }
-        50% {
-            transform: scale(1.05);
-            box-shadow: inset 0px 120px 40px rgba(134, 134, 134, 0.7);
-        }
-        100% {
-            transform: scale(1);
-            box-shadow: inset 0px 100px 30px rgba(134, 134, 134, 0.514);
-        }}
 .box_home_1 {
-    background-color: black;
-    background-image: url('./../../../images/fotos/web_design.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: inset 0px 100px 30px rgba(134, 134, 134, 0.514);
-    color: white;
-    height: 100%;
-    min-width: 13vw;
-    padding: 20px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    cursor: pointer;
-    transition: transform 0.5s, box-shadow 0.5s; /* Adiciona transição suave */
-
+  background-color: black;
+  background-image: url("./../../../images/fotos/web_design.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 100px 30px rgba(134, 134, 134, 0.514);
+  color: white;
+  height: 100%;
+  min-width: 13vw;
+  padding: 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
 .box_home_2 {
-    background-color: black;
-    background-image: url('./../../../images/fotos/graphic_design.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: inset 0px 100px 30px rgba(134, 134, 134, 0.514);
-    color: white;
-    height: 100%;
-    min-width: 13vw;
-    padding: 20px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    transition: transform 0.5s, box-shadow 0.5s; /* Adiciona transição suave */
-    cursor: pointer;
+  background-color: black;
+  background-image: url("./../../../images/fotos/graphic_design.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 100px 30px rgba(134, 134, 134, 0.514);
+  color: white;
+  height: 100%;
+  min-width: 13vw;
+  padding: 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
 .box_home_3 {
-    background-color: black;
-    background-image: url('./../../../images/fotos/branding_design.jpg');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: inset 0px 100px 30px rgba(134, 134, 134, 0.514);
-    color: white;
-    height: 100%;
-    min-width: 13vw;
-    padding: 20px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    transition: transform 0.5s, box-shadow 0.5s; /* Adiciona transição suave */
-    cursor: pointer;
+  background-color: black;
+  background-image: url("./../../../images/fotos/branding_design.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 100px 30px rgba(134, 134, 134, 0.514);
+  color: white;
+  height: 100%;
+  min-width: 13vw;
+  padding: 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
 .box_home_4 {
-    background-color: black;
-    background-image: url('./../../../images/fotos/digital_art.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: inset 0px 100px 30px rgba(134, 134, 134, 0.514);
-    color: white;
-    height: 100%;
-    min-width: 13vw;
-    padding: 20px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    transition: transform 0.5s, box-shadow 0.5s; /* Adiciona transição suave */
-    cursor: pointer;
-}
-.box_home_1:hover,
-.box_home_2:hover,
-.box_home_3:hover,
-.box_home_4:hover {
-    animation: boxHomeHoverAnimation 0.9s forwards; /* Aplica a animação ao passar o cursor */ 
-    cursor: pointer;
+  background-color: black;
+  background-image: url("./../../../images/fotos/digital_art.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 100px 30px rgba(134, 134, 134, 0.514);
+  color: white;
+  height: 100%;
+  min-width: 13vw;
+  padding: 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
 .box1_content_overtitle {
-    font-size: 90%;
+  font-size: 90%;
 }
 
 .box1_content_title {
-    font-size: 110%;
-    font-weight: bold;
+  font-size: 110%;
+  font-weight: bold;
 }
 
 .box2_home_main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35vh;
-    width: 100%;
-    margin-bottom: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  width: 100%;
+  margin-bottom: 15vh;
 }
 
 .box2_home_container {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    width: 70%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 70%;
 }
 
 .box_2 {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    height: 100%;
-    width: 30%;
-    border: 1px solid rgb(168, 168, 168);
-    padding: 50px 30 30 30;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100%;
+  width: 30%;
+  border: 1px solid rgb(168, 168, 168);
+  padding: 50px 30px 30px 30px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .box_2 {
+    width: 80%;
+    padding: 30px 20px 20px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box_2 {
+    width: 100%;
+    padding: 20px 10px 10px 10px;
+  }
 }
 
 .box2_content_icon {
-    display: flex;
-    height: auto;
-    width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: auto;
+  width: 100%;
+  max-width: 40px; /* Adjust the max-width as needed */
+  margin: 5 auto; /* Center the icon horizontally */
 }
 
 .box2_content_text {
-    margin-top: 30px;
-    font-size: 20px;
+  margin-top: 30px;
+  font-size: 20px;
 }
 
 .carousel_design_main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 110vh;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 110vh;
+  width: 100%;
 }
 
 .carousel_design_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 70%;
 }
 
 .carousel_title {
-    width: 100%;
-    font-size: 45px;
-    font-weight: bolder;
+  width: 100%;
+  font-size: 45px;
+  font-weight: bolder;
 }
 
 .carousel_topicos {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: fit-content;
 }
 
 .carousel_topicos_botao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    padding: 15px 30px;
-    border: 1px solid rgb(168, 168, 168);
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    -webkit-transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    -moz-transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    -ms-transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    -o-transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  padding: 15px 30px;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease,
+    transform 0.3s ease;
+  -moz-transition: background-color 0.3s ease, color 0.3s ease,
+    transform 0.3s ease;
+  -ms-transition: background-color 0.3s ease, color 0.3s ease,
+    transform 0.3s ease;
+  -o-transition: background-color 0.3s ease, color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .carousel_topicos_botao:hover {
-    border: 1px solid transparent;
-    color: white;
-    background-color: #0096D1;
+  border: 1px solid transparent;
+  color: white;
+  background-color: #0096d1;
 }
 
 .carousel_carousel_container {
-    display: flex;
-    width: 110%;
-    flex-direction: column;
-    height: 60%;
-    margin-bottom: 5vh;
+  display: flex;
+  width: 110%;
+  flex-direction: column;
+  height: 60%;
+  margin-bottom: 5vh;
 }
 
 .carousel_carousel {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
 }
 
 .carousel_carousel_botao1 {
-    background-color: black;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+  background-color: black;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
 
 .carousel_carousel_botao1:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .cor_botao {
-    fill: white;
+  fill: white;
 }
 
 .carousel_carousel_title {
-    font-size: 30px;
-    font-weight: bolder;
-    margin-top: 5vh;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 5vh;
 }
 
 .carousel_carousel_boxes {
-    display: flex;
-    gap: 2%;
-    align-items: center;
-    height: 60%;
-    width: 90%;
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  height: 60%;
+  width: 90%;
 }
 
-.carousel_carousel_box1{
-    background-color: white;
-    height: 100%;
-    width: 30%;
-    border: 1px solid rgb(168, 168, 168);
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    background-image: url(../../../images/fotos/design_site.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.carousel_carousel_box1 {
+  background-color: white;
+  height: 100%;
+  width: 30%;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-image: url(../../../images/fotos/design_site.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .carousel_carousel_box2 {
-    background-color: white;
-    height: 100%;
-    width: 30%;
-    border: 1px solid rgb(168, 168, 168);
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    background-position: center;
-    background-image: url(../../../images/fotos/design_grafico.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: white;
+  height: 100%;
+  width: 30%;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-position: center;
+  background-image: url(../../../images/fotos/design_grafico.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .carousel_carousel_box3 {
-    background-color: white;
-    height: 100%;
-    width: 30%;
-    border: 1px solid rgb(168, 168, 168);
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    background-position: center;
-    background-image: url(../../../images/fotos/design_logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: white;
+  height: 100%;
+  width: 30%;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-position: center;
+  background-image: url(../../../images/fotos/design_logo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .carousel_carousel_box4 {
-    background-color: white;
-    height: 100%;
-    width: 30%;
-    border: 1px solid rgb(168, 168, 168);
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    background-position: center;
-    background-image: url(../../../images/fotos/arte_digital.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: white;
+  height: 100%;
+  width: 30%;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-position: center;
+  background-image: url(../../../images/fotos/arte_digital.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.text_boxes{
-    display: flex;
-    justify-content: center;
-    padding: 120% 0px 0px 0px;
-    font-weight: bold;
-    font-size: 15px;
+.text_boxes {
+  display: flex;
+  justify-content: center;
+  padding: 120% 0px 0px 0px;
+  font-weight: bold;
+  font-size: 15px;
 }
 .text_boxes:hover {
-    color: #0096D1;
+  color: #0096d1;
 }

@@ -1,0 +1,197 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/login/login.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+/* Estilos principais */
+.login_login_main__Zwluk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.login_login_content___o3Yq {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Lado esquerdo */
+.login_login_content_left__gRbAK {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f5f7ff;
+}
+
+.login_login_left_list__ioIb3 {
+    margin-top: 30px;
+    list-style: disc inside ;
+    padding: 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Lado direito */
+.login_login_content_right__y2T2A {
+    flex: 1;
+    padding: 60px 40px;
+}
+
+.login_login_right_top__ExhGI {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.login_login_right_voltar__y8pjx {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.login_login_right_bemvindo__VswqO h1 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Estilos para os inputs */
+.login_login_field__U3J78 {
+    margin-bottom: 20px;
+}
+
+.login_login_field__U3J78 label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+}
+
+.login_input_container__jzMxA {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0 15px;
+    height: 48px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.login_input_container__jzMxA:focus-within {
+    border-color: #0096D1;
+    box-shadow: 0 0 0 2px rgba(0, 102, 255, 0.2);
+}
+
+.login_login_input__eGv0F {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    height: 100%;
+    background: transparent;
+    padding: 0;
+}
+
+.login_input_icon__DxwQg {
+    margin-left: 10px;
+    opacity: 0.7;
+}
+
+/* Botões sociais */
+.login_social_login_options__BomMw {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.login_social_button__jjYg3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    width: 100%;
+}
+
+.login_social_button__jjYg3:hover {
+    background: #f5f5f5;
+}
+
+/* Divisor */
+.login_divider__99Gky {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.login_divider__99Gky::before,
+.login_divider__99Gky::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+.login_divider__99Gky span {
+    padding: 0 10px;
+}
+
+/* Botão de login */
+.login_login_button__rEifq {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #0096D1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+
+.login_login_button__rEifq:hover {
+    background-color: #0096D1;
+}
+
+/* Esqueci a senha */
+.login_forgot_password__BwmJh {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login_forgot_password_link__Lbaq1 {
+    color: #666;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.login_forgot_password_link__Lbaq1:hover {
+    color: #0096D1;
+    text-decoration: underline;
+}

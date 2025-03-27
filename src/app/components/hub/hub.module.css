@@ -269,8 +269,8 @@
   align-items: flex-start;
   height: auto;
   width: 100%;
-  max-width: 40px; /* Adjust the max-width as needed */
-  margin: 5 auto; /* Center the icon horizontally */
+  max-width: 50px; /* Adjust the max-width as needed */
+  margin: 3 auto; /* Center the icon horizontally */
 }
 
 .box2_content_text {

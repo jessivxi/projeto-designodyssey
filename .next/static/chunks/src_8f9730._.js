@@ -237,7 +237,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: require } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/facebook.ac406898.svg");}}),
+__turbopack_export_value__("/_next/static/media/facebook.5643ecad.svg");}}),
 "[project]/src/images/icones/facebook.svg.mjs { IMAGE => \"[project]/src/images/icones/facebook.svg [app-client] (static)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -471,7 +471,7 @@ __turbopack_export_value__({
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: require } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/chat-fill.4d4312a6.svg");}}),
+__turbopack_export_value__("/_next/static/media/chat-fill.01eb9491.svg");}}),
 "[project]/src/images/icones/chat-fill.svg.mjs { IMAGE => \"[project]/src/images/icones/chat-fill.svg [app-client] (static)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 

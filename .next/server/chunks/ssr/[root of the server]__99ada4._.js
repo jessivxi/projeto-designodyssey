@@ -230,7 +230,7 @@ const __TURBOPACK__default__export__ = {
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: require } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/facebook.5643ecad.svg");}}),
+__turbopack_export_value__("/_next/static/media/facebook.ac406898.svg");}}),
 "[project]/src/images/icones/facebook.svg.mjs { IMAGE => \"[project]/src/images/icones/facebook.svg [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -453,7 +453,7 @@ __turbopack_export_value__({
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: require } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/chat-fill.01eb9491.svg");}}),
+__turbopack_export_value__("/_next/static/media/chat-fill.4d4312a6.svg");}}),
 "[project]/src/images/icones/chat-fill.svg.mjs { IMAGE => \"[project]/src/images/icones/chat-fill.svg [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -601,7 +601,7 @@ function Profile() {
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/profile",
+                                href: "/profile_freelancer",
                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$profile$2f$profile$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].profile_link_freelancer,
                                 children: "Você está atualmente no seu perfil de comprador. Para acessar seu perfil de freelancer, clique para alterna para o modo de vendedor"
                             }, void 0, false, {

@@ -28,7 +28,7 @@ function Profile() {
                         <button className={styles.profile_button}>Editar Perfil</button>
                     </div>
                     <button className={styles.profile_button_explorer}>Explorar DesignOdyssey</button>
-                    <Link href="/profile" className={styles.profile_link_freelancer}>
+                    <Link href="/profile_freelancer" className={styles.profile_link_freelancer}>
                         Você está atualmente no seu perfil de comprador. Para acessar seu perfil de freelancer, clique para alterna para o modo de vendedor
                     </Link>
                 </div>

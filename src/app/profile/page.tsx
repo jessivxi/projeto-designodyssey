@@ -51,7 +51,7 @@ function Profile() {
                         <p className={styles.profile_rigth_column_box_one_text}>Descreva sua necessidade e receba soluções sob medida.</p>
                     </div>
                     <div className={styles.profile_right_column_evaluation}>
-                        <h1 className={styles.profile_rigth_column_evaluation_title}>Avaliações de Clientes</h1>
+                        <h1 className={styles.profile_rigth_column_evaluation_title}>Avaliações de Freelancers</h1>
                         <Image src={chat} height={70} width={70} alt="ícone-tela" />
                         <p className={styles.profile_right_column_evaluation_text}>jessivxi ainda não tem nenhuma avaliação</p>
                     </div>

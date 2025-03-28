@@ -1,0 +1,281 @@
+.page_wrapper {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem;
+}
+
+.main {
+    display: block;
+    height: fit-content;
+    min-height: 300px;
+    width: 57%;
+    margin-right: 10%;
+}
+
+.main_history {
+    margin-bottom: 20px;
+}
+
+.house_fix {
+    padding-bottom: 5px;
+}
+
+.history_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1rem;
+    gap: 11px;
+}
+
+.slash_custom {
+    font-size: 1.7rem;
+    color: rgba(0, 0, 0, 0.444);
+}
+
+.main_title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.main_user_info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.user_rating {
+    display: flex;
+    gap: 10px;
+}
+
+.rating_stars {
+    display: flex;
+    font-size: 1.1rem;
+    gap: 5px;
+}
+
+.text_fix {
+    position: relative;
+    top: 1px;
+}
+
+.rating_trans_fix {
+    color: rgba(0, 0, 0, 0.438);
+    text-decoration: underline;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.separation {
+    width: 100%;
+    height: 1px;
+    background-color: #d2d2d2;
+    margin-bottom: 30px;
+}
+
+.main_product_picture {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    background-color: rgb(189, 189, 189);
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.what_people_like {
+    font-size: 1.3rem;
+    color: rgb(86, 86, 86);
+    margin-bottom: 30px;
+}
+
+.wpl_review_box {
+    display: flex;
+    min-height: 140px;
+    max-height: 200px;
+    width: 100%;
+    border: 1px solid rgb(184, 184, 184);
+    padding: 20px 30px;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.right_wpl_content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.wpl_upper_content {
+    display: flex;
+    gap: 10px;
+}
+
+.wpl_uc_name {
+    font-size: 0.9rem;
+}
+
+.wpl_uc_country {
+    display: flex;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.6);
+    gap: 10px;
+}
+
+.wpl_country_text_fix {
+    position: relative;
+    bottom: -1px;
+}
+
+.flag_round {
+    position: relative;
+    bottom: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.wpl_uc_separation {
+    height: 1.1rem;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.155);
+}
+
+.wpl_rating_stars {
+    display: flex;
+    position: relative;
+    bottom: 5px;
+    font-size: 1.1rem;
+    gap: 5px;
+}
+
+.wpl_middle_content {
+    width: 100%;
+}
+
+.underline_seemore {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.wpl_lc_text {
+    color: rgb(147, 147, 147);
+}
+
+.product_description {
+    width: 100%;
+    height: fit-content;
+}
+
+.pd_topic {
+    width: 100%;
+    min-height: 50px;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 15px;
+}
+
+.pd_title {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.pd_subtopic {
+    margin-bottom: 10px;
+}
+
+.pd_subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.503);
+}
+
+.pd_text {
+    color: rgba(0, 0, 0, 0.716);
+    padding: 5px 0 0 15px;
+}
+
+.sidebar_outer_wrapper {
+    height: fit-content;
+    width: 35%;
+    padding: 30px 0 40px 0;
+    background-color: rgb(242, 242, 242);
+    box-shadow: rgb(191, 191, 191) 0px 0px 5px 0.1px;
+}
+
+.sidebar_inner_wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar_content {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar_box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.sidebar_description {
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.description_price {
+    font-size: 1.6rem;
+}
+
+.description_bullets {
+    ul {
+        list-style: circle !important;
+        padding-left: 18px;
+    }
+}
+
+.sidebar_contact {
+    display: block;
+    height: 65px;
+    width: 80%;
+    background-color: black;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.sidebar_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.05rem;
+    color: white;
+    gap: 1rem;
+}

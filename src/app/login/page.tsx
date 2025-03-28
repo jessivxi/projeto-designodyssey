@@ -51,7 +51,7 @@ export default function Login() {
                         <div className={styles.login_right_bemvindo}>
                             <h1>Bem-vindo de volta!</h1>
                         </div>
-                        
+
                         {/* Opções de login social */}
                         <div className={styles.social_login_options}>
                             <button className={styles.social_button}>
@@ -63,56 +63,56 @@ export default function Login() {
                                 Entrar com Facebook
                             </button>
                         </div>
-                        
+
                         <div className={styles.divider}>
                             <span>ou</span>
                         </div>
-                        
+
                         <div className={styles.login_right_bottom}>
                             <div className={styles.login_credenciais}>
                                 <div className={styles.login_field}>
                                     <label htmlFor="email">E-Mail</label>
                                     <div className={styles.input_container}>
-                                        <input 
+                                        <input
                                             id="email"
-                                            className={styles.login_input} 
-                                            type="email" 
-                                            placeholder='seu@email.com' 
+                                            className={styles.login_input}
+                                            type="email"
+                                            placeholder='seu@email.com'
                                         />
-                                        <Image 
-                                            src={envelope} 
-                                            height={20} 
-                                            width={20} 
+                                        <Image
+                                            src={envelope}
+                                            height={20}
+                                            width={20}
                                             alt='icone-envelope'
                                             className={styles.input_icon}
                                         />
                                     </div>
                                 </div>
-                                
+
                                 <div className={styles.login_field}>
                                     <label htmlFor="password">Senha</label>
                                     <div className={styles.input_container}>
-                                        <input 
+                                        <input
                                             id="password"
-                                            className={styles.login_input} 
-                                            type="password" 
-                                            placeholder='••••••••' 
+                                            className={styles.login_input}
+                                            type="password"
+                                            placeholder='••••••••'
                                         />
-                                        <Image 
-                                            src={cadeado} 
-                                            height={20} 
-                                            width={20} 
+                                        <Image
+                                            src={cadeado}
+                                            height={20}
+                                            width={20}
                                             alt='icone-cadeado'
                                             className={styles.input_icon}
                                         />
                                     </div>
                                 </div>
-                                
+
                                 <div className={styles.login_actions}>
                                     <Link href="/profile" className={styles.login_button}>
                                         Entrar
                                     </Link>
-                                    
+
                                     <div className={styles.forgot_password}>
                                         <Link href="/recuperar-senha" className={styles.forgot_password_link}>
                                             Esqueceu sua senha?

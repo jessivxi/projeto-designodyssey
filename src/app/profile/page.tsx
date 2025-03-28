@@ -4,7 +4,6 @@ import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import styles from './profile.module.css';
 import Image from 'next/image';
-import pincel from './../../images/icones/pencil-square.svg'
 import Link from 'next/link'; // Importação do Link
 import chat from './../../images/icones/chat-fill.svg';
 

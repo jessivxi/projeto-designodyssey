@@ -13,7 +13,7 @@
   flex-direction: column;
   width: 20vw;
   height: 55vh;
-  border: 1px solid #000;
+  border: 1px solid #b8b8b8;
   border-radius: 30px;
   background-color: #fff;
   margin-top: 10vh;
@@ -118,7 +118,7 @@
   margin-top: 2vh;
   margin-bottom: 1vh;
   border-radius: 20px;
-  border: 1px solid #000;
+  border: 1px solid #b8b8b8;
 }
 
 .profile_freelancer-module__HvKjIa__profile_right_column_icone_box {
@@ -151,7 +151,7 @@
   justify-content: center;
   flex-direction: column;
   border-radius: 40px;
-  border: 1px solid #000;
+  border: 1px solid #b8b8b8;
   margin-top: 40px;
 }
 

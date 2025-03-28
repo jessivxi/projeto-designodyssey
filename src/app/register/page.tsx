@@ -9,12 +9,11 @@ import { useRouter } from 'next/navigation';
 // Ícones e fotos
 import foto_login from './../../images/fotos/ilustracao_login.png'
 import seta_esquerda_preta from './../../images/icones/seta_esquerda_preta.svg'
-import email from './../../images/icones/e-mail.svg'
 import envelope from './../../images//icones/envelope.svg'
 import google from './../../images/icones/google.svg'
 import facebook from './../../images/icones/facebook.svg'
 import cadeado from './../../images/icones/cadeado.svg'
-import pessoa  from './../../images/icones/pessoa.svg'
+import pessoa from './../../images/icones/pessoa.svg'
 
 export default function Register() {
     const router = useRouter();
@@ -53,7 +52,7 @@ export default function Register() {
                         <div className={styles.register_right_bemvindo}>
                             <h1>Crie sua conta</h1>
                         </div>
-                        
+
                         {/* Opções de cadastro social */}
                         <div className={styles.social_register_options}>
                             <button className={styles.social_button}>
@@ -65,11 +64,11 @@ export default function Register() {
                                 Cadastre-se com Facebook
                             </button>
                         </div>
-                        
+
                         <div className={styles.divider}>
                             <span>ou</span>
                         </div>
-                        
+
                         <div className={styles.register_right_bottom}>
                             <div className={styles.register_credenciais}>
                                 <div className={styles.register_field}>
@@ -79,7 +78,7 @@ export default function Register() {
                                         <Image src={pessoa} height={20} width={20} alt='icone-pessoa' />
                                     </div>
                                 </div>
-                                
+
                                 <div className={styles.register_field}>
                                     <label className='ml-3' htmlFor="email">E-Mail</label>
                                     <div className={styles.register_input_box}>
@@ -87,7 +86,7 @@ export default function Register() {
                                         <Image src={envelope} height={20} width={20} alt='icone-envelope' />
                                     </div>
                                 </div>
-                                
+
                                 <div className={styles.register_field}>
                                     <label className='ml-3' htmlFor="password">Senha</label>
                                     <div className={styles.register_input_box}>
@@ -95,7 +94,7 @@ export default function Register() {
                                         <Image src={cadeado} height={20} width={20} alt='icone-cadeado' />
                                     </div>
                                 </div>
-                                
+
                                 <div className={styles.register_field}>
                                     <label className='ml-3' htmlFor="confirm-password">Confirmar Senha</label>
                                     <div className={styles.register_input_box}>
@@ -103,12 +102,12 @@ export default function Register() {
                                         <Image src={cadeado} height={20} width={20} alt='icone-cadeado' />
                                     </div>
                                 </div>
-                                
+
                                 <div className={styles.register_actions}>
                                     <button className={styles.register_button}>
                                         Cadastrar
                                     </button>
-                                    
+
                                     <div className={styles.login_redirect}>
                                         Já tem uma conta?
                                         <Link href="/login" className={styles.login_link}>

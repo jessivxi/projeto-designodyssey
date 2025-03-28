@@ -5,11 +5,8 @@ import React from 'react'
 
 import lupa from '../../images/icones/lupa.svg'
 
-
 import Link from 'next/link'
-import { use } from 'react';
 import Header from '../components/header/header';
-import Footer from '../components/footer/footer';
 
 function listing() {
     return (

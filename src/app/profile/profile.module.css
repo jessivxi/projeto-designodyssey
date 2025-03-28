@@ -12,7 +12,8 @@
     flex-direction: column;
     width: 20vw;
     height: 55vh;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(184, 184, 184);
+    /* box-shadow:rgba(0, 0, 0, 0.309) 0px 0px 10px 1px; */
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
     margin-top: 10vh;
@@ -116,7 +117,7 @@
     margin-top: 2vh;
     margin-bottom: 1vh;
     border-radius: 20px;
-    border: black 1px solid;
+    border: 1px solid rgb(184, 184, 184);
 }
 .profile_rigth_column_box_one_title{
     display: flex;
@@ -136,7 +137,7 @@
     justify-content: center;
     flex-direction: column;
     border-radius: 40px;
-    border: black 1px solid;
+    border: 1px solid rgb(184, 184, 184);
     margin-top: 40px;
 }
 .profile_rigth_column_evaluation_title{

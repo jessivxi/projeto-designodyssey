@@ -43,50 +43,50 @@ function listing() {
                                 </div>
                                 <div className={styles.clisting_carousel}>
                                     <div className={styles.listing_carousel_boxes}>
-                                        <div className={styles.listing_carousel_box1}>
+                                        <Link href="gig_page" className={styles.listing_carousel_box1}>
                                             <p className={styles.text_boxes_1}>Anuncio de luciana</p>
                                             <p className={styles.text_boxes_2}>Eu criarei um logotipo empresarial minimalista premium</p>
                                             <p className={styles.text_boxes_3}>A partir de 270$</p>
-                                        </div>
-                                        <div className={styles.listing_carousel_box2}>
+                                        </Link>
+                                        <Link href="gig_page" className={styles.listing_carousel_box2}>
                                             <p className={styles.text_boxes_1}>Anuncio de pedro</p>
                                             <p className={styles.text_boxes_2}>Eu criarei um logotipo profissional moderno para sua marca em 24 horas</p>
                                             <p className={styles.text_boxes_3}>A partir de 270$</p>
-                                        </div>
-                                        <div className={styles.listing_carousel_box3}>
+                                        </Link>
+                                        <Link href="gig_page" className={styles.listing_carousel_box3}>
                                             <p className={styles.text_boxes_1}>Anuncio de Jade</p>
                                             <p className={styles.text_boxes_2}>Nossa agência criará um logotipo empresarial moderno e minimalista</p>
                                             <p className={styles.text_boxes_3}>A partir de 270$</p>
-                                        </div>
-                                        <div className={styles.listing_carousel_box4}>
+                                        </Link>
+                                        <Link href="gig_page" className={styles.listing_carousel_box4}>
                                             <p className={styles.text_boxes_1}>Anuncio de Erick</p>
                                             <p className={styles.text_boxes_2}>Eu farei arte de linha minimalista moderna e design de logotipo de emblema</p>
                                             <p className={styles.text_boxes_3}>A partir de 270$</p>
-                                        </div>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className={styles.clisting_carousel2}>
                                     <div className={styles.listing_carousel_boxes}>
-                                        <div className={styles.listing_carousel_box5}>
+                                        <Link href="gig_page" className={styles.listing_carousel_box5}>
                                             <p className={styles.text_boxes_1}>Anuncio de luciana</p>
                                             <p className={styles.text_boxes_2}>Eu criarei um logotipo empresarial minimalista premium</p>
                                             <p className={styles.text_boxes_3}>A partir de 270$</p>
-                                        </div>
-                                        <div className={styles.listing_carousel_box6}>
+                                        </Link>
+                                        <Link href="gig_page" className={styles.listing_carousel_box6}>
                                             <p className={styles.text_boxes_1}>Anuncio de pedro</p>
                                             <p className={styles.text_boxes_2}>Eu criarei um logotipo profissional moderno para sua marca em 24 horas</p>
                                             <p className={styles.text_boxes_3}>A partir de 270$</p>
-                                        </div>
-                                        <div className={styles.listing_carousel_box7}>
+                                        </Link>
+                                        <Link href="gig_page" className={styles.listing_carousel_box7}>
                                             <p className={styles.text_boxes_1}>Anuncio de Jade</p>
                                             <p className={styles.text_boxes_2}>Nossa agência criará um logotipo empresarial moderno e minimalista</p>
                                             <p className={styles.text_boxes_3}>A partir de 270$</p>
-                                        </div>
-                                        <div className={styles.listing_carousel_box8}>
+                                        </Link>
+                                        <Link href="gig_page" className={styles.listing_carousel_box8}>
                                             <p className={styles.text_boxes_1}>Anuncio de Erick</p>
                                             <p className={styles.text_boxes_2}>Eu farei arte de linha minimalista moderna e design de logotipo de emblema</p>
                                             <p className={styles.text_boxes_3}>A partir de 270$</p>
-                                        </div>
+                                        </Link>
                                     </div>
                                     <div className={styles.listing_contador_number}>
                                         <p className={styles.listing_numero}>1</p>

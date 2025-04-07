@@ -1,10 +1,9 @@
-"use client"
 import styles from './header.module.css'
 
 import Image from 'next/image'
 import Link from 'next/link'
 
-import logo from './../../../images/fotos/logo_cat .png'
+import logo from './../../../images/fotos/logo_cat.png'
 
 function Header() {
     return (

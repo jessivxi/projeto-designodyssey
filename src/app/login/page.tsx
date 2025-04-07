@@ -110,7 +110,7 @@ export default function Login() {
 
                                 <div className={styles.login_actions}>
                                     <Link href="/profile" className={styles.login_button}>
-                                        Entrar
+                                        Login
                                     </Link>
 
                                     <div className={styles.forgot_password}>

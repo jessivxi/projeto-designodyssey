@@ -33,10 +33,120 @@ const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$pr
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
 {
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$tsx__$28$client__proxy$29$__$3c$module__evaluation$3e$__ = __turbopack_import__("[project]/src/app/components/header/header.tsx (client proxy) <module evaluation>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$tsx__$28$client__proxy$29$__ = __turbopack_import__("[project]/src/app/components/header/header.tsx (client proxy)");
+__turbopack_esm__({
+    "default": (()=>__TURBOPACK__default__export__)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_import__("[project]/src/app/components/header/header.module.css [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$fotos$2f$logo_cat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$fotos$2f$logo_cat$2e$png__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/src/images/fotos/logo_cat.png.mjs { IMAGE => "[project]/src/images/fotos/logo_cat.png [app-rsc] (static)" } [app-rsc] (structured image object, ecmascript)');
 ;
-__turbopack_export_namespace__(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$tsx__$28$client__proxy$29$__);
+;
+;
+;
+;
+function Header() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_main,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                href: "/",
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_logo,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].logo,
+                    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$fotos$2f$logo_cat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$fotos$2f$logo_cat$2e$png__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                    height: 100,
+                    width: 100,
+                    alt: ""
+                }, void 0, false, {
+                    fileName: "[project]/src/app/components/header/header.tsx",
+                    lineNumber: 12,
+                    columnNumber: 17
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/components/header/header.tsx",
+                lineNumber: 11,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_list_container,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_list,
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_list_button,
+                            href: "/",
+                            children: "Home"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/header/header.tsx",
+                            lineNumber: 16,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_list_button,
+                            href: "/functioning",
+                            children: "Como Funciona"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/header/header.tsx",
+                            lineNumber: 17,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_list_button,
+                            href: "/listing",
+                            children: "Gráfico e Design"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/header/header.tsx",
+                            lineNumber: 18,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/components/header/header.tsx",
+                    lineNumber: 15,
+                    columnNumber: 17
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/components/header/header.tsx",
+                lineNumber: 14,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_login,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/login",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_login_button,
+                        children: "Login"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/components/header/header.tsx",
+                        lineNumber: 22,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/register",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_signup_button,
+                        children: "Cadastre-se"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/components/header/header.tsx",
+                        lineNumber: 23,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/components/header/header.tsx",
+                lineNumber: 21,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/app/components/header/header.tsx",
+        lineNumber: 10,
+        columnNumber: 9
+    }, this);
+}
+const __TURBOPACK__default__export__ = Header;
 }}),
 "[project]/src/app/components/hub/hub.tsx (client proxy) <module evaluation>": ((__turbopack_context__) => {
 "use strict";
@@ -71,10 +181,659 @@ const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$pr
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
 {
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$tsx__$28$client__proxy$29$__$3c$module__evaluation$3e$__ = __turbopack_import__("[project]/src/app/components/hub/hub.tsx (client proxy) <module evaluation>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$tsx__$28$client__proxy$29$__ = __turbopack_import__("[project]/src/app/components/hub/hub.tsx (client proxy)");
+__turbopack_esm__({
+    "default": (()=>__TURBOPACK__default__export__)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_import__("[project]/src/app/components/hub/hub.module.css [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$lupa$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$icones$2f$lupa$2e$svg__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/src/images/icones/lupa.svg.mjs { IMAGE => "[project]/src/images/icones/lupa.svg [app-rsc] (static)" } [app-rsc] (structured image object, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$fotos$2f$gato_arroba$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$fotos$2f$gato_arroba$2e$png__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/src/images/fotos/gato_arroba.png.mjs { IMAGE => "[project]/src/images/fotos/gato_arroba.png [app-rsc] (static)" } [app-rsc] (structured image object, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$joinha$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$icones$2f$joinha$2e$svg__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/src/images/icones/joinha.svg.mjs { IMAGE => "[project]/src/images/icones/joinha.svg [app-rsc] (static)" } [app-rsc] (structured image object, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$tela$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$icones$2f$tela$2e$svg__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/src/images/icones/tela.svg.mjs { IMAGE => "[project]/src/images/icones/tela.svg [app-rsc] (static)" } [app-rsc] (structured image object, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$dinheiro$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$icones$2f$dinheiro$2e$svg__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/src/images/icones/dinheiro.svg.mjs { IMAGE => "[project]/src/images/icones/dinheiro.svg [app-rsc] (static)" } [app-rsc] (structured image object, ecmascript)');
 ;
-__turbopack_export_namespace__(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$tsx__$28$client__proxy$29$__);
+;
+;
+;
+;
+;
+;
+;
+;
+function Hub() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].hub_main,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].hub_content,
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].hero_main,
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].hub_hero,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].hub_hero_cat,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$fotos$2f$gato_arroba$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$fotos$2f$gato_arroba$2e$png__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                                    height: 100,
+                                    width: 100,
+                                    alt: "gato_arroba"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/components/hub/hub.tsx",
+                                    lineNumber: 19,
+                                    columnNumber: 29
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                lineNumber: 18,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].hub_hero_text,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: "DesignOdyssey"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 22,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].hero_text_hub,
+                                        children: "Amplie sua força de trabalho profissional com freelancers"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 25,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                lineNumber: 21,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].hub_hero_searchbar,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        placeholder: "O que você está procurando?",
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].hub_hero_textinput,
+                                        type: "text"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 28,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "/home",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                            src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$lupa$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$icones$2f$lupa$2e$svg__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                                            height: 25,
+                                            width: 25,
+                                            alt: "lupa_pesquisa"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/components/hub/hub.tsx",
+                                            lineNumber: 30,
+                                            columnNumber: 33
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 29,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                lineNumber: 27,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                        lineNumber: 17,
+                        columnNumber: 21
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/app/components/hub/hub.tsx",
+                    lineNumber: 16,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box_home_main,
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box_home_container,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box_home_1,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box1_content_overtitle,
+                                        children: "Construa sua presença online"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 38,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box1_content_title,
+                                        children: "Web Design"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 41,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                lineNumber: 37,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box_home_2,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box1_content_overtitle,
+                                        children: "Crie um visual impactante"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 46,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box1_content_title,
+                                        children: "Graphic Design"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 49,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                lineNumber: 45,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box_home_3,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box1_content_overtitle,
+                                        children: "Defina sua identidade"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 54,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box1_content_title,
+                                        children: "Branding"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 57,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                lineNumber: 53,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box_home_4,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box1_content_overtitle,
+                                        children: "Transforme suas ideias em arte"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 62,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box1_content_title,
+                                        children: "Digital Art"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 65,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                lineNumber: 61,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                        lineNumber: 36,
+                        columnNumber: 21
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/app/components/hub/hub.tsx",
+                    lineNumber: 35,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].about_main,
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].about_box,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].about_box_title,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].about_titulo,
+                                    children: "A solução rápida e fácil para você"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/components/hub/hub.tsx",
+                                    lineNumber: 74,
+                                    columnNumber: 29
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                lineNumber: 73,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].about_box_text,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].about_text,
+                                        children: "Bem-vindo à nossa plataforma, projetada para conectar você com designers de forma prática e segura. Aqui você pode publicar gratuitamente suas necessidades de design, sejam elas para interfaces de sites, logotipos, design de interiores, ilustrações ou outros projetos criativo."
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 79,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].about_text,
+                                        children: "Nosso modelo permite que profissionais interessados ​​entrem em contato diretamente com você, promovendo uma comunicação transparente e objetiva. E o melhor: o pagamento só é realizado após a sua aprovação do trabalho final, garantindo que você esteja completamente satisfeito com o resultado."
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 82,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                lineNumber: 78,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "/login",
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].button_style,
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                        children: "Experimente agora"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 88,
+                                        columnNumber: 33
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/components/hub/hub.tsx",
+                                    lineNumber: 87,
+                                    columnNumber: 29
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                lineNumber: 86,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                        lineNumber: 72,
+                        columnNumber: 21
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/app/components/hub/hub.tsx",
+                    lineNumber: 71,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box2_home_main,
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box2_home_container,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box_2,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box2_content_icon,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                            src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$joinha$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$icones$2f$joinha$2e$svg__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                                            height: 60,
+                                            width: 60,
+                                            alt: "ícone-joinha"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/components/hub/hub.tsx",
+                                            lineNumber: 97,
+                                            columnNumber: 33
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 96,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box2_content_text,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            children: "Desfrute de uma experiência de correspondência simples e fácil de usar"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/components/hub/hub.tsx",
+                                            lineNumber: 100,
+                                            columnNumber: 33
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 99,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                lineNumber: 95,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box_2,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box2_content_icon,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                            src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$tela$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$icones$2f$tela$2e$svg__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                                            height: 60,
+                                            width: 60,
+                                            alt: "ícone-tela"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/components/hub/hub.tsx",
+                                            lineNumber: 107,
+                                            columnNumber: 33
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 106,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box2_content_text,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            children: "Obtenha trabalho de qualidade feito rapidamente e dentro do orçamento"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/components/hub/hub.tsx",
+                                            lineNumber: 110,
+                                            columnNumber: 33
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 109,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                lineNumber: 105,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box_2,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box2_content_icon,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                            src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$dinheiro$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$icones$2f$dinheiro$2e$svg__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                                            height: 60,
+                                            width: 60,
+                                            alt: "ícone-dinheiro"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/components/hub/hub.tsx",
+                                            lineNumber: 117,
+                                            columnNumber: 33
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 116,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].box2_content_text,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            children: "Pague somente quando estiver satisfeito"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/components/hub/hub.tsx",
+                                            lineNumber: 120,
+                                            columnNumber: 33
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 119,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                lineNumber: 115,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                        lineNumber: 94,
+                        columnNumber: 21
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/app/components/hub/hub.tsx",
+                    lineNumber: 93,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carousel_design_main,
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carousel_design_container,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carousel_title,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                        children: "Gráficos e Design"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 130,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                        children: [
+                                            "Designs para fazer você se ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                                lineNumber: 131,
+                                                columnNumber: 60
+                                            }, this),
+                                            "destacar."
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 131,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                lineNumber: 129,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carousel_topicos,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carousel_topicos_botao,
+                                        children: "Design de Site"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 134,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carousel_topicos_botao,
+                                        children: "Design Gráfico"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 135,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "/listing",
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carousel_topicos_botao,
+                                        children: "Design logo"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 136,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carousel_topicos_botao,
+                                        children: "Arte Digital"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 137,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                lineNumber: 133,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carousel_carousel_container,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carousel_carousel_title,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                            children: "Explorar Gráficos e Design"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/components/hub/hub.tsx",
+                                            lineNumber: 141,
+                                            columnNumber: 33
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 140,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carousel_carousel,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carousel_carousel_boxes,
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "/listing",
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carousel_carousel_box1,
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].text_boxes,
+                                                        children: "Renove seu site"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                                        lineNumber: 146,
+                                                        columnNumber: 41
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/components/hub/hub.tsx",
+                                                    lineNumber: 145,
+                                                    columnNumber: 37
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "/listing",
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carousel_carousel_box2,
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].text_boxes,
+                                                        children: "Amplie seu DesignGrafico"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                                        lineNumber: 149,
+                                                        columnNumber: 41
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/components/hub/hub.tsx",
+                                                    lineNumber: 148,
+                                                    columnNumber: 37
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "/listing",
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carousel_carousel_box3,
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].text_boxes,
+                                                        children: "Construa sua logo"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                                        lineNumber: 152,
+                                                        columnNumber: 41
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/components/hub/hub.tsx",
+                                                    lineNumber: 151,
+                                                    columnNumber: 37
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "/listing",
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].carousel_carousel_box4,
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hub$2f$hub$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].text_boxes,
+                                                        children: "Faça sua Artedigital"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                                        lineNumber: 155,
+                                                        columnNumber: 41
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/components/hub/hub.tsx",
+                                                    lineNumber: 154,
+                                                    columnNumber: 37
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/components/hub/hub.tsx",
+                                            lineNumber: 144,
+                                            columnNumber: 33
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                                        lineNumber: 143,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/hub/hub.tsx",
+                                lineNumber: 139,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/components/hub/hub.tsx",
+                        lineNumber: 128,
+                        columnNumber: 21
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/app/components/hub/hub.tsx",
+                    lineNumber: 127,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/app/components/hub/hub.tsx",
+            lineNumber: 15,
+            columnNumber: 13
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/app/components/hub/hub.tsx",
+        lineNumber: 14,
+        columnNumber: 9
+    }, this);
+}
+const __TURBOPACK__default__export__ = Hub;
 }}),
 "[project]/src/app/components/footer/footer.tsx (client proxy) <module evaluation>": ((__turbopack_context__) => {
 "use strict";

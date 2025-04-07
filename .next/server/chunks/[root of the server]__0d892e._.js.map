@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 54, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/api/login/route.ts"],"sourcesContent":["import { login } from \"@/lib/auth\";\r\nimport { NextResponse } from \"next/server\";\r\n\r\nexport async function POST(req: Request) {\r\n    try {\r\n        const { username, password } = await req.json();\r\n        console.log(\"Dados recebidos:\", { username, password });\r\n\r\n        const response = await login(username, password);\r\n        console.log(\"Resposta do login:\", response);\r\n\r\n        return NextResponse.json(response);\r\n    } catch (error) {\r\n        console.error(\"Erro na API de login:\", error);\r\n        return NextResponse.json({ success: false, message: \"Erro interno\" }, { status: 500 });\r\n    }\r\n}"],"names":[],"mappings":";;;;;;;;AACA;;;AAEO,eAAe,KAAK,GAAY;IACnC,IAAI;QACA,MAAM,EAAE,QAAQ,EAAE,QAAQ,EAAE,GAAG,MAAM,IAAI,IAAI;QAC7C,QAAQ,GAAG,CAAC,oBAAoB;YAAE;YAAU;QAAS;QAErD,MAAM,WAAW,MAAM,MAAM,UAAU;QACvC,QAAQ,GAAG,CAAC,sBAAsB;QAElC,OAAO,gIAAA,CAAA,eAAY,CAAC,IAAI,CAAC;IAC7B,EAAE,OAAO,OAAO;QACZ,QAAQ,KAAK,CAAC,yBAAyB;QACvC,OAAO,gIAAA,CAAA,eAAY,CAAC,IAAI,CAAC;YAAE,SAAS;YAAO,SAAS;QAAe,GAAG;YAAE,QAAQ;QAAI;IACxF;AACJ"}},
+    {"offset": {"line": 85, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

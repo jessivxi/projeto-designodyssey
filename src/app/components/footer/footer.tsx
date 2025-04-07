@@ -2,7 +2,7 @@
 
 import styles from './footer.module.css'
 
-import logo from './../../../images/fotos/logo_cat .png'
+import logo from './../../../images/fotos/logo_cat.png'
 
 import zapzap from './../../../images/icones/zapzap.svg'
 import instagram from './../../../images/icones/instagram.svg'

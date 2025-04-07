@@ -1,6 +1,5 @@
-'use client'
 import React from 'react';
-import Header from '../components/header/header';
+import Header_rw from "../components/header_rw/header_rw";
 import Footer from '../components/footer/footer';
 import styles from './profile.module.css';
 import Image from 'next/image';
@@ -10,7 +9,7 @@ import chat from './../../images/icones/chat-fill.svg';
 function Profile() {
     return (
         <>
-            <Header />
+            <Header_rw />
             <div className={styles.profile_container}>
                 <div className={styles.profile_main}>
                     <div className={styles.profile_box_photo}>
@@ -28,7 +27,7 @@ function Profile() {
                     </div>
                     <button className={styles.profile_button_explorer}>Explorar DesignOdyssey</button>
                     <Link href="/profile_freelancer" className={styles.profile_link_freelancer}>
-                        Você está atualmente no seu perfil de comprador. Para acessar seu perfil de freelancer, clique para alterna para o modo de vendedor
+                        Você está atualmente no seu perfil de cliente. Clique para alternar para seu perfil de freelancer.
                     </Link>
                 </div>
                 <div className={styles.profile_right_column}>

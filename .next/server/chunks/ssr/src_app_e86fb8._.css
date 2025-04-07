@@ -1,0 +1,284 @@
+/* [project]/src/app/components/header_rw/header_rw.module.css [app-client] (css) */
+.header_rw-module__gJAjra__header_outer_wrapper {
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.header_rw-module__gJAjra__header_inner_wrapper {
+  display: flex;
+  height: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.header_rw-module__gJAjra__header_content {
+  display: flex;
+  width: 100%;
+}
+
+.header_rw-module__gJAjra__header_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-width: 223px;
+}
+
+.header_rw-module__gJAjra__header_navigation {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  gap: 20px;
+  text-wrap: nowrap;
+}
+
+.header_rw-module__gJAjra__header_navigation_item {
+  display: inline-block;
+  color: #000;
+  font-size: 14px;
+  border-radius: 100px;
+  line-height: 2;
+  padding: 0 .75em;
+  transition: background-color .3s;
+  margin: 0 10px;
+}
+
+.header_rw-module__gJAjra__header_navigation_item:hover {
+  background-color: #0096d1;
+  color: #fff;
+}
+
+.header_rw-module__gJAjra__header_login_wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: fit-content;
+}
+
+.header_rw-module__gJAjra__header_login_content {
+  display: flex;
+  width: fit-content;
+  gap: 20px;
+  margin: auto;
+}
+
+.header_rw-module__gJAjra__header_login_button {
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-size: 14px;
+  color: #fff;
+  text-wrap: nowrap;
+  cursor: pointer;
+  background-color: #0096d1;
+  padding: .2rem 1.5em;
+  transition: background-color .3s;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.header_rw-module__gJAjra__header_login_button:hover {
+  background-color: #0178a7;
+}
+
+.header_rw-module__gJAjra__header_register_button {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #000;
+  text-wrap: nowrap;
+  line-height: 2;
+  cursor: pointer;
+  background-color: #fff;
+  padding: .2rem 1.5em;
+  transition: background-color .3s;
+  border: 1px solid #d7d7d7;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+}
+
+.header_rw-module__gJAjra__header_register_button:hover {
+  background-color: #d7d7d7;
+}
+
+
+/* [project]/src/app/profile/profile.module.css [app-client] (css) */
+.profile-module__5FeCNW__profile_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.profile-module__5FeCNW__profile_box_photo {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 55vh;
+  border: 1px solid #b8b8b8;
+  border-radius: 30px;
+  background-color: #fff;
+  margin-top: 10vh;
+  padding: 40px 10px 0 0;
+  align-items: center;
+}
+
+.profile-module__5FeCNW__profile_main {
+  display: flex;
+  width: 20w;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px 0 15%;
+}
+
+.profile-module__5FeCNW__profile_photo {
+  display: flex;
+  background-color: #d9d9d9;
+  border-radius: 80px;
+  height: 170px;
+  width: 170px;
+}
+
+.profile-module__5FeCNW__profile_name {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-module__5FeCNW__profile_name_user {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.profile-module__5FeCNW__profile_name_username {
+  font-size: 15px;
+  color: #838181;
+}
+
+.profile-module__5FeCNW__profile_information_text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.profile-module__5FeCNW__profile_information_date, .profile-module__5FeCNW__profile_information_Location, .profile-module__5FeCNW__profile_information_lenguages {
+  font-size: 15px;
+  color: #7a7a7a;
+  margin-bottom: 10px;
+}
+
+.profile-module__5FeCNW__profile_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 53%;
+  height: 6vh;
+  background-color: #d9d9d9;
+  transition: background-color .3s, color .3s, transform .3s;
+  margin-top: 3vh;
+  border-radius: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.profile-module__5FeCNW__profile_button_explorer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  font-size: 17px;
+  height: 6vh;
+  background-color: #d9d9d9;
+  transition: background-color .3s, color .3s, transform .3s;
+  margin-top: 5vh;
+  border-radius: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.profile-module__5FeCNW__profile_right_column {
+  display: flex;
+  width: 55vw;
+  padding-left: 10%;
+  flex-direction: column;
+}
+
+.profile-module__5FeCNW__profile_right_column_text_title {
+  display: flex;
+  width: 70%;
+  margin-top: 9vh;
+  font-size: 17px;
+}
+
+.profile-module__5FeCNW__profile_rigth_column_box_one {
+  display: flex;
+  width: 70%;
+  height: 10vh;
+  flex-direction: column;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  border-radius: 20px;
+  border: 1px solid #b8b8b8;
+}
+
+.profile-module__5FeCNW__profile_rigth_column_box_one_title {
+  display: flex;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 25px 0 0 20px;
+}
+
+.profile-module__5FeCNW__profile_rigth_column_box_one_text {
+  display: flex;
+  padding: 0 0 0 20px;
+}
+
+.profile-module__5FeCNW__profile_right_column_evaluation {
+  display: flex;
+  width: 70%;
+  height: 25vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 40px;
+  border: 1px solid #b8b8b8;
+  margin-top: 40px;
+}
+
+.profile-module__5FeCNW__profile_rigth_column_evaluation_title {
+  display: flex;
+  font-size: 25px;
+  padding: 0 0 30px;
+  font-weight: bold;
+}
+
+.profile-module__5FeCNW__profile_right_column_evaluation_text {
+  display: flex;
+  padding: 30px 0 0;
+}
+
+.profile-module__5FeCNW__profile_link_freelancer {
+  display: flex;
+  padding: 30px 0 0;
+  width: 370px;
+  font-size: 15px;
+  cursor: pointer;
+  line-break: loose;
+}
+
+.profile-module__5FeCNW__profile_link_freelancer:hover {
+  color: #0096d1;
+}
+
+
+/*# sourceMappingURL=src_app_e86fb8._.css.map*/

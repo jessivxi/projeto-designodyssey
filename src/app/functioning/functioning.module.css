@@ -28,13 +28,13 @@
     border-radius: 50px;
 }
 
-.functioning_content_title{
+.functioning_content_title {
     display: flex;
     font-weight: bolder;
     font-size: 35px;
     color: white;
     line-height: 4vw;
-    width: 60%; 
+    width: 60%;
 }
 
 .functioning_content_text {
@@ -86,6 +86,7 @@
     margin: 0;
     padding: 0px 46% 30px 140px;
 }
+
 .functiong_service_columns_container {
     display: flex;
     justify-content: space-between;
@@ -127,6 +128,7 @@
     .functiong_service_columns_container {
         flex-direction: column;
     }
+
     .functiong_service_vertical {
         width: 100%;
     }

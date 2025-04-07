@@ -46,6 +46,10 @@
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  -webkit-transition: background-color .3s, color .3s, transform .3s;
+  -moz-transition: background-color .3s, color .3s, transform .3s;
+  -ms-transition: background-color .3s, color .3s, transform .3s;
+  -o-transition: background-color .3s ease, color .3s ease, transform .3s ease;
 }
 
 .header-module__MIcRHW__header_list_button:hover {

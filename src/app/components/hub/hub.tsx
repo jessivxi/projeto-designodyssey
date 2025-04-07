@@ -1,7 +1,4 @@
-'use client'
-
 import styles from './hub.module.css'
-
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -11,8 +8,6 @@ import gato_arroba from './../../../images/fotos/gato_arroba.png'
 import joinha from './../../../images/icones/joinha.svg'
 import tela from './../../../images/icones/tela.svg'
 import dinheiro from './../../../images/icones/dinheiro.svg'
-import seta_esquerda from './../../../images/icones/seta_esquerda.svg'
-import seta_direita from './../../../images/icones/seta_direita.svg'
 
 function Hub() {
     return (

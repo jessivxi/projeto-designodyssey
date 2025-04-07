@@ -1,4 +1,3 @@
-"use client"
 import styles from './listing.module.css'
 import Image from 'next/image';
 import React from 'react'
@@ -6,12 +5,12 @@ import React from 'react'
 import lupa from '../../images/icones/lupa.svg'
 
 import Link from 'next/link'
-import Header from '../components/header/header';
+import Header_rw from "../components/header_rw/header_rw";
 
 function listing() {
     return (
         <>
-            <Header />
+            <Header_rw />
             <div className={styles.listing_main}>
                 <div className={styles.listing_content}>
                     <div className={styles.hero_main}>

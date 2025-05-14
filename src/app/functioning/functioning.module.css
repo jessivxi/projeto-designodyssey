@@ -133,3 +133,107 @@
         width: 100%;
     }
 }
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+    .functioning_content_box {
+        width: 90%;
+        padding: 6%;
+    }
+    .functioning_content_title {
+        font-size: 28px;
+        width: 90%;
+    }
+    .functioning_apresention_content {
+        width: 95%;
+    }
+    .functioning_apresention_texts {
+        font-size: 28px;
+        padding: 0 10% 20px 10%;
+    }
+    .functiong_service_columns_container {
+        padding: 0 2%;
+        gap: 24px;
+    }
+    .functiong_service_vertical {
+        width: 100%;
+        gap: 16px;
+    }
+    .functiong_service_colune1,
+    .functiong_service_colune2,
+    .functiong_service_colune3,
+    .functiong_service_colune4,
+    .functiong_service_colune5 {
+        padding: 20px;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    .functioning_main {
+        margin-bottom: 8vh;
+        padding: 0 2vw;
+    }
+    .functioning_content {
+        width: 100%;
+        min-height: unset;
+    }
+    .functioning_content_box {
+        width: 100%;
+        padding: 6% 2%;
+        border-radius: 20px;
+    }
+    .functioning_content_title {
+        font-size: 20px;
+        width: 100%;
+        line-height: 1.2;
+        text-align: center;
+    }
+    .functioning_content_text {
+        font-size: 1rem;
+        padding: 0;
+    }
+    .functioning_content_button {
+        width: 100%;
+        font-size: 14px;
+        height: 40px;
+        margin-top: 2vh;
+    }
+    .functioning_apresention_main {
+        margin-top: 3vh;
+    }
+    .functioning_apresention_content {
+        width: 100%;
+        padding: 0;
+    }
+    .functioning_apresention_texts {
+        font-size: 20px;
+        padding: 0 0 20px 0;
+        text-align: center;
+    }
+    .functiong_service_columns_container {
+        flex-direction: column;
+        padding: 0;
+        gap: 16px;
+    }
+    .functiong_service_vertical {
+        width: 100%;
+        gap: 10px;
+    }
+    .functiong_service_colune1,
+    .functiong_service_colune2,
+    .functiong_service_colune3,
+    .functiong_service_colune4,
+    .functiong_service_colune5 {
+        padding: 12px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
+    .functiong_service_title {
+        font-size: 16px;
+        padding: 20px 0 4px 0;
+    }
+    .functiong_service_text {
+        font-size: 0.95rem;
+    }
+}

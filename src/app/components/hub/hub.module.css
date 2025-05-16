@@ -446,7 +446,7 @@
 .text_boxes {
   display: flex;
   justify-content: center;
-  padding: 120% 0px 0px 0px;
+  padding-top: 120%;
   font-weight: bold;
   font-size: 15px;
 }
@@ -513,19 +513,19 @@
   }
   .about_box {
     width: 100%;
-    padding: 8% 2%;
     border-radius: 30px;
   }
   .about_box_title {
-    font-size: 32px;
+    padding-top: 20px;
+    font-size: 25px;
     width: 100%;
     line-height: 1.2;
   }
   .about_text {
-    font-size: 15px;
+    font-size: 16px;
   }
   .button_style {
-    width: 100%;
+    width: 50%;
     font-size: 14px;
     height: 40px;
   }
@@ -533,7 +533,6 @@
   .box2_home_main,
   .carousel_design_main {
     height: auto;
-    margin-bottom: 5vh;
   }
   .box_home_container,
   .box2_home_container,
@@ -550,9 +549,11 @@
   .box_2 {
     width: 100%;
     min-width: unset;
-    padding: 10px;
+    padding: 27px;
     margin-bottom: 12px;
+    border: 1px solid rgb(168, 168, 168);
     border-radius: 20px;
+    font-size: 13px;
   }
   .carousel_title {
     font-size: 24px;
@@ -560,7 +561,7 @@
   .carousel_carousel_boxes {
     flex-direction: column;
     width: 100%;
-    gap: 12px;
+    gap: 40px;
     align-items: center;
   }
   .carousel_carousel_box1,
@@ -569,6 +570,7 @@
   .carousel_carousel_box4 {
     width: 100%;
     height: 120px;
+
     min-width: unset;
     border-radius: 20px;
   }
@@ -596,7 +598,7 @@
     margin-top: 2vh;
   }
   .text_boxes {
-    font-size: 13px;
-    padding: 30% 0 0 0;
+    font-size: 13px;  
+    padding-top: 32%;
   }
 }

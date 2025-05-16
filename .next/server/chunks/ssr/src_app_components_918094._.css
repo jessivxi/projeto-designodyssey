@@ -557,7 +557,7 @@
 .hub-module__LVsAYa__text_boxes {
   display: flex;
   justify-content: center;
-  padding: 120% 0 0;
+  padding-top: 120%;
   font-weight: bold;
   font-size: 15px;
 }
@@ -622,29 +622,28 @@
 
   .hub-module__LVsAYa__about_box {
     width: 100%;
-    padding: 8% 2%;
     border-radius: 30px;
   }
 
   .hub-module__LVsAYa__about_box_title {
-    font-size: 32px;
+    padding-top: 20px;
+    font-size: 25px;
     width: 100%;
     line-height: 1.2;
   }
 
   .hub-module__LVsAYa__about_text {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .hub-module__LVsAYa__button_style {
-    width: 100%;
+    width: 50%;
     font-size: 14px;
     height: 40px;
   }
 
   .hub-module__LVsAYa__box_home_main, .hub-module__LVsAYa__box2_home_main, .hub-module__LVsAYa__carousel_design_main {
     height: auto;
-    margin-bottom: 5vh;
   }
 
   .hub-module__LVsAYa__box_home_container, .hub-module__LVsAYa__box2_home_container, .hub-module__LVsAYa__carousel_design_container {
@@ -657,9 +656,11 @@
   .hub-module__LVsAYa__box_home_1, .hub-module__LVsAYa__box_home_2, .hub-module__LVsAYa__box_home_3, .hub-module__LVsAYa__box_home_4, .hub-module__LVsAYa__box_2 {
     width: 100%;
     min-width: unset;
-    padding: 10px;
+    padding: 27px;
     margin-bottom: 12px;
+    border: 1px solid #a8a8a8;
     border-radius: 20px;
+    font-size: 13px;
   }
 
   .hub-module__LVsAYa__carousel_title {
@@ -669,7 +670,7 @@
   .hub-module__LVsAYa__carousel_carousel_boxes {
     flex-direction: column;
     width: 100%;
-    gap: 12px;
+    gap: 40px;
     align-items: center;
   }
 
@@ -710,7 +711,7 @@
 
   .hub-module__LVsAYa__text_boxes {
     font-size: 13px;
-    padding: 30% 0 0;
+    padding-top: 32%;
   }
 }
 

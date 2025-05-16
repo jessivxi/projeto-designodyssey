@@ -249,19 +249,6 @@
   -o-border-radius: 50px;
 }
 
-@media (max-width: 768px) {
-  .box_2 {
-    width: 80%;
-    padding: 30px 20px 20px 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .box_2 {
-    width: 100%;
-    padding: 20px 10px 10px 10px;
-  }
-}
 
 .box2_content_icon {
   display: flex;
@@ -452,51 +439,6 @@
 }
 .text_boxes:hover {
   color: #0096d1;
-}
-
-/* Responsividade para tablets */
-@media (max-width: 1024px) {
-  .hub_hero_text {
-    font-size: 200%;
-  }
-  .hub_hero_searchbar {
-    width: 90%;
-  }
-  .about_box {
-    width: 90%;
-    padding: 6%;
-  }
-  .box_home_container,
-  .box2_home_container,
-  .carousel_design_container {
-    width: 95%;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-  }
-  .box_home_1,
-  .box_home_2,
-  .box_home_3,
-  .box_home_4,
-  .box_2 {
-    min-width: 60vw;
-    width: 90%;
-    margin-bottom: 20px;
-  }
-  .carousel_carousel_boxes {
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-    align-items: center;
-  }
-  .carousel_carousel_box1,
-  .carousel_carousel_box2,
-  .carousel_carousel_box3,
-  .carousel_carousel_box4 {
-    width: 90%;
-    min-width: unset;
-    height: 200px;
-  }
 }
 
 /* Responsividade para celulares */

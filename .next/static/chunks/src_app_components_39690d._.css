@@ -361,20 +361,6 @@
   -o-border-radius: 50px;
 }
 
-@media (width <= 768px) {
-  .hub-module__LVsAYa__box_2 {
-    width: 80%;
-    padding: 30px 20px 20px;
-  }
-}
-
-@media (width <= 480px) {
-  .hub-module__LVsAYa__box_2 {
-    width: 100%;
-    padding: 20px 10px 10px;
-  }
-}
-
 .hub-module__LVsAYa__box2_content_icon {
   display: flex;
   justify-content: flex-start;
@@ -564,47 +550,6 @@
 
 .hub-module__LVsAYa__text_boxes:hover {
   color: #0096d1;
-}
-
-@media (width <= 1024px) {
-  .hub-module__LVsAYa__hub_hero_text {
-    font-size: 200%;
-  }
-
-  .hub-module__LVsAYa__hub_hero_searchbar {
-    width: 90%;
-  }
-
-  .hub-module__LVsAYa__about_box {
-    width: 90%;
-    padding: 6%;
-  }
-
-  .hub-module__LVsAYa__box_home_container, .hub-module__LVsAYa__box2_home_container, .hub-module__LVsAYa__carousel_design_container {
-    width: 95%;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-  }
-
-  .hub-module__LVsAYa__box_home_1, .hub-module__LVsAYa__box_home_2, .hub-module__LVsAYa__box_home_3, .hub-module__LVsAYa__box_home_4, .hub-module__LVsAYa__box_2 {
-    min-width: 60vw;
-    width: 90%;
-    margin-bottom: 20px;
-  }
-
-  .hub-module__LVsAYa__carousel_carousel_boxes {
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .hub-module__LVsAYa__carousel_carousel_box1, .hub-module__LVsAYa__carousel_carousel_box2, .hub-module__LVsAYa__carousel_carousel_box3, .hub-module__LVsAYa__carousel_carousel_box4 {
-    width: 90%;
-    min-width: unset;
-    height: 200px;
-  }
 }
 
 @media (width <= 600px) {

@@ -443,36 +443,44 @@
 
 @media (width <= 600px) {
   .hub-module__LVsAYa__hub_hero_text {
-    font-size: 120%;
-    padding: 10px 0 0;
+    font-size: 220%;
+    padding: 10px 0 20px;
+  }
+
+  .hub-module__LVsAYa__hub_hero_textinput {
+    width: 100%;
+    height: 100%;
+    padding: 25px 0 0 20px;
+    font-size: 15px;
   }
 
   .hub-module__LVsAYa__hub_hero_searchbar {
-    width: 100%;
-    height: 40px;
+    width: 120%;
+    height: 55px;
     flex-direction: column;
-    padding: 0 2%;
   }
 
   .hub-module__LVsAYa__about_box {
     width: 100%;
+    height: 93%;
     border-radius: 30px;
   }
 
   .hub-module__LVsAYa__about_box_title {
-    padding-top: 20px;
+    padding-top: 22px;
     font-size: 25px;
     width: 100%;
     line-height: 1.2;
   }
 
   .hub-module__LVsAYa__about_text {
-    font-size: 16px;
+    font-size: 15px;
+    line-break: anywhere;
   }
 
   .hub-module__LVsAYa__button_style {
-    width: 50%;
-    font-size: 14px;
+    width: 40%;
+    font-size: 13px;
     height: 40px;
   }
 
@@ -494,7 +502,7 @@
     margin-bottom: 12px;
     border: 1px solid #a8a8a8;
     border-radius: 20px;
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .hub-module__LVsAYa__carousel_title {

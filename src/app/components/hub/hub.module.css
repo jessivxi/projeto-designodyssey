@@ -444,8 +444,8 @@
 /* Responsividade para celulares */
 @media (max-width: 600px) {
   .hub_hero_text {
-    font-size: 220%;
-    padding: 10px 0 20 0;
+    font-size: 200%;
+    padding: 0px 10 20 0;
   }
   .hub_hero_textinput {
     width: 100%;
@@ -454,13 +454,14 @@
     font-size: 15px;
   }
   .hub_hero_searchbar {
-    width: 120%;
+    width: 110%;
     height: 55px;
     flex-direction: column;
   
   }
   .about_box {
-    width: 100%;
+    width: 90%;
+    justify-content: center;
     height: 93%;
     border-radius: 30px;
   }
@@ -472,13 +473,14 @@
   
   }
   .about_text {
-    font-size: 15px;
-    line-break: anywhere;
+    font-size: 13px;
+    line-break: auto;
   }
   .button_style {
-    width: 40%;
+    width: 55%;
+    font-weight: bold;
     font-size: 13px;
-    height: 40px;
+    height: 45px;
   }
   .box_home_main,
   .box2_home_main,
@@ -521,7 +523,6 @@
   .carousel_carousel_box4 {
     width: 100%;
     height: 120px;
-
     min-width: unset;
     border-radius: 20px;
   }
@@ -546,10 +547,10 @@
   }
   .carousel_carousel_title {
     font-size: 18px;
-    margin-top: 2vh;
+    margin-bottom:30px ;
   }
   .text_boxes {
     font-size: 13px;  
-    padding-top: 32%;
+    padding-top: 34%;
   }
 }

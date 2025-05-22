@@ -442,16 +442,15 @@
 
   .listing-module__2wsz6a__listing_design_main {
     height: auto;
-    padding-bottom: 50px;
   }
 
   .listing-module__2wsz6a__listing_design_container {
-    width: 90%;
+    width: 85%;
   }
 
   .listing-module__2wsz6a__listing_title {
     font-size: 1.8rem;
-    padding: 20px 0;
+    padding-top: 60px;
   }
 
   .listing-module__2wsz6a__listing_text {
@@ -463,6 +462,7 @@
     flex-direction: column;
     gap: 12px;
     align-items: center;
+    padding-bottom: 90%;
   }
 
   .listing-module__2wsz6a__listing_topicos_botao1, .listing-module__2wsz6a__listing_topicos_botao2, .listing-module__2wsz6a__listing_topicos_botao3, .listing-module__2wsz6a__listing_topicos_botao4 {
@@ -478,7 +478,7 @@
   }
 
   .listing-module__2wsz6a__listing_carousel_box1, .listing-module__2wsz6a__listing_carousel_box2, .listing-module__2wsz6a__listing_carousel_box3, .listing-module__2wsz6a__listing_carousel_box4, .listing-module__2wsz6a__listing_carousel_box5, .listing-module__2wsz6a__listing_carousel_box6, .listing-module__2wsz6a__listing_carousel_box7, .listing-module__2wsz6a__listing_carousel_box8 {
-    width: 100%;
+    width: 150%;
     height: 200px;
     border-radius: 20px;
     margin: 0;

@@ -7,7 +7,12 @@
     background-color: #f8f9fa;
     font-family: 'Arial', sans-serif;
 }
-
+.login_error {
+    color: #d32f2f;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
 .login_content {
     display: flex;
     max-width: 1200px;

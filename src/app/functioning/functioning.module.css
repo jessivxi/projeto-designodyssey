@@ -133,28 +133,25 @@
     }
     .functioning_content {
         width: 100%;
-        min-height: unset;
-        padding-top: 5vh;
-
     }
     .functioning_content_box {
         width: 90%;
         padding: 4%;
+        height: auto;
         border-radius: 20px;
     }
     .functioning_content_title {
         font-size: 20px;
         width: 100%;
-        padding-top: 20px;
     }
     .functioning_content_text {
-        font-size: 14px;
+        font-size: 13px;
         line-break: initial;
-        padding-top: 10px;
+        padding-top: 13px;
     }
     .functioning_content_button {
         width: 50%;
-        font-size: 13px;
+        font-size: 12px;
         height: 36px;
         margin-top: 1.5vh;
     }
@@ -186,7 +183,7 @@
     .functiong_service_colune5 {
         padding: 12px;
         border-radius: 12px;
-        font-size: 14px;
+        font-size: 12px;
     }
     .functiong_service_title {
         font-size: 16px;

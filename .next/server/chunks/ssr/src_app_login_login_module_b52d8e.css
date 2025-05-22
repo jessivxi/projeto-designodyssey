@@ -8,6 +8,13 @@
   font-family: Arial, sans-serif;
 }
 
+.login-module__WEZH7G__login_error {
+  color: #d32f2f;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
 .login-module__WEZH7G__login_content {
   display: flex;
   max-width: 1200px;

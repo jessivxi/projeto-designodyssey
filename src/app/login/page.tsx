@@ -17,6 +17,9 @@ import cadeado from './../../images/icones/cadeado.svg'
 export default function Login() {
     const router = useRouter()
     const [isExternalReferrer, setIsExternalReferrer] = useState(false)
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [error, setError] = useState('')
 
     useEffect(() => {
         if (!document.referrer || !document.referrer.includes(window.location.origin)) {
@@ -30,6 +33,16 @@ export default function Login() {
         } else {
             router.back()
         }
+    }
+
+    const handleLogin = (e: React.FormEvent) => {
+        e.preventDefault()
+        if (!email || !password) {
+            setError('Preencha e-mail e senha para continuar.')
+            return
+        }
+        setError('')
+        router.push('/profile')
     }
 
     return (
@@ -68,7 +81,7 @@ export default function Login() {
                             <span>ou</span>
                         </div>
 
-                        <div className={styles.login_right_bottom}>
+                        <form className={styles.login_right_bottom} onSubmit={handleLogin}>
                             <div className={styles.login_credenciais}>
                                 <div className={styles.login_field}>
                                     <label htmlFor="email">E-Mail</label>
@@ -78,6 +91,8 @@ export default function Login() {
                                             className={styles.login_input}
                                             type="email"
                                             placeholder='seu@email.com'
+                                            value={email}
+                                            onChange={e => setEmail(e.target.value)}
                                         />
                                         <Image
                                             src={envelope}
@@ -97,6 +112,8 @@ export default function Login() {
                                             className={styles.login_input}
                                             type="password"
                                             placeholder='••••••••'
+                                            value={password}
+                                            onChange={e => setPassword(e.target.value)}
                                         />
                                         <Image
                                             src={cadeado}
@@ -108,10 +125,14 @@ export default function Login() {
                                     </div>
                                 </div>
 
+                                {error && (
+                                    <div className={styles.login_error}>{error}</div>
+                                )}
+
                                 <div className={styles.login_actions}>
-                                    <Link href="/profile" className={styles.login_button}>
+                                    <button type="submit" className={styles.login_button}>
                                         Login
-                                    </Link>
+                                    </button>
 
                                     <div className={styles.forgot_password}>
                                         <Link href="/recuperar-senha" className={styles.forgot_password_link}>
@@ -120,7 +141,7 @@ export default function Login() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

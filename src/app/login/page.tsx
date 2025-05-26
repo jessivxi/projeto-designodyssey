@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from './login.module.css'
 import { useRouter } from 'next/navigation'
+import { z } from 'zod'
 
 // Ícones e fotos
 import foto_login from './../../images/fotos/ilustracao_login.png'
@@ -13,6 +14,12 @@ import google from './../../images/icones/google.svg'
 import facebook from './../../images/icones/facebook.svg'
 import envelope from './../../images/icones/envelope.svg'
 import cadeado from './../../images/icones/cadeado.svg'
+
+// Schema de validação com Zod
+const loginSchema = z.object({
+    email: z.string().email('E-mail inválido'),
+    password: z.string().min(1, 'Senha é obrigatória')
+})
 
 export default function Login() {
     const router = useRouter()
@@ -37,8 +44,10 @@ export default function Login() {
 
     const handleLogin = (e: React.FormEvent) => {
         e.preventDefault()
-        if (!email || !password) {
-            setError('Preencha e-mail e senha para continuar.')
+        // Validação com Zod
+        const result = loginSchema.safeParse({ email, password })
+        if (!result.success) {
+            setError(result.error.errors[0].message)
             return
         }
         setError('')

@@ -412,70 +412,123 @@
 
 
 @media (max-width: 600px) {
+
   .listing_main {
-    padding-top: 40px;
+    padding-top: 54px;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    min-height: 100vh;
+    box-sizing: border-box;
   }
-  
+
   .listing_hero {
     height: auto;
-    padding: 20px 5%;
-    margin-bottom: 30px;
+    padding: 16px 4vw 24px 9vw;
+    margin-bottom: 48px;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .listing_hero_text {
-    font-size: 1.8rem;
-    padding: 10px 0;
-  }
-  
-  .listing_hero_searchbar {
+    font-size: 1.1rem;
+    padding: 6px 0 0 0;
+    line-height: 1.3;
+    word-break: break-word;
+    text-align: center;
     width: 100%;
-    height: 50px;
-    margin-top: 20px;
-    border-radius: 25px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
+
+  .listing_hero_searchbar {
+    width: 78vw;
+    max-width: 420px;
+    height: 44px;
+    margin: 14px auto 0 auto;
+    border-radius: 22px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .listing_design_main {
     height: auto;
+    width: 100vw;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .listing_design_container {
-    width: 85%;
-  }
-  
-  .listing_title {
-    font-size: 1.8rem;
-    padding-top: 60px;
-  }
-  
-  .listing_text {
-    font-size: 1rem;
-    line-height: 1.5;
 
+  .listing_design_container {
+    width: 80vw;
+    padding: 0 1vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
+  .listing_title {
+    font-size: 1.6rem;
+    padding-top: 18px;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+  }
+
+  .listing_text {
+    font-size: 0.94rem;
+    line-height: 1.5;
+    padding-top: 5px;
+    margin-bottom: 12px;
+    width: 100%;
+  }
+
   .listing_topicos {
     flex-direction: column;
     gap: 12px;
     align-items: center;
-    padding-bottom: 90%;
+    padding-top: 18px;
+    width: 100%;
   }
-  
+
   .listing_topicos_botao1,
   .listing_topicos_botao2,
   .listing_topicos_botao3,
   .listing_topicos_botao4 {
-    width: 100%;
-    max-width: 250px;
-    padding: 12px;
-    font-size: 0.9rem;
+    width: 230px;
+    padding: 11px 0;
+    font-size: 15px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    display: flex;
   }
-  
+
   .listing_carousel_boxes,
   .listing_carousel_boxes2 {
     flex-direction: column;
-    gap: 15px;
+    gap: 24px; /* aumenta o espaço entre as caixas */
+    width: 100vw;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    margin: 0 auto;
   }
-  
+
   .listing_carousel_box1,
   .listing_carousel_box2,
   .listing_carousel_box3,
@@ -484,20 +537,48 @@
   .listing_carousel_box6,
   .listing_carousel_box7,
   .listing_carousel_box8 {
-    width: 150%;
-    height: 200px;
-    border-radius: 20px;
-    margin: 0;
+    width: 85vw;           /* mais largas e centralizadas */
+    max-width: 340px;
+    height: 140px;
+    border-radius: 22px;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  
-  .text_boxes_1 {
-    padding-top: 40%;
-    font-size: 1rem;
+
+  .text_boxes_1,
+  .text_boxes_2,
+  .text_boxes_3 {
+    font-size: 14px;
+    text-align: center;
+    padding: 8px 0 0 0;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
+
   .listing_contador_number {
-    padding: 30px 0;
+    padding: 18px 0 0 0;
     flex-direction: row;
     justify-content: center;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .listing_numero {
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

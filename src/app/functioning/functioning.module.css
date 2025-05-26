@@ -135,8 +135,8 @@
         min-height: 50vh;
     }
     .functioning_content_box {
-        width: 75%;           /* Mais larga */
-        min-height: 330px;    /* Mais alta */
+        width: 80%;           /* Mais larga */
+        min-height: 360px;    /* Mais alta */
         height: auto;         /* Altura automática se o conteúdo crescer */
         border-radius: 24px;
         color: #fff;
@@ -146,15 +146,15 @@
     }
     .functioning_content_title {
         width: 100%;
-        line-height: 1.2rem;
-        font-size: 20px;
-        padding-bottom: 10px;
+        line-height: 1.5rem;
+        font-size: 25px;
+        padding-bottom: 19px;
     }
     .functioning_content_text {
         font-size: 14px;
     }
     .functioning_content_button {
-        width: 65%;
+        width: 63%;
         font-size: 13px;
         height: 42px;
     }

@@ -4,7 +4,8 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './register.module.css'
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation'
+import { z } from 'zod'
 
 // Ícones e fotos
 import foto_login from './../../images/fotos/ilustracao_login.png'
@@ -15,9 +16,27 @@ import facebook from './../../images/icones/facebook.svg'
 import cadeado from './../../images/icones/cadeado.svg'
 import pessoa from './../../images/icones/pessoa.svg'
 
+// Schema de validação com Zod
+const registerSchema = z.object({
+  name: z.string().min(1, 'Nome é obrigatório'),
+  email: z.string().email('E-mail inválido'),
+  password: z.string().min(6, 'A senha deve ter pelo menos 6 caracteres'),
+  confirmPassword: z.string().min(1, 'Confirme sua senha')
+}).refine((data) => data.password === data.confirmPassword, {
+  message: 'As senhas não coincidem.',
+  path: ['confirmPassword'],
+})
+
 export default function Register() {
     const router = useRouter();
     const [isExternalReferrer, setIsExternalReferrer] = useState(false);
+
+    // Estados para os campos
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         if (!document.referrer || !document.referrer.includes(window.location.origin)) {
@@ -31,6 +50,27 @@ export default function Register() {
         } else {
             router.back();
         }
+    };
+
+    const handleRegister = (e: React.FormEvent) => {
+        e.preventDefault();
+
+        // Validação com Zod
+        const result = registerSchema.safeParse({
+            name,
+            email,
+            password,
+            confirmPassword
+        });
+
+        if (!result.success) {
+            setError(result.error.errors[0].message);
+            return;
+        }
+
+        setError(null);
+        // Aqui você pode adicionar a lógica para acessar o banco de dados
+        router.push('/login');
     };
 
     return (
@@ -69,20 +109,32 @@ export default function Register() {
                             <span>ou</span>
                         </div>
 
-                        <div className={styles.register_right_bottom}>
+                        <form className={styles.register_right_bottom} onSubmit={handleRegister}>
                             <div className={styles.register_credenciais}>
                                 <div className={styles.register_field}>
                                     <label className='ml-3' htmlFor="name">Nome completo</label>
                                     <div className={styles.register_input_box}>
-                                        <input className={styles.register_input} type="text" placeholder='Seu nome completo' />
+                                        <input
+                                            className={styles.register_input}
+                                            type="text"
+                                            placeholder='Seu nome completo'
+                                            value={name}
+                                            onChange={e => setName(e.target.value)}
+                                        />
                                         <Image src={pessoa} height={20} width={20} alt='icone-pessoa' />
                                     </div>
                                 </div>
 
                                 <div className={styles.register_field}>
-                                    <label className='ml-3' htmlFor="email">E-Mail</label>
+                                    <label className='ml-3' htmlFor="email">E-mail</label>
                                     <div className={styles.register_input_box}>
-                                        <input className={styles.register_input} type="email" placeholder='seu@email.com' />
+                                        <input
+                                            className={styles.register_input}
+                                            type="email"
+                                            placeholder='seu@email.com'
+                                            value={email}
+                                            onChange={e => setEmail(e.target.value)}
+                                        />
                                         <Image src={envelope} height={20} width={20} alt='icone-envelope' />
                                     </div>
                                 </div>
@@ -90,7 +142,13 @@ export default function Register() {
                                 <div className={styles.register_field}>
                                     <label className='ml-3' htmlFor="password">Senha</label>
                                     <div className={styles.register_input_box}>
-                                        <input className={styles.register_input} type="password" placeholder='••••••••' />
+                                        <input
+                                            className={styles.register_input}
+                                            type="password"
+                                            placeholder='••••••••'
+                                            value={password}
+                                            onChange={e => setPassword(e.target.value)}
+                                        />
                                         <Image src={cadeado} height={20} width={20} alt='icone-cadeado' />
                                     </div>
                                 </div>
@@ -98,13 +156,25 @@ export default function Register() {
                                 <div className={styles.register_field}>
                                     <label className='ml-3' htmlFor="confirm-password">Confirmar Senha</label>
                                     <div className={styles.register_input_box}>
-                                        <input className={styles.register_input} type="password" placeholder='••••••••' />
+                                        <input
+                                            className={styles.register_input}
+                                            type="password"
+                                            placeholder='••••••••'
+                                            value={confirmPassword}
+                                            onChange={e => setConfirmPassword(e.target.value)}
+                                        />
                                         <Image src={cadeado} height={20} width={20} alt='icone-cadeado' />
                                     </div>
                                 </div>
 
+                                {error && (
+                                    <div style={{ color: '#d32f2f', margin: '10px 0', textAlign: 'center', fontSize: '14px' }}>
+                                        {error}
+                                    </div>
+                                )}
+
                                 <div className={styles.register_actions}>
-                                    <button className={styles.register_button}>
+                                    <button className={styles.register_button} type="submit">
                                         Cadastrar
                                     </button>
 
@@ -116,7 +186,7 @@ export default function Register() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

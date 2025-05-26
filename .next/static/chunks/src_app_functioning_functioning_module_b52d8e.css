@@ -132,8 +132,8 @@
   }
 
   .functioning-module__EK0Zcq__functioning_content_box {
-    width: 75%;
-    min-height: 330px;
+    width: 80%;
+    min-height: 360px;
     height: auto;
     border-radius: 24px;
     color: #fff;
@@ -144,9 +144,9 @@
 
   .functioning-module__EK0Zcq__functioning_content_title {
     width: 100%;
-    line-height: 1.2rem;
-    font-size: 20px;
-    padding-bottom: 10px;
+    line-height: 1.5rem;
+    font-size: 25px;
+    padding-bottom: 19px;
   }
 
   .functioning-module__EK0Zcq__functioning_content_text {
@@ -154,7 +154,7 @@
   }
 
   .functioning-module__EK0Zcq__functioning_content_button {
-    width: 65%;
+    width: 63%;
     font-size: 13px;
     height: 42px;
   }

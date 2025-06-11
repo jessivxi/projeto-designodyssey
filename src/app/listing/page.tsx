@@ -5,12 +5,12 @@ import React from 'react'
 import lupa from '../../images/icones/lupa.svg'
 
 import Link from 'next/link'
-import Header_rw from "../components/header_rw/header_rw";
+import Header from '../components/header/header';
 
 function listing() {
     return (
         <>
-            <Header_rw />
+            <Header />
             <div className={styles.listing_main}>
                 <div className={styles.listing_content}>
                     <div className={styles.hero_main}>

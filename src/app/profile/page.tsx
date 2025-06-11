@@ -1,5 +1,5 @@
 import React from 'react';
-import Header_rw from "../components/header_rw/header_rw";
+import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import styles from './profile.module.css';
 import Image from 'next/image';
@@ -9,7 +9,7 @@ import chat from './../../images/icones/chat-fill.svg';
 function Profile() {
     return (
         <>
-            <Header_rw />
+            <Header />
             <div className={styles.profile_container}>
                 <div className={styles.profile_main}>
                     <div className={styles.profile_box_photo}>

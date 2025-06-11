@@ -224,6 +224,7 @@
   justify-content: center;
   align-items: center;
   height: 35vh;
+  flex-direction: column;
   width: 100%;
   margin-bottom: 15vh;
 }
@@ -231,8 +232,12 @@
 .hub-module__LVsAYa__box2_home_container {
   display: flex;
   justify-content: space-between;
-  height: 100%;
+  align-items: stretch;
+  flex-direction: row;
   width: 70%;
+  height: 160%;
+  gap: 24px;
+  padding: 0;
 }
 
 .hub-module__LVsAYa__box_2 {
@@ -240,7 +245,7 @@
   flex-direction: column;
   background-color: #fff;
   height: 100%;
-  width: 30%;
+  width: 80%;
   border: 1px solid #a8a8a8;
   padding: 50px 30px 30px;
   border-radius: 50px;
@@ -248,20 +253,6 @@
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
-}
-
-@media (width <= 768px) {
-  .hub-module__LVsAYa__box_2 {
-    width: 80%;
-    padding: 30px 20px 20px;
-  }
-}
-
-@media (width <= 480px) {
-  .hub-module__LVsAYa__box_2 {
-    width: 100%;
-    padding: 20px 10px 10px;
-  }
 }
 
 .hub-module__LVsAYa__box2_content_icon {
@@ -446,13 +437,148 @@
 .hub-module__LVsAYa__text_boxes {
   display: flex;
   justify-content: center;
-  padding: 120% 0 0;
+  padding-top: 120%;
   font-weight: bold;
   font-size: 15px;
 }
 
 .hub-module__LVsAYa__text_boxes:hover {
   color: #0096d1;
+}
+
+@media (width <= 600px) {
+  .hub-module__LVsAYa__hub_hero_text {
+    font-size: 200%;
+    padding: 0 0 10px;
+  }
+
+  .hub-module__LVsAYa__hub_hero_textinput {
+    padding: 5px 0 6px 25px;
+    font-size: 15px;
+  }
+
+  .hub-module__LVsAYa__hub_hero_searchbar {
+    width: 105%;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 25px;
+  }
+
+  .hub-module__LVsAYa__about_box {
+    width: 90%;
+    justify-content: center;
+    height: 105%;
+    border-radius: 30px;
+  }
+
+  .hub-module__LVsAYa__about_box_title {
+    padding-top: 22px;
+    font-size: 25px;
+    width: 100%;
+    line-height: 1.2;
+  }
+
+  .hub-module__LVsAYa__about_text {
+    font-size: 14px;
+    line-break: auto;
+  }
+
+  .hub-module__LVsAYa__button_style {
+    width: 55%;
+    font-weight: bold;
+    font-size: 13px;
+    height: 45px;
+  }
+
+  .hub-module__LVsAYa__box_home_main, .hub-module__LVsAYa__box2_home_main, .hub-module__LVsAYa__carousel_design_main {
+    height: auto;
+  }
+
+  .hub-module__LVsAYa__box_home_container, .hub-module__LVsAYa__box2_home_container, .hub-module__LVsAYa__carousel_design_container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .hub-module__LVsAYa__box_home_1, .hub-module__LVsAYa__box_home_2, .hub-module__LVsAYa__box_home_3, .hub-module__LVsAYa__box_home_4 {
+    width: 90%;
+    min-width: unset;
+    padding: 27px;
+    margin-bottom: 12px;
+    border: 1px solid #a8a8a8;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+  .hub-module__LVsAYa__carousel_title {
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  .hub-module__LVsAYa__carousel_carousel_boxes {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .hub-module__LVsAYa__carousel_carousel_box1, .hub-module__LVsAYa__carousel_carousel_box2, .hub-module__LVsAYa__carousel_carousel_box3, .hub-module__LVsAYa__carousel_carousel_box4 {
+    width: 90%;
+    height: 120px;
+    min-width: unset;
+    border-radius: 20px;
+  }
+
+  .hub-module__LVsAYa__carousel_topicos {
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+  }
+
+  .hub-module__LVsAYa__carousel_topicos_botao {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .hub-module__LVsAYa__carousel_carousel_container {
+    width: 100%;
+    margin-bottom: 2vh;
+  }
+
+  .hub-module__LVsAYa__carousel_carousel {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+
+  .hub-module__LVsAYa__carousel_carousel_title {
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+  }
+
+  .hub-module__LVsAYa__text_boxes {
+    font-size: 13px;
+    padding-top: 45%;
+  }
+
+  .hub-module__LVsAYa__box2_home_container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 16px;
+    padding: 0;
+  }
+
+  .hub-module__LVsAYa__box_2 {
+    width: 90%;
+    min-width: unset;
+    height: auto;
+    padding: 24px 12px;
+    margin-bottom: 12px;
+    border-radius: 20px;
+  }
 }
 
 

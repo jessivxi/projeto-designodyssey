@@ -83,120 +83,10 @@ const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$pr
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
 {
-__turbopack_esm__({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_import__("[project]/src/app/components/header/header.module.css [app-client] (css module)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$fotos$2f$logo_cat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$fotos$2f$logo_cat$2e$png__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/src/images/fotos/logo_cat.png.mjs { IMAGE => "[project]/src/images/fotos/logo_cat.png [app-rsc] (static)" } [app-rsc] (structured image object, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$tsx__$28$client__proxy$29$__$3c$module__evaluation$3e$__ = __turbopack_import__("[project]/src/app/components/header/header.tsx (client proxy) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$tsx__$28$client__proxy$29$__ = __turbopack_import__("[project]/src/app/components/header/header.tsx (client proxy)");
 ;
-;
-;
-;
-;
-function Header() {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_main,
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                href: "/",
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_logo,
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].logo,
-                    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$fotos$2f$logo_cat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$fotos$2f$logo_cat$2e$png__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                    height: 100,
-                    width: 100,
-                    alt: ""
-                }, void 0, false, {
-                    fileName: "[project]/src/app/components/header/header.tsx",
-                    lineNumber: 12,
-                    columnNumber: 17
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/app/components/header/header.tsx",
-                lineNumber: 11,
-                columnNumber: 13
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_list_container,
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_list,
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_list_button,
-                            href: "/",
-                            children: "Home"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/components/header/header.tsx",
-                            lineNumber: 16,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_list_button,
-                            href: "/functioning",
-                            children: "Como Funciona"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/components/header/header.tsx",
-                            lineNumber: 17,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_list_button,
-                            href: "/listing",
-                            children: "Gráfico e Design"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/components/header/header.tsx",
-                            lineNumber: 18,
-                            columnNumber: 21
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/app/components/header/header.tsx",
-                    lineNumber: 15,
-                    columnNumber: 17
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/app/components/header/header.tsx",
-                lineNumber: 14,
-                columnNumber: 13
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_login,
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                        href: "/login",
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_login_button,
-                        children: "Login"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/components/header/header.tsx",
-                        lineNumber: 22,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                        href: "/register",
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header_signup_button,
-                        children: "Cadastre-se"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/components/header/header.tsx",
-                        lineNumber: 23,
-                        columnNumber: 17
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/app/components/header/header.tsx",
-                lineNumber: 21,
-                columnNumber: 13
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/src/app/components/header/header.tsx",
-        lineNumber: 10,
-        columnNumber: 9
-    }, this);
-}
-const __TURBOPACK__default__export__ = Header;
+__turbopack_export_namespace__(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$header$2f$header$2e$tsx__$28$client__proxy$29$__);
 }}),
 "[project]/src/app/components/footer/footer.tsx (client proxy) <module evaluation>": ((__turbopack_context__) => {
 "use strict";
@@ -264,7 +154,7 @@ const __TURBOPACK__default__export__ = {
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: require } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/casa.392d5d4e.svg");}}),
+__turbopack_export_value__("/_next/static/media/casa.5372740e.svg");}}),
 "[project]/src/images/icones/casa.svg.mjs { IMAGE => \"[project]/src/images/icones/casa.svg [app-rsc] (static)\" } [app-rsc] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -288,7 +178,7 @@ const __TURBOPACK__default__export__ = {
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: require } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/person_circle.da50288b.svg");}}),
+__turbopack_export_value__("/_next/static/media/person_circle.45114349.svg");}}),
 "[project]/src/images/icones/person_circle.svg.mjs { IMAGE => \"[project]/src/images/icones/person_circle.svg [app-rsc] (static)\" } [app-rsc] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -312,7 +202,7 @@ const __TURBOPACK__default__export__ = {
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: require } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/star_fill.37a95617.svg");}}),
+__turbopack_export_value__("/_next/static/media/star_fill.6943a5c8.svg");}}),
 "[project]/src/images/icones/star_fill.svg.mjs { IMAGE => \"[project]/src/images/icones/star_fill.svg [app-rsc] (static)\" } [app-rsc] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -336,7 +226,7 @@ const __TURBOPACK__default__export__ = {
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: require } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/star_half.e1c9684b.svg");}}),
+__turbopack_export_value__("/_next/static/media/star_half.323310eb.svg");}}),
 "[project]/src/images/icones/star_half.svg.mjs { IMAGE => \"[project]/src/images/icones/star_half.svg [app-rsc] (static)\" } [app-rsc] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -360,7 +250,7 @@ const __TURBOPACK__default__export__ = {
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: require } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/br.707a8d96.svg");}}),
+__turbopack_export_value__("/_next/static/media/br.abf01c43.svg");}}),
 "[project]/src/images/bandeiras/4x3/br.svg.mjs { IMAGE => \"[project]/src/images/bandeiras/4x3/br.svg [app-rsc] (static)\" } [app-rsc] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -721,17 +611,17 @@ function Product() {
                                             children: "O que as pessoas adoram neste freelancer"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                            lineNumber: 131,
+                                            lineNumber: 125,
                                             columnNumber: 33
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/gig_page/page.tsx",
-                                        lineNumber: 130,
+                                        lineNumber: 124,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                    lineNumber: 129,
+                                    lineNumber: 123,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -748,12 +638,12 @@ function Product() {
                                                     alt: ""
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                    lineNumber: 139,
+                                                    lineNumber: 133,
                                                     columnNumber: 37
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/gig_page/page.tsx",
-                                                lineNumber: 138,
+                                                lineNumber: 132,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -768,12 +658,12 @@ function Product() {
                                                                     children: "Dandara"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                    lineNumber: 149,
+                                                                    lineNumber: 143,
                                                                     columnNumber: 45
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                lineNumber: 148,
+                                                                lineNumber: 142,
                                                                 columnNumber: 41
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -787,7 +677,7 @@ function Product() {
                                                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$gig_page$2f$gig_page$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].flag_round
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                        lineNumber: 154,
+                                                                        lineNumber: 148,
                                                                         columnNumber: 45
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -795,20 +685,20 @@ function Product() {
                                                                         children: "Brazil"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                        lineNumber: 161,
+                                                                        lineNumber: 155,
                                                                         columnNumber: 45
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                lineNumber: 153,
+                                                                lineNumber: 147,
                                                                 columnNumber: 41
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$gig_page$2f$gig_page$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].wpl_uc_separation
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                lineNumber: 165,
+                                                                lineNumber: 159,
                                                                 columnNumber: 41
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -816,6 +706,16 @@ function Product() {
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$gig_page$2f$gig_page$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].wpl_rating_stars,
                                                                     children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                                            src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$star_fill$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$icones$2f$star_fill$2e$svg__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                                                                            height: 15,
+                                                                            width: 15,
+                                                                            alt: "star.icon"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/gig_page/page.tsx",
+                                                                            lineNumber: 162,
+                                                                            columnNumber: 49
+                                                                        }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                                                             src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$star_fill$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$icones$2f$star_fill$2e$svg__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
                                                                             height: 15,
@@ -847,23 +747,13 @@ function Product() {
                                                                             columnNumber: 49
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                                            src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$star_fill$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$icones$2f$star_fill$2e$svg__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                                                                            height: 15,
-                                                                            width: 15,
-                                                                            alt: "star.icon"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                            lineNumber: 186,
-                                                                            columnNumber: 49
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                                                             src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$star_half$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$icones$2f$star_half$2e$svg__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
                                                                             height: 15,
                                                                             width: 15,
                                                                             alt: "star_half.icon"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                            lineNumber: 192,
+                                                                            lineNumber: 186,
                                                                             columnNumber: 49
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -872,29 +762,29 @@ function Product() {
                                                                                 children: "4,5"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                                lineNumber: 199,
+                                                                                lineNumber: 193,
                                                                                 columnNumber: 53
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                            lineNumber: 198,
+                                                                            lineNumber: 192,
                                                                             columnNumber: 49
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                    lineNumber: 167,
+                                                                    lineNumber: 161,
                                                                     columnNumber: 45
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                lineNumber: 166,
+                                                                lineNumber: 160,
                                                                 columnNumber: 41
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/gig_page/page.tsx",
-                                                        lineNumber: 147,
+                                                        lineNumber: 141,
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -907,18 +797,18 @@ function Product() {
                                                                     children: "Ver Mais"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                    lineNumber: 206,
+                                                                    lineNumber: 200,
                                                                     columnNumber: 218
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 205,
+                                                            lineNumber: 199,
                                                             columnNumber: 41
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/gig_page/page.tsx",
-                                                        lineNumber: 204,
+                                                        lineNumber: 198,
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -928,29 +818,29 @@ function Product() {
                                                             children: "há 2 semanas"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 210,
+                                                            lineNumber: 204,
                                                             columnNumber: 41
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/gig_page/page.tsx",
-                                                        lineNumber: 209,
+                                                        lineNumber: 203,
                                                         columnNumber: 37
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/gig_page/page.tsx",
-                                                lineNumber: 146,
+                                                lineNumber: 140,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/gig_page/page.tsx",
-                                        lineNumber: 137,
+                                        lineNumber: 131,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                    lineNumber: 136,
+                                    lineNumber: 130,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -966,17 +856,17 @@ function Product() {
                                                             children: "Apresentação"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 221,
+                                                            lineNumber: 215,
                                                             columnNumber: 41
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/gig_page/page.tsx",
-                                                        lineNumber: 220,
+                                                        lineNumber: 214,
                                                         columnNumber: 37
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                    lineNumber: 219,
+                                                    lineNumber: 213,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -985,18 +875,18 @@ function Product() {
                                                         children: "Ola, me chamo Luísa. Tenho 35 anos e sou Webdesigner. Comecei com o meu sonho aos meus 18 anos, quando decidi ir para faculdade. Sempre fui apaixonada por design, sempre trabalhando como freelencer desde jovem."
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/gig_page/page.tsx",
-                                                        lineNumber: 227,
+                                                        lineNumber: 221,
                                                         columnNumber: 37
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                    lineNumber: 226,
+                                                    lineNumber: 220,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                            lineNumber: 218,
+                                            lineNumber: 212,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1009,17 +899,17 @@ function Product() {
                                                             children: "Descrição do serviço"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 235,
+                                                            lineNumber: 229,
                                                             columnNumber: 41
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/gig_page/page.tsx",
-                                                        lineNumber: 234,
+                                                        lineNumber: 228,
                                                         columnNumber: 37
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                    lineNumber: 233,
+                                                    lineNumber: 227,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1030,7 +920,7 @@ function Product() {
                                                             children: "Conversa inicial:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 241,
+                                                            lineNumber: 235,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1038,13 +928,13 @@ function Product() {
                                                             children: "Primeiro, a gente vai bater um papo sobre o que sua marca representa, seu público e o que você quer transmitir. Pode ser por mensagem, e-mail ou chamada. Exemplo: se você vende produtos de luxo, vou focar em cores sóbrias e linhas elegantes."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 244,
+                                                            lineNumber: 238,
                                                             columnNumber: 37
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                    lineNumber: 240,
+                                                    lineNumber: 234,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1055,7 +945,7 @@ function Product() {
                                                             children: "Rascunho das ideias:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 249,
+                                                            lineNumber: 243,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1063,13 +953,13 @@ function Product() {
                                                             children: "Com base no que você me passar, vou criar 2 a 3 opções de logo em preto e branco (pra focar na forma). Muitos designers no Fiverr fazem assim – mostram o conceito antes de colorir."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 252,
+                                                            lineNumber: 246,
                                                             columnNumber: 37
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                    lineNumber: 248,
+                                                    lineNumber: 242,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1080,7 +970,7 @@ function Product() {
                                                             children: "Refinamento:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 257,
+                                                            lineNumber: 251,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1088,13 +978,13 @@ function Product() {
                                                             children: "Você escolhe a opção que mais gostou, e aí eu ajusto os detalhes: cor, fonte e espaçamento. Se precisar, faço versões simplificadas pra redes sociais ou papelaria."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 260,
+                                                            lineNumber: 254,
                                                             columnNumber: 37
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                    lineNumber: 256,
+                                                    lineNumber: 250,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1105,7 +995,7 @@ function Product() {
                                                             children: "Entrega:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 265,
+                                                            lineNumber: 259,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1113,25 +1003,25 @@ function Product() {
                                                             children: "Te envio o logo em vários formatos (PNG, SVG, etc.) e cores (principal, preto e branco), tudo organizadinho pra você usar onde quiser."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 268,
+                                                            lineNumber: 262,
                                                             columnNumber: 37
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                    lineNumber: 264,
+                                                    lineNumber: 258,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                            lineNumber: 232,
+                                            lineNumber: 226,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                    lineNumber: 217,
+                                    lineNumber: 211,
                                     columnNumber: 25
                                 }, this)
                             ]
@@ -1159,17 +1049,17 @@ function Product() {
                                                                 children: "R$ 277,22"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                lineNumber: 281,
+                                                                lineNumber: 275,
                                                                 columnNumber: 48
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 281,
+                                                            lineNumber: 275,
                                                             columnNumber: 45
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/gig_page/page.tsx",
-                                                        lineNumber: 280,
+                                                        lineNumber: 274,
                                                         columnNumber: 41
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1178,12 +1068,12 @@ function Product() {
                                                             children: "Pacote de logotipo inicial 01 conceito de logotipo + arquivo PNG e JPEG + 03 revisões"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 284,
+                                                            lineNumber: 278,
                                                             columnNumber: 45
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/gig_page/page.tsx",
-                                                        lineNumber: 283,
+                                                        lineNumber: 277,
                                                         columnNumber: 41
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1194,59 +1084,59 @@ function Product() {
                                                                     children: "Pacote básico"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                    lineNumber: 290,
+                                                                    lineNumber: 284,
                                                                     columnNumber: 49
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "1 conceito incluído"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                    lineNumber: 291,
+                                                                    lineNumber: 285,
                                                                     columnNumber: 49
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "Transparência do logotipo"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                    lineNumber: 292,
+                                                                    lineNumber: 286,
                                                                     columnNumber: 49
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "Incluir maquete 3D"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                    lineNumber: 293,
+                                                                    lineNumber: 287,
                                                                     columnNumber: 49
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "Entrega em 3 dias"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                    lineNumber: 294,
+                                                                    lineNumber: 288,
                                                                     columnNumber: 49
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "3 revisões"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                    lineNumber: 295,
+                                                                    lineNumber: 289,
                                                                     columnNumber: 49
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 289,
+                                                            lineNumber: 283,
                                                             columnNumber: 45
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/gig_page/page.tsx",
-                                                        lineNumber: 288,
+                                                        lineNumber: 282,
                                                         columnNumber: 41
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/gig_page/page.tsx",
-                                                lineNumber: 279,
+                                                lineNumber: 273,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1262,7 +1152,7 @@ function Product() {
                                                             alt: "whatsapp.icon"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 301,
+                                                            lineNumber: 295,
                                                             columnNumber: 45
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1270,44 +1160,44 @@ function Product() {
                                                                 children: "Entre em contato comigo"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/gig_page/page.tsx",
-                                                                lineNumber: 307,
+                                                                lineNumber: 301,
                                                                 columnNumber: 48
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gig_page/page.tsx",
-                                                            lineNumber: 307,
+                                                            lineNumber: 301,
                                                             columnNumber: 45
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                                    lineNumber: 300,
+                                                    lineNumber: 294,
                                                     columnNumber: 41
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/gig_page/page.tsx",
-                                                lineNumber: 299,
+                                                lineNumber: 293,
                                                 columnNumber: 37
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/gig_page/page.tsx",
-                                        lineNumber: 278,
+                                        lineNumber: 272,
                                         columnNumber: 33
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/gig_page/page.tsx",
-                                    lineNumber: 277,
+                                    lineNumber: 271,
                                     columnNumber: 29
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/gig_page/page.tsx",
-                                lineNumber: 276,
+                                lineNumber: 270,
                                 columnNumber: 25
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/gig_page/page.tsx",
-                            lineNumber: 275,
+                            lineNumber: 269,
                             columnNumber: 21
                         }, this)
                     ]
@@ -1323,7 +1213,7 @@ function Product() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$footer$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/gig_page/page.tsx",
-                lineNumber: 316,
+                lineNumber: 310,
                 columnNumber: 13
             }, this)
         ]

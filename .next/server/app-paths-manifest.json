@@ -1,9 +1,9 @@
 {
   "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/login/page": "app/login/page.js",
-  "/register/page": "app/register/page.js",
-  "/listing/page": "app/listing/page.js",
   "/functioning/page": "app/functioning/page.js",
-  "/_not-found/page": "app/_not-found/page.js"
+  "/listing/page": "app/listing/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/login/page": "app/login/page.js",
+  "/gig_page/page": "app/gig_page/page.js"
 }

@@ -2,7 +2,7 @@ import styles from './hub.module.css'
 
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Header from '../header/header'
 import lupa from './../../../images/icones/lupa.svg'
 import gato_arroba from './../../../images/fotos/gato_arroba.png'
 import joinha from './../../../images/icones/joinha.svg'
@@ -10,6 +10,7 @@ import tela from './../../../images/icones/tela.svg'
 import dinheiro from './../../../images/icones/dinheiro.svg'
 
 function Hub() {
+    <Header/>
     return (
         <div className={styles.hub_main}>
             <div className={styles.hub_content}>

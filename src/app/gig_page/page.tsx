@@ -1,6 +1,6 @@
 import styles from "./gig_page.module.css"
 
-import Header_rw from "../components/header_rw/header_rw";
+import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 
 import Image from "next/image";;
@@ -20,7 +20,7 @@ export const metadata = {
 export default function Product() {
     return (
         <>
-            <Header_rw />
+            <Header/>
             <div className={styles.page_wrapper}>
                 <div className={styles.page}>
                     <main className={styles.main}>

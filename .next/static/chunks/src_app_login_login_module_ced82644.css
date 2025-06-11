@@ -1,4 +1,63 @@
 /* [project]/src/app/login/login.module.css [app-client] (css) */
+.login-module__WEZH7G__login_header_container {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  position: relative;
+}
+
+.login-module__WEZH7G__login_right_voltar {
+  color: #555;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color .3s;
+  display: flex;
+  position: absolute;
+  left: 0;
+}
+
+.login-module__WEZH7G__login_right_voltar:hover {
+  color: #0096d1;
+}
+
+.login-module__WEZH7G__login_right_bemvindo {
+  text-align: center;
+}
+
+.login-module__WEZH7G__login_right_bemvindo h1 {
+  color: #222;
+  margin: 0;
+  font-size: 24px;
+}
+
+@media (width <= 600px) {
+  .login-module__WEZH7G__login_header_container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .login-module__WEZH7G__login_right_voltar {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    position: static;
+  }
+
+  .login-module__WEZH7G__login_right_bemvindo h1 {
+    font-size: 22px;
+  }
+}
+
+@media (width >= 601px) {
+  .login-module__WEZH7G__login_right_bemvindo h1 {
+    font-size: 28px;
+  }
+}
+
 .login-module__WEZH7G__login_main {
   box-sizing: border-box;
   background-color: #f8f9fa;

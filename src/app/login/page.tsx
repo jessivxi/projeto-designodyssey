@@ -76,7 +76,11 @@ export default function Login() {
         <div className={styles.login_content_right}>
           <div className={styles.login_right_top}>
             <div className={styles.login_header_container}>
-              <div className={styles.login_right_voltar}>
+              <div
+                className={styles.login_right_voltar}
+                onClick={handleBack}
+                style={{ cursor: "pointer" }}
+              >
                 <Image
                   src={seta_esquerda_preta}
                   height={30}

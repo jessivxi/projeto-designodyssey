@@ -111,48 +111,20 @@ const __TURBOPACK__default__export__ = {
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: require } = __turbopack_context__;
 {
 __turbopack_export_value__("/_next/static/media/google.1c4805ff.svg");}}),
-"[project]/src/images/icones/google.svg.mjs { IMAGE => \"[project]/src/images/icones/google.svg [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
-"use strict";
+"[project]/src/images/icones/google.svg.mjs { IMAGE => \"[project]/src/images/icones/google.svg [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)": (() => {{
 
-var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
-{
-__turbopack_esm__({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$google$2e$svg__$5b$app$2d$ssr$5d$__$28$static$29$__ = __turbopack_import__("[project]/src/images/icones/google.svg [app-ssr] (static)");
-;
-const __TURBOPACK__default__export__ = {
-    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$google$2e$svg__$5b$app$2d$ssr$5d$__$28$static$29$__["default"],
-    width: 16,
-    height: 16,
-    blurDataURL: null,
-    blurWidth: 0,
-    blurHeight: 0
-};
+throw new Error("An error occurred while generating the chunk item [project]/src/images/icones/google.svg.mjs { IMAGE => \"[project]/src/images/icones/google.svg [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)\n\nCaused by:\n- failed to parse [project]/src/images/icones/google.svg.mjs (structured image object)\n- Cell doesn't exist\n\nDebug info:\n- An error occurred while generating the chunk item [project]/src/images/icones/google.svg.mjs { IMAGE => \"[project]/src/images/icones/google.svg [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)\n- Execution of *EcmascriptChunkItemContent::module_factory failed\n- Execution of *EcmascriptChunkItemContent::new failed\n- Execution of <EcmascriptModuleAsset as EcmascriptAnalyzable>::module_content failed\n- Execution of parse failed\n- failed to parse [project]/src/images/icones/google.svg.mjs (structured image object)\n- Cell doesn't exist");
+
 }}),
 "[project]/src/images/icones/facebook.svg [app-ssr] (static)": ((__turbopack_context__) => {
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: require } = __turbopack_context__;
 {
 __turbopack_export_value__("/_next/static/media/facebook.ac406898.svg");}}),
-"[project]/src/images/icones/facebook.svg.mjs { IMAGE => \"[project]/src/images/icones/facebook.svg [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
-"use strict";
+"[project]/src/images/icones/facebook.svg.mjs { IMAGE => \"[project]/src/images/icones/facebook.svg [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)": (() => {{
 
-var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
-{
-__turbopack_esm__({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$facebook$2e$svg__$5b$app$2d$ssr$5d$__$28$static$29$__ = __turbopack_import__("[project]/src/images/icones/facebook.svg [app-ssr] (static)");
-;
-const __TURBOPACK__default__export__ = {
-    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$facebook$2e$svg__$5b$app$2d$ssr$5d$__$28$static$29$__["default"],
-    width: 16,
-    height: 16,
-    blurDataURL: null,
-    blurWidth: 0,
-    blurHeight: 0
-};
+throw new Error("An error occurred while generating the chunk item [project]/src/images/icones/facebook.svg.mjs { IMAGE => \"[project]/src/images/icones/facebook.svg [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)\n\nCaused by:\n- failed to parse [project]/src/images/icones/facebook.svg.mjs (structured image object)\n- Cell doesn't exist\n\nDebug info:\n- An error occurred while generating the chunk item [project]/src/images/icones/facebook.svg.mjs { IMAGE => \"[project]/src/images/icones/facebook.svg [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)\n- Execution of *EcmascriptChunkItemContent::module_factory failed\n- Execution of *EcmascriptChunkItemContent::new failed\n- Execution of <EcmascriptModuleAsset as EcmascriptAnalyzable>::module_content failed\n- Execution of parse failed\n- failed to parse [project]/src/images/icones/facebook.svg.mjs (structured image object)\n- Cell doesn't exist");
+
 }}),
 "[project]/src/images/icones/envelope.svg [app-ssr] (static)": ((__turbopack_context__) => {
 
@@ -183,24 +155,10 @@ const __TURBOPACK__default__export__ = {
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: require } = __turbopack_context__;
 {
 __turbopack_export_value__("/_next/static/media/cadeado.495e2010.svg");}}),
-"[project]/src/images/icones/cadeado.svg.mjs { IMAGE => \"[project]/src/images/icones/cadeado.svg [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
-"use strict";
+"[project]/src/images/icones/cadeado.svg.mjs { IMAGE => \"[project]/src/images/icones/cadeado.svg [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)": (() => {{
 
-var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
-{
-__turbopack_esm__({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$cadeado$2e$svg__$5b$app$2d$ssr$5d$__$28$static$29$__ = __turbopack_import__("[project]/src/images/icones/cadeado.svg [app-ssr] (static)");
-;
-const __TURBOPACK__default__export__ = {
-    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$cadeado$2e$svg__$5b$app$2d$ssr$5d$__$28$static$29$__["default"],
-    width: 800,
-    height: 800,
-    blurDataURL: null,
-    blurWidth: 0,
-    blurHeight: 0
-};
+throw new Error("An error occurred while generating the chunk item [project]/src/images/icones/cadeado.svg.mjs { IMAGE => \"[project]/src/images/icones/cadeado.svg [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)\n\nCaused by:\n- failed to parse [project]/src/images/icones/cadeado.svg.mjs (structured image object)\n- Cell doesn't exist\n\nDebug info:\n- An error occurred while generating the chunk item [project]/src/images/icones/cadeado.svg.mjs { IMAGE => \"[project]/src/images/icones/cadeado.svg [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)\n- Execution of *EcmascriptChunkItemContent::module_factory failed\n- Execution of *EcmascriptChunkItemContent::new failed\n- Execution of <EcmascriptModuleAsset as EcmascriptAnalyzable>::module_content failed\n- Execution of parse failed\n- failed to parse [project]/src/images/icones/cadeado.svg.mjs (structured image object)\n- Cell doesn't exist");
+
 }}),
 "[project]/src/app/login/page.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -216,7 +174,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$login$2f$login$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_import__("[project]/src/app/login/login.module.css [app-client] (css module)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/navigation.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_import__("[project]/node_modules/zod/dist/esm/index.js [app-ssr] (ecmascript) <module evaluation>");
+(()=>{
+    const e = new Error("Cannot find module 'zod'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 // Ícones e fotos
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$fotos$2f$ilustracao_login$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$fotos$2f$ilustracao_login$2e$png__$5b$app$2d$ssr$5d$__$28$static$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/src/images/fotos/ilustracao_login.png.mjs { IMAGE => "[project]/src/images/fotos/ilustracao_login.png [app-ssr] (static)" } [app-ssr] (structured image object, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$seta_esquerda_preta$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$icones$2f$seta_esquerda_preta$2e$svg__$5b$app$2d$ssr$5d$__$28$static$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/src/images/icones/seta_esquerda_preta.svg.mjs { IMAGE => "[project]/src/images/icones/seta_esquerda_preta.svg [app-ssr] (static)" } [app-ssr] (structured image object, ecmascript)');
@@ -224,7 +186,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$g
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$facebook$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$icones$2f$facebook$2e$svg__$5b$app$2d$ssr$5d$__$28$static$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/src/images/icones/facebook.svg.mjs { IMAGE => "[project]/src/images/icones/facebook.svg [app-ssr] (static)" } [app-ssr] (structured image object, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$envelope$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$icones$2f$envelope$2e$svg__$5b$app$2d$ssr$5d$__$28$static$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/src/images/icones/envelope.svg.mjs { IMAGE => "[project]/src/images/icones/envelope.svg [app-ssr] (static)" } [app-ssr] (structured image object, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$images$2f$icones$2f$cadeado$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$images$2f$icones$2f$cadeado$2e$svg__$5b$app$2d$ssr$5d$__$28$static$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/src/images/icones/cadeado.svg.mjs { IMAGE => "[project]/src/images/icones/cadeado.svg [app-ssr] (static)" } [app-ssr] (structured image object, ecmascript)');
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$dist$2f$esm$2f$v3$2f$external$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__ = __turbopack_import__("[project]/node_modules/zod/dist/esm/v3/external.js [app-ssr] (ecmascript) <export * as z>");
 'use client';
 ;
 ;
@@ -240,9 +201,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$dist$
 ;
 ;
 // Schema de validação com Zod
-const loginSchema = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$dist$2f$esm$2f$v3$2f$external$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].object({
-    email: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$dist$2f$esm$2f$v3$2f$external$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().email('E-mail inválido'),
-    password: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$dist$2f$esm$2f$v3$2f$external$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().min(1, 'Senha é obrigatória')
+const loginSchema = z.object({
+    email: z.string().email('E-mail inválido'),
+    password: z.string().min(1, 'Senha é obrigatória')
 });
 function Login() {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();

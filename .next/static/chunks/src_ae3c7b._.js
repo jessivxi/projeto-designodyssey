@@ -5,25 +5,13 @@
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: require } = __turbopack_context__;
 {
 __turbopack_export_value__({
-  "divider": "login-module__WEZH7G__divider",
-  "forgot_password": "login-module__WEZH7G__forgot_password",
-  "forgot_password_link": "login-module__WEZH7G__forgot_password_link",
-  "input_container": "login-module__WEZH7G__input_container",
-  "input_icon": "login-module__WEZH7G__input_icon",
   "login_button": "login-module__WEZH7G__login_button",
   "login_content": "login-module__WEZH7G__login_content",
   "login_content_left": "login-module__WEZH7G__login_content_left",
   "login_content_right": "login-module__WEZH7G__login_content_right",
-  "login_error": "login-module__WEZH7G__login_error",
-  "login_field": "login-module__WEZH7G__login_field",
-  "login_input": "login-module__WEZH7G__login_input",
   "login_left_list": "login-module__WEZH7G__login_left_list",
   "login_main": "login-module__WEZH7G__login_main",
-  "login_right_bemvindo": "login-module__WEZH7G__login_right_bemvindo",
   "login_right_top": "login-module__WEZH7G__login_right_top",
-  "login_right_voltar": "login-module__WEZH7G__login_right_voltar",
-  "social_button": "login-module__WEZH7G__social_button",
-  "social_login_options": "login-module__WEZH7G__social_login_options",
 });
 }}),
 "[project]/src/images/fotos/ilustracao_login.png [app-client] (static)": ((__turbopack_context__) => {

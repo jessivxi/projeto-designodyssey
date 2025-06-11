@@ -5,9 +5,9 @@
 (globalThis.TURBOPACK_CHUNK_LISTS = globalThis.TURBOPACK_CHUNK_LISTS || []).push({
   "path": "static/chunks/pages__error_5771e1._.js",
   "chunks": [
-    "static/chunks/[root of the server]__577f55._.js",
+    "static/chunks/[root of the server]__8df760._.js",
     "static/chunks/node_modules_react-dom_82bb97._.js",
-    "static/chunks/node_modules_beb007._.js",
+    "static/chunks/node_modules_a51498._.js",
     "static/chunks/[root of the server]__2e1cf5._.js"
   ],
   "source": "entry"

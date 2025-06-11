@@ -1,0 +1,25 @@
+/* [project]/src/app/components/footer/footer.module.css [app-client] (css) */
+.footer-module__1jeW9a__footer_main {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 1% 16%;
+  display: flex;
+  box-shadow: 0 -.1px #000;
+}
+
+.footer-module__1jeW9a__footer_text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-module__1jeW9a__footer_social_container {
+  justify-content: space-around;
+  align-items: center;
+  width: 15%;
+  display: flex;
+}
+
+/*# sourceMappingURL=src_app_components_footer_footer_module_css_f9ee138c._.single.css.map*/

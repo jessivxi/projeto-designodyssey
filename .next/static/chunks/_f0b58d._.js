@@ -48,7 +48,7 @@ function handleSmoothScroll(fn, options) {
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, m: module, e: exports, t: require } = __turbopack_context__;
 {
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-"use client";
+'use client';
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -65,6 +65,7 @@ Object.defineProperty(exports, /**
 const _interop_require_default = __turbopack_require__("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
 const _interop_require_wildcard = __turbopack_require__("[project]/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_require__("[project]/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
+const _routerreducertypes = __turbopack_require__("[project]/node_modules/next/dist/client/components/router-reducer/router-reducer-types.js [app-client] (ecmascript)");
 const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_require__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _reactdom = /*#__PURE__*/ _interop_require_default._(__turbopack_require__("[project]/node_modules/next/dist/compiled/react-dom/index.js [app-client] (ecmascript)"));
 const _approutercontextsharedruntime = __turbopack_require__("[project]/node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js [app-client] (ecmascript)");
@@ -74,10 +75,10 @@ const _errorboundary = __turbopack_require__("[project]/node_modules/next/dist/c
 const _matchsegments = __turbopack_require__("[project]/node_modules/next/dist/client/components/match-segments.js [app-client] (ecmascript)");
 const _handlesmoothscroll = __turbopack_require__("[project]/node_modules/next/dist/shared/lib/router/utils/handle-smooth-scroll.js [app-client] (ecmascript)");
 const _redirectboundary = __turbopack_require__("[project]/node_modules/next/dist/client/components/redirect-boundary.js [app-client] (ecmascript)");
-const _notfoundboundary = __turbopack_require__("[project]/node_modules/next/dist/client/components/not-found-boundary.js [app-client] (ecmascript)");
-const _getsegmentvalue = __turbopack_require__("[project]/node_modules/next/dist/client/components/router-reducer/reducers/get-segment-value.js [app-client] (ecmascript)");
+const _errorboundary1 = __turbopack_require__("[project]/node_modules/next/dist/client/components/http-access-fallback/error-boundary.js [app-client] (ecmascript)");
 const _createroutercachekey = __turbopack_require__("[project]/node_modules/next/dist/client/components/router-reducer/create-router-cache-key.js [app-client] (ecmascript)");
 const _hasinterceptionrouteincurrenttree = __turbopack_require__("[project]/node_modules/next/dist/client/components/router-reducer/reducers/has-interception-route-in-current-tree.js [app-client] (ecmascript)");
+const _useactionqueue = __turbopack_require__("[project]/node_modules/next/dist/client/components/use-action-queue.js [app-client] (ecmascript)");
 /**
  * Add refetch marker to router state at the point of the current layout segment.
  * This ensures the response returned is not further down than the current layout segment.
@@ -190,8 +191,7 @@ class InnerScrollAndFocusHandler extends _react.default.Component {
         return this.props.children;
     }
     constructor(...args){
-        super(...args);
-        this.handlePotentialScroll = ()=>{
+        super(...args), this.handlePotentialScroll = ()=>{
             // Handle scroll and focus, it's only applied once in the first useEffect that triggers that changed.
             const { focusAndScrollRef, segmentPath } = this.props;
             if (focusAndScrollRef.apply) {
@@ -218,6 +218,14 @@ class InnerScrollAndFocusHandler extends _react.default.Component {
                 // Verify if the element is a HTMLElement and if we want to consider it for scroll behavior.
                 // If the element is skipped, try to select the next sibling and try again.
                 while(!(domNode instanceof HTMLElement) || shouldSkipElement(domNode)){
+                    if ("TURBOPACK compile-time truthy", 1) {
+                        var _domNode_parentElement;
+                        if (((_domNode_parentElement = domNode.parentElement) == null ? void 0 : _domNode_parentElement.localName) === 'head') {
+                        // TODO: We enter this state when metadata was rendered as part of the page or via Next.js.
+                        // This is always a bug in Next.js and caused by React hoisting metadata.
+                        // We need to replace `findDOMNode` in favor of Fragment Refs (when available) so that we can skip over metadata.
+                        }
+                    }
                     // No siblings found that match the criteria are found, so handle scroll higher up in the tree instead.
                     if (domNode.nextElementSibling === null) {
                         return;
@@ -231,6 +239,7 @@ class InnerScrollAndFocusHandler extends _react.default.Component {
                 (0, _handlesmoothscroll.handleSmoothScroll)(()=>{
                     // In case of hash scroll, we only need to scroll the element into view
                     if (hashFragment) {
+                        ;
                         domNode.scrollIntoView();
                         return;
                     }
@@ -249,6 +258,8 @@ class InnerScrollAndFocusHandler extends _react.default.Component {
                     htmlElement.scrollTop = 0;
                     // Scroll to domNode if domNode is not in viewport when scrolled to top of document
                     if (!topOfElementInViewport(domNode, viewportHeight)) {
+                        // Scroll into view doesn't scroll horizontally by default when not needed
+                        ;
                         domNode.scrollIntoView();
                     }
                 }, {
@@ -268,7 +279,11 @@ function ScrollAndFocusHandler(param) {
     let { segmentPath, children } = param;
     const context = (0, _react.useContext)(_approutercontextsharedruntime.GlobalLayoutRouterContext);
     if (!context) {
-        throw new Error('invariant global layout router not mounted');
+        throw Object.defineProperty(new Error('invariant global layout router not mounted'), "__NEXT_ERROR_CODE", {
+            value: "E473",
+            enumerable: false,
+            configurable: true
+        });
     }
     return /*#__PURE__*/ (0, _jsxruntime.jsx)(InnerScrollAndFocusHandler, {
         segmentPath: segmentPath,
@@ -279,47 +294,27 @@ function ScrollAndFocusHandler(param) {
 /**
  * InnerLayoutRouter handles rendering the provided segment based on the cache.
  */ function InnerLayoutRouter(param) {
-    let { parallelRouterKey, url, childNodes, segmentPath, tree, // isActive,
-    cacheKey } = param;
+    let { tree, segmentPath, cacheNode, url } = param;
     const context = (0, _react.useContext)(_approutercontextsharedruntime.GlobalLayoutRouterContext);
     if (!context) {
-        throw new Error('invariant global layout router not mounted');
+        throw Object.defineProperty(new Error('invariant global layout router not mounted'), "__NEXT_ERROR_CODE", {
+            value: "E473",
+            enumerable: false,
+            configurable: true
+        });
     }
-    const { buildId, changeByServerResponse, tree: fullTree } = context;
-    // Read segment path from the parallel router cache node.
-    let childNode = childNodes.get(cacheKey);
-    // When data is not available during rendering client-side we need to fetch
-    // it from the server.
-    if (childNode === undefined) {
-        const newLazyCacheNode = {
-            lazyData: null,
-            rsc: null,
-            prefetchRsc: null,
-            head: null,
-            prefetchHead: null,
-            parallelRoutes: new Map(),
-            loading: null
-        };
-        /**
-     * Flight data fetch kicked off during render and put into the cache.
-     */ childNode = newLazyCacheNode;
-        childNodes.set(cacheKey, newLazyCacheNode);
-    }
+    const { tree: fullTree } = context;
     // `rsc` represents the renderable node for this segment.
     // If this segment has a `prefetchRsc`, it's the statically prefetched data.
     // We should use that on initial render instead of `rsc`. Then we'll switch
     // to `rsc` when the dynamic response streams in.
     //
     // If no prefetch data is available, then we go straight to rendering `rsc`.
-    const resolvedPrefetchRsc = childNode.prefetchRsc !== null ? childNode.prefetchRsc : childNode.rsc;
+    const resolvedPrefetchRsc = cacheNode.prefetchRsc !== null ? cacheNode.prefetchRsc : cacheNode.rsc;
     // We use `useDeferredValue` to handle switching between the prefetched and
     // final values. The second argument is returned on initial render, then it
     // re-renders with the first argument.
-    //
-    // @ts-expect-error The second argument to `useDeferredValue` is only
-    // available in the experimental builds. When its disabled, it will always
-    // return `rsc`.
-    const rsc = (0, _react.useDeferredValue)(childNode.rsc, resolvedPrefetchRsc);
+    const rsc = (0, _react.useDeferredValue)(cacheNode.rsc, resolvedPrefetchRsc);
     // `rsc` is either a React node or a promise for a React node, except we
     // special case `null` to represent that this segment's data is missing. If
     // it's a promise, we need to unwrap it so we can determine whether or not the
@@ -330,7 +325,7 @@ function ScrollAndFocusHandler(param) {
         // navigation that will be able to fulfill it. We need to fetch more from
         // the server and patch the cache.
         // Check if there's already a pending request.
-        let lazyData = childNode.lazyData;
+        let lazyData = cacheNode.lazyData;
         if (lazyData === null) {
             /**
        * Router state with refetch marker added
@@ -340,19 +335,23 @@ function ScrollAndFocusHandler(param) {
                 ...segmentPath
             ], fullTree);
             const includeNextUrl = (0, _hasinterceptionrouteincurrenttree.hasInterceptionRouteInCurrentTree)(fullTree);
-            childNode.lazyData = lazyData = (0, _fetchserverresponse.fetchServerResponse)(new URL(url, location.origin), {
+            const navigatedAt = Date.now();
+            cacheNode.lazyData = lazyData = (0, _fetchserverresponse.fetchServerResponse)(new URL(url, location.origin), {
                 flightRouterState: refetchTree,
-                nextUrl: includeNextUrl ? context.nextUrl : null,
-                buildId
+                nextUrl: includeNextUrl ? context.nextUrl : null
             }).then((serverResponse)=>{
                 (0, _react.startTransition)(()=>{
-                    changeByServerResponse({
+                    (0, _useactionqueue.dispatchAppRouterAction)({
+                        type: _routerreducertypes.ACTION_SERVER_PATCH,
                         previousTree: fullTree,
-                        serverResponse
+                        serverResponse,
+                        navigatedAt
                     });
                 });
                 return serverResponse;
             });
+            // Suspend while waiting for lazyData to resolve
+            (0, _react.use)(lazyData);
         }
         // Suspend infinitely as `changeByServerResponse` will cause a different part of the tree to be rendered.
         // A falsey `resolvedRsc` indicates missing data -- we should not commit that branch, and we need to wait for the data to arrive.
@@ -361,11 +360,11 @@ function ScrollAndFocusHandler(param) {
     // If we get to this point, then we know we have something we can render.
     const subtree = /*#__PURE__*/ (0, _jsxruntime.jsx)(_approutercontextsharedruntime.LayoutRouterContext.Provider, {
         value: {
-            tree: tree[1][parallelRouterKey],
-            childNodes: childNode.parallelRoutes,
+            parentTree: tree,
+            parentCacheNode: cacheNode,
+            parentSegmentPath: segmentPath,
             // TODO-APP: overriding of url for parallel routes
-            url: url,
-            loading: childNode.loading
+            url: url
         },
         children: resolvedRsc
     });
@@ -376,16 +375,32 @@ function ScrollAndFocusHandler(param) {
  * Renders suspense boundary with the provided "loading" property as the fallback.
  * If no loading property is provided it renders the children without a suspense boundary.
  */ function LoadingBoundary(param) {
-    let { children, hasLoading, loading, loadingStyles, loadingScripts } = param;
-    // We have an explicit prop for checking if `loading` is provided, to disambiguate between a loading
-    // component that returns `null` / `undefined`, vs not having a loading component at all.
-    if (hasLoading) {
+    let { loading, children } = param;
+    // If loading is a promise, unwrap it. This happens in cases where we haven't
+    // yet received the loading data from the server — which includes whether or
+    // not this layout has a loading component at all.
+    //
+    // It's OK to suspend here instead of inside the fallback because this
+    // promise will resolve simultaneously with the data for the segment itself.
+    // So it will never suspend for longer than it would have if we didn't use
+    // a Suspense fallback at all.
+    let loadingModuleData;
+    if (typeof loading === 'object' && loading !== null && typeof loading.then === 'function') {
+        const promiseForLoading = loading;
+        loadingModuleData = (0, _react.use)(promiseForLoading);
+    } else {
+        loadingModuleData = loading;
+    }
+    if (loadingModuleData) {
+        const loadingRsc = loadingModuleData[0];
+        const loadingStyles = loadingModuleData[1];
+        const loadingScripts = loadingModuleData[2];
         return /*#__PURE__*/ (0, _jsxruntime.jsx)(_react.Suspense, {
             fallback: /*#__PURE__*/ (0, _jsxruntime.jsxs)(_jsxruntime.Fragment, {
                 children: [
                     loadingStyles,
                     loadingScripts,
-                    loading
+                    loadingRsc
                 ]
             }),
             children: children
@@ -396,81 +411,118 @@ function ScrollAndFocusHandler(param) {
     });
 }
 function OuterLayoutRouter(param) {
-    let { parallelRouterKey, segmentPath, error, errorStyles, errorScripts, templateStyles, templateScripts, template, notFound, notFoundStyles } = param;
+    let { parallelRouterKey, error, errorStyles, errorScripts, templateStyles, templateScripts, template, notFound, forbidden, unauthorized } = param;
     const context = (0, _react.useContext)(_approutercontextsharedruntime.LayoutRouterContext);
     if (!context) {
-        throw new Error('invariant expected layout router to be mounted');
+        throw Object.defineProperty(new Error('invariant expected layout router to be mounted'), "__NEXT_ERROR_CODE", {
+            value: "E56",
+            enumerable: false,
+            configurable: true
+        });
     }
-    const { childNodes, tree, url, loading } = context;
-    // Get the current parallelRouter cache node
-    let childNodesForParallelRouter = childNodes.get(parallelRouterKey);
+    const { parentTree, parentCacheNode, parentSegmentPath, url } = context;
+    // Get the CacheNode for this segment by reading it from the parent segment's
+    // child map.
+    const parentParallelRoutes = parentCacheNode.parallelRoutes;
+    let segmentMap = parentParallelRoutes.get(parallelRouterKey);
     // If the parallel router cache node does not exist yet, create it.
     // This writes to the cache when there is no item in the cache yet. It never *overwrites* existing cache items which is why it's safe in concurrent mode.
-    if (!childNodesForParallelRouter) {
-        childNodesForParallelRouter = new Map();
-        childNodes.set(parallelRouterKey, childNodesForParallelRouter);
+    if (!segmentMap) {
+        segmentMap = new Map();
+        parentParallelRoutes.set(parallelRouterKey, segmentMap);
     }
     // Get the active segment in the tree
     // The reason arrays are used in the data format is that these are transferred from the server to the browser so it's optimized to save bytes.
-    const treeSegment = tree[1][parallelRouterKey][0];
-    // If segment is an array it's a dynamic route and we want to read the dynamic route value as the segment to get from the cache.
-    const currentChildSegmentValue = (0, _getsegmentvalue.getSegmentValue)(treeSegment);
-    /**
-   * Decides which segments to keep rendering, all segments that are not active will be wrapped in `<Offscreen>`.
-   */ // TODO-APP: Add handling of `<Offscreen>` when it's available.
-    const preservedSegments = [
-        treeSegment
-    ];
-    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_jsxruntime.Fragment, {
-        children: preservedSegments.map((preservedSegment)=>{
-            const preservedSegmentValue = (0, _getsegmentvalue.getSegmentValue)(preservedSegment);
-            const cacheKey = (0, _createroutercachekey.createRouterCacheKey)(preservedSegment);
-            return(/*
-            - Error boundary
-              - Only renders error boundary if error component is provided.
-              - Rendered for each segment to ensure they have their own error state.
-            - Loading boundary
-              - Only renders suspense boundary if loading components is provided.
-              - Rendered for each segment to ensure they have their own loading state.
-              - Passed to the router during rendering to ensure it can be immediately rendered when suspending on a Flight fetch.
-          */ /*#__PURE__*/ (0, _jsxruntime.jsxs)(_approutercontextsharedruntime.TemplateContext.Provider, {
-                value: /*#__PURE__*/ (0, _jsxruntime.jsx)(ScrollAndFocusHandler, {
-                    segmentPath: segmentPath,
-                    children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_errorboundary.ErrorBoundary, {
-                        errorComponent: error,
-                        errorStyles: errorStyles,
-                        errorScripts: errorScripts,
-                        children: /*#__PURE__*/ (0, _jsxruntime.jsx)(LoadingBoundary, {
-                            hasLoading: Boolean(loading),
-                            loading: loading == null ? void 0 : loading[0],
-                            loadingStyles: loading == null ? void 0 : loading[1],
-                            loadingScripts: loading == null ? void 0 : loading[2],
-                            children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_notfoundboundary.NotFoundBoundary, {
-                                notFound: notFound,
-                                notFoundStyles: notFoundStyles,
-                                children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_redirectboundary.RedirectBoundary, {
-                                    children: /*#__PURE__*/ (0, _jsxruntime.jsx)(InnerLayoutRouter, {
-                                        parallelRouterKey: parallelRouterKey,
-                                        url: url,
-                                        tree: tree,
-                                        childNodes: childNodesForParallelRouter,
-                                        segmentPath: segmentPath,
-                                        cacheKey: cacheKey,
-                                        isActive: currentChildSegmentValue === preservedSegmentValue
-                                    })
-                                })
+    const parentTreeSegment = parentTree[0];
+    const tree = parentTree[1][parallelRouterKey];
+    const treeSegment = tree[0];
+    const segmentPath = parentSegmentPath === null ? // the code. We should clean this up.
+    [
+        parallelRouterKey
+    ] : parentSegmentPath.concat([
+        parentTreeSegment,
+        parallelRouterKey
+    ]);
+    // The "state" key of a segment is the one passed to React — it represents the
+    // identity of the UI tree. Whenever the state key changes, the tree is
+    // recreated and the state is reset. In the App Router model, search params do
+    // not cause state to be lost, so two segments with the same segment path but
+    // different search params should have the same state key.
+    //
+    // The "cache" key of a segment, however, *does* include the search params, if
+    // it's possible that the segment accessed the search params on the server.
+    // (This only applies to page segments; layout segments cannot access search
+    // params on the server.)
+    const cacheKey = (0, _createroutercachekey.createRouterCacheKey)(treeSegment);
+    const stateKey = (0, _createroutercachekey.createRouterCacheKey)(treeSegment, true) // no search params
+    ;
+    // Read segment path from the parallel router cache node.
+    let cacheNode = segmentMap.get(cacheKey);
+    if (cacheNode === undefined) {
+        // When data is not available during rendering client-side we need to fetch
+        // it from the server.
+        const newLazyCacheNode = {
+            lazyData: null,
+            rsc: null,
+            prefetchRsc: null,
+            head: null,
+            prefetchHead: null,
+            parallelRoutes: new Map(),
+            loading: null,
+            navigatedAt: -1
+        };
+        // Flight data fetch kicked off during render and put into the cache.
+        cacheNode = newLazyCacheNode;
+        segmentMap.set(cacheKey, newLazyCacheNode);
+    }
+    /*
+    - Error boundary
+      - Only renders error boundary if error component is provided.
+      - Rendered for each segment to ensure they have their own error state.
+    - Loading boundary
+      - Only renders suspense boundary if loading components is provided.
+      - Rendered for each segment to ensure they have their own loading state.
+      - Passed to the router during rendering to ensure it can be immediately rendered when suspending on a Flight fetch.
+  */ // TODO: The loading module data for a segment is stored on the parent, then
+    // applied to each of that parent segment's parallel route slots. In the
+    // simple case where there's only one parallel route (the `children` slot),
+    // this is no different from if the loading module data where stored on the
+    // child directly. But I'm not sure this actually makes sense when there are
+    // multiple parallel routes. It's not a huge issue because you always have
+    // the option to define a narrower loading boundary for a particular slot. But
+    // this sort of smells like an implementation accident to me.
+    const loadingModuleData = parentCacheNode.loading;
+    return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_approutercontextsharedruntime.TemplateContext.Provider, {
+        value: /*#__PURE__*/ (0, _jsxruntime.jsx)(ScrollAndFocusHandler, {
+            segmentPath: segmentPath,
+            children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_errorboundary.ErrorBoundary, {
+                errorComponent: error,
+                errorStyles: errorStyles,
+                errorScripts: errorScripts,
+                children: /*#__PURE__*/ (0, _jsxruntime.jsx)(LoadingBoundary, {
+                    loading: loadingModuleData,
+                    children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_errorboundary1.HTTPAccessFallbackBoundary, {
+                        notFound: notFound,
+                        forbidden: forbidden,
+                        unauthorized: unauthorized,
+                        children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_redirectboundary.RedirectBoundary, {
+                            children: /*#__PURE__*/ (0, _jsxruntime.jsx)(InnerLayoutRouter, {
+                                url: url,
+                                tree: tree,
+                                cacheNode: cacheNode,
+                                segmentPath: segmentPath
                             })
                         })
                     })
-                }),
-                children: [
-                    templateStyles,
-                    templateScripts,
-                    template
-                ]
-            }, (0, _createroutercachekey.createRouterCacheKey)(preservedSegment, true)));
-        })
-    });
+                })
+            })
+        }),
+        children: [
+            templateStyles,
+            templateScripts,
+            template
+        ]
+    }, stateKey);
 }
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
     Object.defineProperty(exports.default, '__esModule', {
@@ -484,7 +536,7 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, m: module, e: exports, t: require } = __turbopack_context__;
 {
-"use client";
+'use client';
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -576,11 +628,10 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 0 && (module.exports = {
-    describeHasCheckingStringProperty: null,
-    describeStringPropertyAccess: null,
+    isRequestAPICallableInsideAfter: null,
+    throwForSearchParamsAccessInUseCache: null,
     throwWithStaticGenerationBailoutError: null,
-    throwWithStaticGenerationBailoutErrorWithDynamicError: null,
-    wellKnownProperties: null
+    throwWithStaticGenerationBailoutErrorWithDynamicError: null
 });
 function _export(target, all) {
     for(var name in all)Object.defineProperty(target, name, {
@@ -589,307 +640,58 @@ function _export(target, all) {
     });
 }
 _export(exports, {
-    describeHasCheckingStringProperty: function() {
-        return describeHasCheckingStringProperty;
+    isRequestAPICallableInsideAfter: function() {
+        return isRequestAPICallableInsideAfter;
     },
-    describeStringPropertyAccess: function() {
-        return describeStringPropertyAccess;
+    throwForSearchParamsAccessInUseCache: function() {
+        return throwForSearchParamsAccessInUseCache;
     },
     throwWithStaticGenerationBailoutError: function() {
         return throwWithStaticGenerationBailoutError;
     },
     throwWithStaticGenerationBailoutErrorWithDynamicError: function() {
         return throwWithStaticGenerationBailoutErrorWithDynamicError;
-    },
-    wellKnownProperties: function() {
-        return wellKnownProperties;
     }
 });
 const _staticgenerationbailout = __turbopack_require__("[project]/node_modules/next/dist/client/components/static-generation-bailout.js [app-client] (ecmascript)");
-// This regex will have fast negatives meaning valid identifiers may not pass
-// this test. However this is only used during static generation to provide hints
-// about why a page bailed out of some or all prerendering and we can use bracket notation
-// for example while `ಠ_ಠ` is a valid identifier it's ok to print `searchParams['ಠ_ಠ']`
-// even if this would have been fine too `searchParams.ಠ_ಠ`
-const isDefinitelyAValidIdentifier = /^[A-Za-z_$][A-Za-z0-9_$]*$/;
-function describeStringPropertyAccess(target, prop) {
-    if (isDefinitelyAValidIdentifier.test(prop)) {
-        return `\`${target}.${prop}\``;
-    }
-    return `\`${target}[${JSON.stringify(prop)}]\``;
-}
-function describeHasCheckingStringProperty(target, prop) {
-    const stringifiedProp = JSON.stringify(prop);
-    return `\`Reflect.has(${target}, ${stringifiedProp})\`, \`${stringifiedProp} in ${target}\`, or similar`;
-}
+const _aftertaskasyncstorageexternal = __turbopack_require__("[project]/node_modules/next/dist/server/app-render/after-task-async-storage.external.js [app-client] (ecmascript)");
 function throwWithStaticGenerationBailoutError(route, expression) {
-    throw new _staticgenerationbailout.StaticGenBailoutError(`Route ${route} couldn't be rendered statically because it used ${expression}. See more info here: https://nextjs.org/docs/app/building-your-application/rendering/static-and-dynamic#dynamic-rendering`);
+    throw Object.defineProperty(new _staticgenerationbailout.StaticGenBailoutError(`Route ${route} couldn't be rendered statically because it used ${expression}. See more info here: https://nextjs.org/docs/app/building-your-application/rendering/static-and-dynamic#dynamic-rendering`), "__NEXT_ERROR_CODE", {
+        value: "E576",
+        enumerable: false,
+        configurable: true
+    });
 }
 function throwWithStaticGenerationBailoutErrorWithDynamicError(route, expression) {
-    throw new _staticgenerationbailout.StaticGenBailoutError(`Route ${route} with \`dynamic = "error"\` couldn't be rendered statically because it used ${expression}. See more info here: https://nextjs.org/docs/app/building-your-application/rendering/static-and-dynamic#dynamic-rendering`);
+    throw Object.defineProperty(new _staticgenerationbailout.StaticGenBailoutError(`Route ${route} with \`dynamic = "error"\` couldn't be rendered statically because it used ${expression}. See more info here: https://nextjs.org/docs/app/building-your-application/rendering/static-and-dynamic#dynamic-rendering`), "__NEXT_ERROR_CODE", {
+        value: "E543",
+        enumerable: false,
+        configurable: true
+    });
 }
-const wellKnownProperties = new Set([
-    'hasOwnProperty',
-    'isPrototypeOf',
-    'propertyIsEnumerable',
-    'toString',
-    'valueOf',
-    'toLocaleString',
-    // Promise prototype
-    // fallthrough
-    'then',
-    'catch',
-    'finally',
-    // React Promise extension
-    // fallthrough
-    'status',
-    // React introspection
-    'displayName',
-    // Common tested properties
-    // fallthrough
-    'toJSON',
-    '$$typeof',
-    '__esModule'
-]); //# sourceMappingURL=utils.js.map
+function throwForSearchParamsAccessInUseCache(workStore) {
+    const error = Object.defineProperty(new Error(`Route ${workStore.route} used "searchParams" inside "use cache". Accessing Dynamic data sources inside a cache scope is not supported. If you need this data inside a cached function use "searchParams" outside of the cached function and pass the required dynamic data in as an argument. See more info here: https://nextjs.org/docs/messages/next-request-in-use-cache`), "__NEXT_ERROR_CODE", {
+        value: "E634",
+        enumerable: false,
+        configurable: true
+    });
+    workStore.invalidUsageError ??= error;
+    throw error;
+}
+function isRequestAPICallableInsideAfter() {
+    const afterTaskStore = _aftertaskasyncstorageexternal.afterTaskAsyncStorage.getStore();
+    return (afterTaskStore == null ? void 0 : afterTaskStore.rootTaskSpawnPhase) === 'action';
+} //# sourceMappingURL=utils.js.map
 }}),
-"[project]/node_modules/next/dist/server/request/search-params.browser.js [app-client] (ecmascript)": (function(__turbopack_context__) {
+"[project]/node_modules/next/dist/server/request/search-params.browser.js [app-client] (ecmascript)": (() => {{
 
-var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, m: module, e: exports, t: require } = __turbopack_context__;
-{
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, "createRenderSearchParamsFromClient", {
-    enumerable: true,
-    get: function() {
-        return createRenderSearchParamsFromClient;
-    }
-});
-const _reflect = __turbopack_require__("[project]/node_modules/next/dist/server/web/spec-extension/adapters/reflect.js [app-client] (ecmascript)");
-const _utils = __turbopack_require__("[project]/node_modules/next/dist/server/request/utils.js [app-client] (ecmascript)");
-function createRenderSearchParamsFromClient(underlyingSearchParams) {
-    if ("TURBOPACK compile-time truthy", 1) {
-        return makeUntrackedExoticSearchParamsWithDevWarnings(underlyingSearchParams);
-    } else {
-        "TURBOPACK unreachable";
-    }
-}
-const CachedSearchParams = new WeakMap();
-function makeUntrackedExoticSearchParamsWithDevWarnings(underlyingSearchParams) {
-    const cachedSearchParams = CachedSearchParams.get(underlyingSearchParams);
-    if (cachedSearchParams) {
-        return cachedSearchParams;
-    }
-    const proxiedProperties = new Set();
-    const unproxiedProperties = [];
-    const promise = Promise.resolve(underlyingSearchParams);
-    Object.keys(underlyingSearchParams).forEach((prop)=>{
-        if (_utils.wellKnownProperties.has(prop)) {
-            // These properties cannot be shadowed because they need to be the
-            // true underlying value for Promises to work correctly at runtime
-            unproxiedProperties.push(prop);
-        } else {
-            proxiedProperties.add(prop);
-            promise[prop] = underlyingSearchParams[prop];
-        }
-    });
-    const proxiedPromise = new Proxy(promise, {
-        get (target, prop, receiver) {
-            if (typeof prop === 'string') {
-                if (!_utils.wellKnownProperties.has(prop) && (proxiedProperties.has(prop) || // We are accessing a property that doesn't exist on the promise nor
-                // the underlying searchParams.
-                Reflect.has(target, prop) === false)) {
-                    const expression = (0, _utils.describeStringPropertyAccess)('searchParams', prop);
-                    warnForSyncAccess(expression);
-                }
-            }
-            return _reflect.ReflectAdapter.get(target, prop, receiver);
-        },
-        set (target, prop, value, receiver) {
-            if (typeof prop === 'string') {
-                proxiedProperties.delete(prop);
-            }
-            return Reflect.set(target, prop, value, receiver);
-        },
-        has (target, prop) {
-            if (typeof prop === 'string') {
-                if (!_utils.wellKnownProperties.has(prop) && (proxiedProperties.has(prop) || // We are accessing a property that doesn't exist on the promise nor
-                // the underlying searchParams.
-                Reflect.has(target, prop) === false)) {
-                    const expression = (0, _utils.describeHasCheckingStringProperty)('searchParams', prop);
-                    warnForSyncAccess(expression);
-                }
-            }
-            return Reflect.has(target, prop);
-        },
-        ownKeys (target) {
-            warnForSyncSpread();
-            return Reflect.ownKeys(target);
-        }
-    });
-    CachedSearchParams.set(underlyingSearchParams, proxiedPromise);
-    return proxiedPromise;
-}
-function makeUntrackedExoticSearchParams(underlyingSearchParams) {
-    const cachedSearchParams = CachedSearchParams.get(underlyingSearchParams);
-    if (cachedSearchParams) {
-        return cachedSearchParams;
-    }
-    // We don't use makeResolvedReactPromise here because searchParams
-    // supports copying with spread and we don't want to unnecessarily
-    // instrument the promise with spreadable properties of ReactPromise.
-    const promise = Promise.resolve(underlyingSearchParams);
-    CachedSearchParams.set(underlyingSearchParams, promise);
-    Object.keys(underlyingSearchParams).forEach((prop)=>{
-        if (_utils.wellKnownProperties.has(prop)) {
-        // These properties cannot be shadowed because they need to be the
-        // true underlying value for Promises to work correctly at runtime
-        } else {
-            promise[prop] = underlyingSearchParams[prop];
-        }
-    });
-    return promise;
-}
-const noop = ()=>{};
-const warnForSyncAccess = ("TURBOPACK compile-time falsy", 0) ? ("TURBOPACK unreachable", undefined) : function warnForSyncAccess(expression) {
-    if ("TURBOPACK compile-time falsy", 0) {
-        "TURBOPACK unreachable";
-    }
-    console.error(`A searchParam property was accessed directly with ${expression}. ` + `\`searchParams\` should be unwrapped with \`React.use()\` before accessing its properties. ` + `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`);
-};
-const warnForSyncSpread = ("TURBOPACK compile-time falsy", 0) ? ("TURBOPACK unreachable", undefined) : function warnForSyncSpread() {
-    if ("TURBOPACK compile-time falsy", 0) {
-        "TURBOPACK unreachable";
-    }
-    console.error(`The keys of \`searchParams\` were accessed directly. ` + `\`searchParams\` should be unwrapped with \`React.use()\` before accessing its properties. ` + `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`);
-}; //# sourceMappingURL=search-params.browser.js.map
+throw new Error("An error occurred while generating the chunk item [project]/node_modules/next/dist/server/request/search-params.browser.js [app-client] (ecmascript)\n\nCaused by:\n- failed to analyse ecmascript module '[project]/node_modules/next/dist/server/request/search-params.browser.js [app-client] (ecmascript)'\n- Cell doesn't exist\n\nDebug info:\n- An error occurred while generating the chunk item [project]/node_modules/next/dist/server/request/search-params.browser.js [app-client] (ecmascript)\n- Execution of *EcmascriptChunkItemContent::module_factory failed\n- Execution of *EcmascriptChunkItemContent::new failed\n- Execution of <EcmascriptModuleAsset as EcmascriptAnalyzable>::module_content failed\n- Execution of analyse_ecmascript_module failed\n- failed to analyse ecmascript module '[project]/node_modules/next/dist/server/request/search-params.browser.js [app-client] (ecmascript)'\n- Cell doesn't exist");
+
 }}),
-"[project]/node_modules/next/dist/server/request/params.browser.js [app-client] (ecmascript)": (function(__turbopack_context__) {
+"[project]/node_modules/next/dist/server/request/params.browser.js [app-client] (ecmascript)": (() => {{
 
-var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, m: module, e: exports, t: require } = __turbopack_context__;
-{
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, "createRenderParamsFromClient", {
-    enumerable: true,
-    get: function() {
-        return createRenderParamsFromClient;
-    }
-});
-const _reflect = __turbopack_require__("[project]/node_modules/next/dist/server/web/spec-extension/adapters/reflect.js [app-client] (ecmascript)");
-const _invarianterror = __turbopack_require__("[project]/node_modules/next/dist/shared/lib/invariant-error.js [app-client] (ecmascript)");
-const _utils = __turbopack_require__("[project]/node_modules/next/dist/server/request/utils.js [app-client] (ecmascript)");
-function createRenderParamsFromClient(underlyingParams) {
-    if ("TURBOPACK compile-time truthy", 1) {
-        return makeDynamicallyTrackedExoticParamsWithDevWarnings(underlyingParams);
-    } else {
-        "TURBOPACK unreachable";
-    }
-}
-const CachedParams = new WeakMap();
-function makeUntrackedExoticParams(underlyingParams) {
-    const cachedParams = CachedParams.get(underlyingParams);
-    if (cachedParams) {
-        return cachedParams;
-    }
-    const promise = Promise.resolve(underlyingParams);
-    CachedParams.set(underlyingParams, promise);
-    Object.keys(underlyingParams).forEach((prop)=>{
-        if (_utils.wellKnownProperties.has(prop)) {
-        // These properties cannot be shadowed because they need to be the
-        // true underlying value for Promises to work correctly at runtime
-        } else {
-            promise[prop] = underlyingParams[prop];
-        }
-    });
-    return promise;
-}
-function makeDynamicallyTrackedExoticParamsWithDevWarnings(underlyingParams) {
-    const cachedParams = CachedParams.get(underlyingParams);
-    if (cachedParams) {
-        return cachedParams;
-    }
-    // We don't use makeResolvedReactPromise here because params
-    // supports copying with spread and we don't want to unnecessarily
-    // instrument the promise with spreadable properties of ReactPromise.
-    const promise = Promise.resolve(underlyingParams);
-    const proxiedProperties = new Set();
-    const unproxiedProperties = [];
-    Object.keys(underlyingParams).forEach((prop)=>{
-        if (_utils.wellKnownProperties.has(prop)) {
-        // These properties cannot be shadowed because they need to be the
-        // true underlying value for Promises to work correctly at runtime
-        } else {
-            proxiedProperties.add(prop);
-            promise[prop] = underlyingParams[prop];
-        }
-    });
-    const proxiedPromise = new Proxy(promise, {
-        get (target, prop, receiver) {
-            if (typeof prop === 'string') {
-                if (proxiedProperties.has(prop)) {
-                    const expression = (0, _utils.describeStringPropertyAccess)('params', prop);
-                    warnForSyncAccess(expression);
-                }
-            }
-            return _reflect.ReflectAdapter.get(target, prop, receiver);
-        },
-        set (target, prop, value, receiver) {
-            if (typeof prop === 'string') {
-                proxiedProperties.delete(prop);
-            }
-            return _reflect.ReflectAdapter.set(target, prop, value, receiver);
-        },
-        ownKeys (target) {
-            warnForEnumeration(unproxiedProperties);
-            return Reflect.ownKeys(target);
-        }
-    });
-    CachedParams.set(underlyingParams, proxiedPromise);
-    return proxiedPromise;
-}
-const noop = ()=>{};
-const warnForSyncAccess = ("TURBOPACK compile-time falsy", 0) ? ("TURBOPACK unreachable", undefined) : function warnForSyncAccess(expression) {
-    if ("TURBOPACK compile-time falsy", 0) {
-        "TURBOPACK unreachable";
-    }
-    console.error(`A param property was accessed directly with ${expression}. \`params\` is now a Promise and should be unwrapped with \`React.use()\` before accessing properties of the underlying params object. In this version of Next.js direct access to param properties is still supported to facilitate migration but in a future version you will be required to unwrap \`params\` with \`React.use()\`.`);
-};
-const warnForEnumeration = ("TURBOPACK compile-time falsy", 0) ? ("TURBOPACK unreachable", undefined) : function warnForEnumeration(missingProperties) {
-    if ("TURBOPACK compile-time falsy", 0) {
-        "TURBOPACK unreachable";
-    }
-    if (missingProperties.length) {
-        const describedMissingProperties = describeListOfPropertyNames(missingProperties);
-        console.error(`params are being enumerated incompletely missing these properties: ${describedMissingProperties}. ` + `\`params\` should be unwrapped with \`React.use()\` before using its value. ` + `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`);
-    } else {
-        console.error(`params are being enumerated. ` + `\`params\` should be unwrapped with \`React.use()\` before using its value. ` + `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`);
-    }
-};
-function describeListOfPropertyNames(properties) {
-    switch(properties.length){
-        case 0:
-            throw new _invarianterror.InvariantError('Expected describeListOfPropertyNames to be called with a non-empty list of strings.');
-        case 1:
-            return `\`${properties[0]}\``;
-        case 2:
-            return `\`${properties[0]}\` and \`${properties[1]}\``;
-        default:
-            {
-                let description = '';
-                for(let i = 0; i < properties.length - 1; i++){
-                    description += `\`${properties[i]}\`, `;
-                }
-                description += `, and \`${properties[properties.length - 1]}\``;
-                return description;
-            }
-    }
-} //# sourceMappingURL=params.browser.js.map
+throw new Error("An error occurred while generating the chunk item [project]/node_modules/next/dist/server/request/params.browser.js [app-client] (ecmascript)\n\nCaused by:\n- failed to analyse ecmascript module '[project]/node_modules/next/dist/server/request/params.browser.js [app-client] (ecmascript)'\n- Cell doesn't exist\n\nDebug info:\n- An error occurred while generating the chunk item [project]/node_modules/next/dist/server/request/params.browser.js [app-client] (ecmascript)\n- Execution of *EcmascriptChunkItemContent::module_factory failed\n- Execution of *EcmascriptChunkItemContent::new failed\n- Execution of <EcmascriptModuleAsset as EcmascriptAnalyzable>::module_content failed\n- Execution of analyse_ecmascript_module failed\n- failed to analyse ecmascript module '[project]/node_modules/next/dist/server/request/params.browser.js [app-client] (ecmascript)'\n- Cell doesn't exist");
+
 }}),
 "[project]/node_modules/next/dist/server/create-deduped-by-callsite-server-error-logger.js [app-client] (ecmascript)": (function(__turbopack_context__) {
 
@@ -1071,7 +873,8 @@ Object.defineProperty(exports, "__esModule", {
     createPrerenderSearchParamsForClientPage: null,
     createSearchParamsFromClient: null,
     createServerSearchParamsForMetadata: null,
-    createServerSearchParamsForServerPage: null
+    createServerSearchParamsForServerPage: null,
+    makeErroringExoticSearchParamsForUseCache: null
 });
 function _export(target, all) {
     for(var name in all)Object.defineProperty(target, name, {
@@ -1091,6 +894,9 @@ _export(exports, {
     },
     createServerSearchParamsForServerPage: function() {
         return createServerSearchParamsForServerPage;
+    },
+    makeErroringExoticSearchParamsForUseCache: function() {
+        return makeErroringExoticSearchParamsForUseCache;
     }
 });
 const _reflect = __turbopack_require__("[project]/node_modules/next/dist/server/web/spec-extension/adapters/reflect.js [app-client] (ecmascript)");
@@ -1099,6 +905,7 @@ const _workunitasyncstorageexternal = __turbopack_require__("[project]/node_modu
 const _invarianterror = __turbopack_require__("[project]/node_modules/next/dist/shared/lib/invariant-error.js [app-client] (ecmascript)");
 const _dynamicrenderingutils = __turbopack_require__("[project]/node_modules/next/dist/server/dynamic-rendering-utils.js [app-client] (ecmascript)");
 const _creatededupedbycallsiteservererrorlogger = __turbopack_require__("[project]/node_modules/next/dist/server/create-deduped-by-callsite-server-error-logger.js [app-client] (ecmascript)");
+const _reflectutils = __turbopack_require__("[project]/node_modules/next/dist/shared/lib/utils/reflect-utils.js [app-client] (ecmascript)");
 const _utils = __turbopack_require__("[project]/node_modules/next/dist/server/request/utils.js [app-client] (ecmascript)");
 const _scheduler = __turbopack_require__("[project]/node_modules/next/dist/lib/scheduler.js [app-client] (ecmascript)");
 function createSearchParamsFromClient(underlyingSearchParams, workStore) {
@@ -1175,6 +982,7 @@ function createRenderSearchParams(underlyingSearchParams, workStore) {
     }
 }
 const CachedSearchParams = new WeakMap();
+const CachedSearchParamsForUseCache = new WeakMap();
 function makeAbortingExoticSearchParams(route, prerenderStore) {
     const cachedSearchParams = CachedSearchParams.get(prerenderStore);
     if (cachedSearchParams) {
@@ -1202,31 +1010,10 @@ function makeAbortingExoticSearchParams(route, prerenderStore) {
                         (0, _dynamicrendering.annotateDynamicAccess)(expression, prerenderStore);
                         return _reflect.ReflectAdapter.get(target, prop, receiver);
                     }
-                // Object prototype
-                case 'hasOwnProperty':
-                case 'isPrototypeOf':
-                case 'propertyIsEnumerable':
-                case 'toString':
-                case 'valueOf':
-                case 'toLocaleString':
-                // Promise prototype
-                // fallthrough
-                case 'catch':
-                case 'finally':
-                // Common tested properties
-                // fallthrough
-                case 'toJSON':
-                case '$$typeof':
-                case '__esModule':
-                    {
-                        // These properties cannot be shadowed because they need to be the
-                        // true underlying value for Promises to work correctly at runtime
-                        return _reflect.ReflectAdapter.get(target, prop, receiver);
-                    }
                 default:
                     {
-                        if (typeof prop === 'string') {
-                            const expression = (0, _utils.describeStringPropertyAccess)('searchParams', prop);
+                        if (typeof prop === 'string' && !_reflectutils.wellKnownProperties.has(prop)) {
+                            const expression = (0, _reflectutils.describeStringPropertyAccess)('searchParams', prop);
                             const error = createSearchAccessError(route, expression);
                             (0, _dynamicrendering.abortAndThrowOnSynchronousRequestDataAccess)(route, expression, error, prerenderStore);
                         }
@@ -1240,7 +1027,7 @@ function makeAbortingExoticSearchParams(route, prerenderStore) {
             // can resolve to the then function on the Promise prototype but 'then' in promise will assume
             // you are testing whether the searchParams has a 'then' property.
             if (typeof prop === 'string') {
-                const expression = (0, _utils.describeHasCheckingStringProperty)('searchParams', prop);
+                const expression = (0, _reflectutils.describeHasCheckingStringProperty)('searchParams', prop);
                 const error = createSearchAccessError(route, expression);
                 (0, _dynamicrendering.abortAndThrowOnSynchronousRequestDataAccess)(route, expression, error, prerenderStore);
             }
@@ -1274,27 +1061,6 @@ function makeErroringExoticSearchParams(workStore, prerenderStore) {
                 return _reflect.ReflectAdapter.get(target, prop, receiver);
             }
             switch(prop){
-                // Object prototype
-                case 'hasOwnProperty':
-                case 'isPrototypeOf':
-                case 'propertyIsEnumerable':
-                case 'toString':
-                case 'valueOf':
-                case 'toLocaleString':
-                // Promise prototype
-                // fallthrough
-                case 'catch':
-                case 'finally':
-                // Common tested properties
-                // fallthrough
-                case 'toJSON':
-                case '$$typeof':
-                case '__esModule':
-                    {
-                        // These properties cannot be shadowed because they need to be the
-                        // true underlying value for Promises to work correctly at runtime
-                        return _reflect.ReflectAdapter.get(target, prop, receiver);
-                    }
                 case 'then':
                     {
                         const expression = '`await searchParams`, `searchParams.then`, or similar';
@@ -1325,8 +1091,8 @@ function makeErroringExoticSearchParams(workStore, prerenderStore) {
                     }
                 default:
                     {
-                        if (typeof prop === 'string') {
-                            const expression = (0, _utils.describeStringPropertyAccess)('searchParams', prop);
+                        if (typeof prop === 'string' && !_reflectutils.wellKnownProperties.has(prop)) {
+                            const expression = (0, _reflectutils.describeStringPropertyAccess)('searchParams', prop);
                             if (workStore.dynamicShouldError) {
                                 (0, _utils.throwWithStaticGenerationBailoutErrorWithDynamicError)(workStore.route, expression);
                             } else if (prerenderStore.type === 'prerender-ppr') {
@@ -1347,7 +1113,7 @@ function makeErroringExoticSearchParams(workStore, prerenderStore) {
             // can resolve to the then function on the Promise prototype but 'then' in promise will assume
             // you are testing whether the searchParams has a 'then' property.
             if (typeof prop === 'string') {
-                const expression = (0, _utils.describeHasCheckingStringProperty)('searchParams', prop);
+                const expression = (0, _reflectutils.describeHasCheckingStringProperty)('searchParams', prop);
                 if (workStore.dynamicShouldError) {
                     (0, _utils.throwWithStaticGenerationBailoutErrorWithDynamicError)(workStore.route, expression);
                 } else if (prerenderStore.type === 'prerender-ppr') {
@@ -1377,6 +1143,43 @@ function makeErroringExoticSearchParams(workStore, prerenderStore) {
     CachedSearchParams.set(workStore, proxiedPromise);
     return proxiedPromise;
 }
+function makeErroringExoticSearchParamsForUseCache(workStore) {
+    const cachedSearchParams = CachedSearchParamsForUseCache.get(workStore);
+    if (cachedSearchParams) {
+        return cachedSearchParams;
+    }
+    const promise = Promise.resolve({});
+    const proxiedPromise = new Proxy(promise, {
+        get (target, prop, receiver) {
+            if (Object.hasOwn(promise, prop)) {
+                // The promise has this property directly. we must return it. We know it
+                // isn't a dynamic access because it can only be something that was
+                // previously written to the promise and thus not an underlying
+                // searchParam value
+                return _reflect.ReflectAdapter.get(target, prop, receiver);
+            }
+            if (typeof prop === 'string' && (prop === 'then' || !_reflectutils.wellKnownProperties.has(prop))) {
+                (0, _utils.throwForSearchParamsAccessInUseCache)(workStore);
+            }
+            return _reflect.ReflectAdapter.get(target, prop, receiver);
+        },
+        has (target, prop) {
+            // We don't expect key checking to be used except for testing the existence of
+            // searchParams so we make all has tests throw an error. this means that `promise.then`
+            // can resolve to the then function on the Promise prototype but 'then' in promise will assume
+            // you are testing whether the searchParams has a 'then' property.
+            if (typeof prop === 'string' && (prop === 'then' || !_reflectutils.wellKnownProperties.has(prop))) {
+                (0, _utils.throwForSearchParamsAccessInUseCache)(workStore);
+            }
+            return _reflect.ReflectAdapter.has(target, prop);
+        },
+        ownKeys () {
+            (0, _utils.throwForSearchParamsAccessInUseCache)(workStore);
+        }
+    });
+    CachedSearchParamsForUseCache.set(workStore, proxiedPromise);
+    return proxiedPromise;
+}
 function makeUntrackedExoticSearchParams(underlyingSearchParams, store) {
     const cachedSearchParams = CachedSearchParams.get(underlyingSearchParams);
     if (cachedSearchParams) {
@@ -1388,49 +1191,23 @@ function makeUntrackedExoticSearchParams(underlyingSearchParams, store) {
     const promise = Promise.resolve(underlyingSearchParams);
     CachedSearchParams.set(underlyingSearchParams, promise);
     Object.keys(underlyingSearchParams).forEach((prop)=>{
-        switch(prop){
-            // Object prototype
-            case 'hasOwnProperty':
-            case 'isPrototypeOf':
-            case 'propertyIsEnumerable':
-            case 'toString':
-            case 'valueOf':
-            case 'toLocaleString':
-            // Promise prototype
-            // fallthrough
-            case 'then':
-            case 'catch':
-            case 'finally':
-            // React Promise extension
-            // fallthrough
-            case 'status':
-            // Common tested properties
-            // fallthrough
-            case 'toJSON':
-            case '$$typeof':
-            case '__esModule':
-                {
-                    break;
-                }
-            default:
-                {
+        if (!_reflectutils.wellKnownProperties.has(prop)) {
+            Object.defineProperty(promise, prop, {
+                get () {
+                    const workUnitStore = _workunitasyncstorageexternal.workUnitAsyncStorage.getStore();
+                    (0, _dynamicrendering.trackDynamicDataInDynamicRender)(store, workUnitStore);
+                    return underlyingSearchParams[prop];
+                },
+                set (value) {
                     Object.defineProperty(promise, prop, {
-                        get () {
-                            const workUnitStore = _workunitasyncstorageexternal.workUnitAsyncStorage.getStore();
-                            (0, _dynamicrendering.trackDynamicDataInDynamicRender)(store, workUnitStore);
-                            return underlyingSearchParams[prop];
-                        },
-                        set (value) {
-                            Object.defineProperty(promise, prop, {
-                                value,
-                                writable: true,
-                                enumerable: true
-                            });
-                        },
-                        enumerable: true,
-                        configurable: true
+                        value,
+                        writable: true,
+                        enumerable: true
                     });
-                }
+                },
+                enumerable: true,
+                configurable: true
+            });
         }
     });
     return promise;
@@ -1453,7 +1230,7 @@ function makeDynamicallyTrackedExoticSearchParamsWithDevWarnings(underlyingSearc
         get (target, prop, receiver) {
             if (typeof prop === 'string' && promiseInitialized) {
                 if (store.dynamicShouldError) {
-                    const expression = (0, _utils.describeStringPropertyAccess)('searchParams', prop);
+                    const expression = (0, _reflectutils.describeStringPropertyAccess)('searchParams', prop);
                     (0, _utils.throwWithStaticGenerationBailoutErrorWithDynamicError)(store.route, expression);
                 }
                 const workUnitStore = _workunitasyncstorageexternal.workUnitAsyncStorage.getStore();
@@ -1464,7 +1241,7 @@ function makeDynamicallyTrackedExoticSearchParamsWithDevWarnings(underlyingSearc
         has (target, prop) {
             if (typeof prop === 'string') {
                 if (store.dynamicShouldError) {
-                    const expression = (0, _utils.describeHasCheckingStringProperty)('searchParams', prop);
+                    const expression = (0, _reflectutils.describeHasCheckingStringProperty)('searchParams', prop);
                     (0, _utils.throwWithStaticGenerationBailoutErrorWithDynamicError)(store.route, expression);
                 }
             }
@@ -1486,7 +1263,7 @@ function makeDynamicallyTrackedExoticSearchParamsWithDevWarnings(underlyingSearc
         promiseInitialized = true;
     });
     Object.keys(underlyingSearchParams).forEach((prop)=>{
-        if (_utils.wellKnownProperties.has(prop)) {
+        if (_reflectutils.wellKnownProperties.has(prop)) {
             // These properties cannot be shadowed because they need to be the
             // true underlying value for Promises to work correctly at runtime
             unproxiedProperties.push(prop);
@@ -1515,10 +1292,10 @@ function makeDynamicallyTrackedExoticSearchParamsWithDevWarnings(underlyingSearc
                 (0, _utils.throwWithStaticGenerationBailoutErrorWithDynamicError)(store.route, expression);
             }
             if (typeof prop === 'string') {
-                if (!_utils.wellKnownProperties.has(prop) && (proxiedProperties.has(prop) || // We are accessing a property that doesn't exist on the promise nor
+                if (!_reflectutils.wellKnownProperties.has(prop) && (proxiedProperties.has(prop) || // We are accessing a property that doesn't exist on the promise nor
                 // the underlying searchParams.
                 Reflect.has(target, prop) === false)) {
-                    const expression = (0, _utils.describeStringPropertyAccess)('searchParams', prop);
+                    const expression = (0, _reflectutils.describeStringPropertyAccess)('searchParams', prop);
                     syncIODev(store.route, expression);
                 }
             }
@@ -1532,10 +1309,10 @@ function makeDynamicallyTrackedExoticSearchParamsWithDevWarnings(underlyingSearc
         },
         has (target, prop) {
             if (typeof prop === 'string') {
-                if (!_utils.wellKnownProperties.has(prop) && (proxiedProperties.has(prop) || // We are accessing a property that doesn't exist on the promise nor
+                if (!_reflectutils.wellKnownProperties.has(prop) && (proxiedProperties.has(prop) || // We are accessing a property that doesn't exist on the promise nor
                 // the underlying searchParams.
                 Reflect.has(target, prop) === false)) {
-                    const expression = (0, _utils.describeHasCheckingStringProperty)('searchParams', prop);
+                    const expression = (0, _reflectutils.describeHasCheckingStringProperty)('searchParams', prop);
                     syncIODev(store.route, expression);
                 }
             }
@@ -1565,21 +1342,32 @@ function syncIODev(route, expression, missingProperties) {
         (0, _dynamicrendering.trackSynchronousRequestDataAccessInDev)(requestStore);
     }
 }
-const noop = ()=>{};
-const warnForSyncAccess = ("TURBOPACK compile-time falsy", 0) ? ("TURBOPACK unreachable", undefined) : (0, _creatededupedbycallsiteservererrorlogger.createDedupedByCallsiteServerErrorLoggerDev)(createSearchAccessError);
-const warnForIncompleteEnumeration = ("TURBOPACK compile-time falsy", 0) ? ("TURBOPACK unreachable", undefined) : (0, _creatededupedbycallsiteservererrorlogger.createDedupedByCallsiteServerErrorLoggerDev)(createIncompleteEnumerationError);
+const warnForSyncAccess = (0, _creatededupedbycallsiteservererrorlogger.createDedupedByCallsiteServerErrorLoggerDev)(createSearchAccessError);
+const warnForIncompleteEnumeration = (0, _creatededupedbycallsiteservererrorlogger.createDedupedByCallsiteServerErrorLoggerDev)(createIncompleteEnumerationError);
 function createSearchAccessError(route, expression) {
     const prefix = route ? `Route "${route}" ` : 'This route ';
-    return new Error(`${prefix}used ${expression}. ` + `\`searchParams\` should be awaited before using its properties. ` + `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`);
+    return Object.defineProperty(new Error(`${prefix}used ${expression}. ` + `\`searchParams\` should be awaited before using its properties. ` + `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`), "__NEXT_ERROR_CODE", {
+        value: "E249",
+        enumerable: false,
+        configurable: true
+    });
 }
 function createIncompleteEnumerationError(route, expression, missingProperties) {
     const prefix = route ? `Route "${route}" ` : 'This route ';
-    return new Error(`${prefix}used ${expression}. ` + `\`searchParams\` should be awaited before using its properties. ` + `The following properties were not available through enumeration ` + `because they conflict with builtin or well-known property names: ` + `${describeListOfPropertyNames(missingProperties)}. ` + `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`);
+    return Object.defineProperty(new Error(`${prefix}used ${expression}. ` + `\`searchParams\` should be awaited before using its properties. ` + `The following properties were not available through enumeration ` + `because they conflict with builtin or well-known property names: ` + `${describeListOfPropertyNames(missingProperties)}. ` + `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`), "__NEXT_ERROR_CODE", {
+        value: "E2",
+        enumerable: false,
+        configurable: true
+    });
 }
 function describeListOfPropertyNames(properties) {
     switch(properties.length){
         case 0:
-            throw new _invarianterror.InvariantError('Expected describeListOfPropertyNames to be called with a non-empty list of strings.');
+            throw Object.defineProperty(new _invarianterror.InvariantError('Expected describeListOfPropertyNames to be called with a non-empty list of strings.'), "__NEXT_ERROR_CODE", {
+                value: "E531",
+                enumerable: false,
+                configurable: true
+            });
         case 1:
             return `\`${properties[0]}\``;
         case 2:
@@ -1639,7 +1427,7 @@ const _reflect = __turbopack_require__("[project]/node_modules/next/dist/server/
 const _dynamicrendering = __turbopack_require__("[project]/node_modules/next/dist/server/app-render/dynamic-rendering.js [app-client] (ecmascript)");
 const _workunitasyncstorageexternal = __turbopack_require__("[project]/node_modules/next/dist/server/app-render/work-unit-async-storage.external.js [app-client] (ecmascript)");
 const _invarianterror = __turbopack_require__("[project]/node_modules/next/dist/shared/lib/invariant-error.js [app-client] (ecmascript)");
-const _utils = __turbopack_require__("[project]/node_modules/next/dist/server/request/utils.js [app-client] (ecmascript)");
+const _reflectutils = __turbopack_require__("[project]/node_modules/next/dist/shared/lib/utils/reflect-utils.js [app-client] (ecmascript)");
 const _dynamicrenderingutils = __turbopack_require__("[project]/node_modules/next/dist/server/dynamic-rendering-utils.js [app-client] (ecmascript)");
 const _creatededupedbycallsiteservererrorlogger = __turbopack_require__("[project]/node_modules/next/dist/server/create-deduped-by-callsite-server-error-logger.js [app-client] (ecmascript)");
 const _scheduler = __turbopack_require__("[project]/node_modules/next/dist/lib/scheduler.js [app-client] (ecmascript)");
@@ -1719,7 +1507,7 @@ function createPrerenderParams(underlyingParams, workStore, prerenderStore) {
                 // We are in a dynamicIO (PPR or otherwise) prerender
                 return makeAbortingExoticParams(underlyingParams, workStore.route, prerenderStore);
             }
-            // remaining cases are prender-ppr and prerender-legacy
+            // remaining cases are prerender-ppr and prerender-legacy
             // We aren't in a dynamicIO prerender but we do have fallback params at this
             // level so we need to make an erroring exotic params object which will postpone
             // if you access the fallback params
@@ -1745,13 +1533,13 @@ function makeAbortingExoticParams(underlyingParams, route, prerenderStore) {
     const promise = (0, _dynamicrenderingutils.makeHangingPromise)(prerenderStore.renderSignal, '`params`');
     CachedParams.set(underlyingParams, promise);
     Object.keys(underlyingParams).forEach((prop)=>{
-        if (_utils.wellKnownProperties.has(prop)) {
+        if (_reflectutils.wellKnownProperties.has(prop)) {
         // These properties cannot be shadowed because they need to be the
         // true underlying value for Promises to work correctly at runtime
         } else {
             Object.defineProperty(promise, prop, {
                 get () {
-                    const expression = (0, _utils.describeStringPropertyAccess)('params', prop);
+                    const expression = (0, _reflectutils.describeStringPropertyAccess)('params', prop);
                     const error = createParamsAccessError(route, expression);
                     (0, _dynamicrendering.abortAndThrowOnSynchronousRequestDataAccess)(route, expression, error, prerenderStore);
                 },
@@ -1783,14 +1571,14 @@ function makeErroringExoticParams(underlyingParams, fallbackParams, workStore, p
     const promise = Promise.resolve(augmentedUnderlying);
     CachedParams.set(underlyingParams, promise);
     Object.keys(underlyingParams).forEach((prop)=>{
-        if (_utils.wellKnownProperties.has(prop)) {
+        if (_reflectutils.wellKnownProperties.has(prop)) {
         // These properties cannot be shadowed because they need to be the
         // true underlying value for Promises to work correctly at runtime
         } else {
             if (fallbackParams.has(prop)) {
                 Object.defineProperty(augmentedUnderlying, prop, {
                     get () {
-                        const expression = (0, _utils.describeStringPropertyAccess)('params', prop);
+                        const expression = (0, _reflectutils.describeStringPropertyAccess)('params', prop);
                         // In most dynamic APIs we also throw if `dynamic = "error"` however
                         // for params is only dynamic when we're generating a fallback shell
                         // and even when `dynamic = "error"` we still support generating dynamic
@@ -1809,7 +1597,7 @@ function makeErroringExoticParams(underlyingParams, fallbackParams, workStore, p
                 });
                 Object.defineProperty(promise, prop, {
                     get () {
-                        const expression = (0, _utils.describeStringPropertyAccess)('params', prop);
+                        const expression = (0, _reflectutils.describeStringPropertyAccess)('params', prop);
                         // In most dynamic APIs we also throw if `dynamic = "error"` however
                         // for params is only dynamic when we're generating a fallback shell
                         // and even when `dynamic = "error"` we still support generating dynamic
@@ -1835,6 +1623,7 @@ function makeErroringExoticParams(underlyingParams, fallbackParams, workStore, p
                     configurable: true
                 });
             } else {
+                ;
                 promise[prop] = underlyingParams[prop];
             }
         }
@@ -1852,10 +1641,11 @@ function makeUntrackedExoticParams(underlyingParams) {
     const promise = Promise.resolve(underlyingParams);
     CachedParams.set(underlyingParams, promise);
     Object.keys(underlyingParams).forEach((prop)=>{
-        if (_utils.wellKnownProperties.has(prop)) {
+        if (_reflectutils.wellKnownProperties.has(prop)) {
         // These properties cannot be shadowed because they need to be the
         // true underlying value for Promises to work correctly at runtime
         } else {
+            ;
             promise[prop] = underlyingParams[prop];
         }
     });
@@ -1873,7 +1663,7 @@ function makeDynamicallyTrackedExoticParamsWithDevWarnings(underlyingParams, sto
     const proxiedProperties = new Set();
     const unproxiedProperties = [];
     Object.keys(underlyingParams).forEach((prop)=>{
-        if (_utils.wellKnownProperties.has(prop)) {
+        if (_reflectutils.wellKnownProperties.has(prop)) {
             // These properties cannot be shadowed because they need to be the
             // true underlying value for Promises to work correctly at runtime
             unproxiedProperties.push(prop);
@@ -1886,7 +1676,7 @@ function makeDynamicallyTrackedExoticParamsWithDevWarnings(underlyingParams, sto
         get (target, prop, receiver) {
             if (typeof prop === 'string') {
                 if (proxiedProperties.has(prop)) {
-                    const expression = (0, _utils.describeStringPropertyAccess)('params', prop);
+                    const expression = (0, _reflectutils.describeStringPropertyAccess)('params', prop);
                     syncIODev(store.route, expression);
                 }
             }
@@ -1922,21 +1712,32 @@ function syncIODev(route, expression, missingProperties) {
         warnForSyncAccess(route, expression);
     }
 }
-const noop = ()=>{};
-const warnForSyncAccess = ("TURBOPACK compile-time falsy", 0) ? ("TURBOPACK unreachable", undefined) : (0, _creatededupedbycallsiteservererrorlogger.createDedupedByCallsiteServerErrorLoggerDev)(createParamsAccessError);
-const warnForIncompleteEnumeration = ("TURBOPACK compile-time falsy", 0) ? ("TURBOPACK unreachable", undefined) : (0, _creatededupedbycallsiteservererrorlogger.createDedupedByCallsiteServerErrorLoggerDev)(createIncompleteEnumerationError);
+const warnForSyncAccess = (0, _creatededupedbycallsiteservererrorlogger.createDedupedByCallsiteServerErrorLoggerDev)(createParamsAccessError);
+const warnForIncompleteEnumeration = (0, _creatededupedbycallsiteservererrorlogger.createDedupedByCallsiteServerErrorLoggerDev)(createIncompleteEnumerationError);
 function createParamsAccessError(route, expression) {
     const prefix = route ? `Route "${route}" ` : 'This route ';
-    return new Error(`${prefix}used ${expression}. ` + `\`params\` should be awaited before using its properties. ` + `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`);
+    return Object.defineProperty(new Error(`${prefix}used ${expression}. ` + `\`params\` should be awaited before using its properties. ` + `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`), "__NEXT_ERROR_CODE", {
+        value: "E307",
+        enumerable: false,
+        configurable: true
+    });
 }
 function createIncompleteEnumerationError(route, expression, missingProperties) {
     const prefix = route ? `Route "${route}" ` : 'This route ';
-    return new Error(`${prefix}used ${expression}. ` + `\`params\` should be awaited before using its properties. ` + `The following properties were not available through enumeration ` + `because they conflict with builtin property names: ` + `${describeListOfPropertyNames(missingProperties)}. ` + `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`);
+    return Object.defineProperty(new Error(`${prefix}used ${expression}. ` + `\`params\` should be awaited before using its properties. ` + `The following properties were not available through enumeration ` + `because they conflict with builtin property names: ` + `${describeListOfPropertyNames(missingProperties)}. ` + `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`), "__NEXT_ERROR_CODE", {
+        value: "E482",
+        enumerable: false,
+        configurable: true
+    });
 }
 function describeListOfPropertyNames(properties) {
     switch(properties.length){
         case 0:
-            throw new _invarianterror.InvariantError('Expected describeListOfPropertyNames to be called with a non-empty list of strings.');
+            throw Object.defineProperty(new _invarianterror.InvariantError('Expected describeListOfPropertyNames to be called with a non-empty list of strings.'), "__NEXT_ERROR_CODE", {
+                value: "E531",
+                enumerable: false,
+                configurable: true
+            });
         case 1:
             return `\`${properties[0]}\``;
         case 2:
@@ -1957,7 +1758,7 @@ function describeListOfPropertyNames(properties) {
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, m: module, e: exports, t: require } = __turbopack_context__;
 {
-"use client";
+'use client';
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -1980,7 +1781,11 @@ function ClientPageRoot(param) {
         // appropriate context. We wrap differently in prerendering vs rendering
         const store = workAsyncStorage.getStore();
         if (!store) {
-            throw new _invarianterror.InvariantError('Expected workStore to exist when handling searchParams in a client Page.');
+            throw Object.defineProperty(new _invarianterror.InvariantError('Expected workStore to exist when handling searchParams in a client Page.'), "__NEXT_ERROR_CODE", {
+                value: "E564",
+                enumerable: false,
+                configurable: true
+            });
         }
         const { createSearchParamsFromClient } = __turbopack_require__("[project]/node_modules/next/dist/server/request/search-params.js [app-client] (ecmascript)");
         clientSearchParams = createSearchParamsFromClient(searchParams, store);
@@ -1991,9 +1796,9 @@ function ClientPageRoot(param) {
             searchParams: clientSearchParams
         });
     } else {
-        const { createRenderSearchParamsFromClient } = __turbopack_require__("[project]/node_modules/next/dist/server/request/search-params.browser.js [app-client] (ecmascript)");
+        const { createRenderSearchParamsFromClient } = __turbopack_require__("[project]/node_modules/next/dist/client/request/search-params.browser.js [app-client] (ecmascript)");
         const clientSearchParams = createRenderSearchParamsFromClient(searchParams);
-        const { createRenderParamsFromClient } = __turbopack_require__("[project]/node_modules/next/dist/server/request/params.browser.js [app-client] (ecmascript)");
+        const { createRenderParamsFromClient } = __turbopack_require__("[project]/node_modules/next/dist/client/request/params.browser.js [app-client] (ecmascript)");
         const clientParams = createRenderParamsFromClient(params);
         return /*#__PURE__*/ (0, _jsxruntime.jsx)(Component, {
             params: clientParams,
@@ -2013,7 +1818,7 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, m: module, e: exports, t: require } = __turbopack_context__;
 {
-"use client";
+'use client';
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -2035,7 +1840,11 @@ function ClientSegmentRoot(param) {
         // appropriate context. We wrap differently in prerendering vs rendering
         const store = workAsyncStorage.getStore();
         if (!store) {
-            throw new _invarianterror.InvariantError('Expected workStore to exist when handling params in a client segment such as a Layout or Template.');
+            throw Object.defineProperty(new _invarianterror.InvariantError('Expected workStore to exist when handling params in a client segment such as a Layout or Template.'), "__NEXT_ERROR_CODE", {
+                value: "E600",
+                enumerable: false,
+                configurable: true
+            });
         }
         const { createParamsFromClient } = __turbopack_require__("[project]/node_modules/next/dist/server/request/params.js [app-client] (ecmascript)");
         clientParams = createParamsFromClient(params, store);
@@ -2044,7 +1853,7 @@ function ClientSegmentRoot(param) {
             params: clientParams
         });
     } else {
-        const { createRenderParamsFromClient } = __turbopack_require__("[project]/node_modules/next/dist/server/request/params.browser.js [app-client] (ecmascript)");
+        const { createRenderParamsFromClient } = __turbopack_require__("[project]/node_modules/next/dist/client/request/params.browser.js [app-client] (ecmascript)");
         const clientParams = createRenderParamsFromClient(params);
         return /*#__PURE__*/ (0, _jsxruntime.jsx)(Component, {
             ...slots,
@@ -2060,57 +1869,10 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     module.exports = exports.default;
 } //# sourceMappingURL=client-segment.js.map
 }}),
-"[project]/node_modules/next/dist/lib/metadata/metadata-boundary.js [app-client] (ecmascript)": (function(__turbopack_context__) {
+"[project]/node_modules/next/dist/lib/metadata/metadata-boundary.js [app-client] (ecmascript)": (() => {{
 
-var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, m: module, e: exports, t: require } = __turbopack_context__;
-{
-"use client";
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-0 && (module.exports = {
-    MetadataBoundary: null,
-    OutletBoundary: null,
-    ViewportBoundary: null
-});
-function _export(target, all) {
-    for(var name in all)Object.defineProperty(target, name, {
-        enumerable: true,
-        get: all[name]
-    });
-}
-_export(exports, {
-    MetadataBoundary: function() {
-        return MetadataBoundary;
-    },
-    OutletBoundary: function() {
-        return OutletBoundary;
-    },
-    ViewportBoundary: function() {
-        return ViewportBoundary;
-    }
-});
-const _metadataconstants = __turbopack_require__("[project]/node_modules/next/dist/lib/metadata/metadata-constants.js [app-client] (ecmascript)");
-// We use a namespace object to allow us to recover the name of the function
-// at runtime even when production bundling/minification is used.
-const NameSpace = {
-    [_metadataconstants.METADATA_BOUNDARY_NAME]: function({ children }) {
-        return children;
-    },
-    [_metadataconstants.VIEWPORT_BOUNDARY_NAME]: function({ children }) {
-        return children;
-    },
-    [_metadataconstants.OUTLET_BOUNDARY_NAME]: function({ children }) {
-        return children;
-    }
-};
-const MetadataBoundary = // so it retains the name inferred from the namespace object
-NameSpace[_metadataconstants.METADATA_BOUNDARY_NAME.slice(0)];
-const ViewportBoundary = // so it retains the name inferred from the namespace object
-NameSpace[_metadataconstants.VIEWPORT_BOUNDARY_NAME.slice(0)];
-const OutletBoundary = // so it retains the name inferred from the namespace object
-NameSpace[_metadataconstants.OUTLET_BOUNDARY_NAME.slice(0)]; //# sourceMappingURL=metadata-boundary.js.map
+throw new Error("An error occurred while generating the chunk item [project]/node_modules/next/dist/lib/metadata/metadata-boundary.js [app-client] (ecmascript)\n\nCaused by:\n- failed to analyse ecmascript module '[project]/node_modules/next/dist/lib/metadata/metadata-boundary.js [app-client] (ecmascript)'\n- Cell doesn't exist\n\nDebug info:\n- An error occurred while generating the chunk item [project]/node_modules/next/dist/lib/metadata/metadata-boundary.js [app-client] (ecmascript)\n- Execution of *EcmascriptChunkItemContent::module_factory failed\n- Execution of *EcmascriptChunkItemContent::new failed\n- Execution of <EcmascriptModuleAsset as EcmascriptAnalyzable>::module_content failed\n- Execution of analyse_ecmascript_module failed\n- failed to analyse ecmascript module '[project]/node_modules/next/dist/lib/metadata/metadata-boundary.js [app-client] (ecmascript)'\n- Cell doesn't exist");
+
 }}),
 }]);
 

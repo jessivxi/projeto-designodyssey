@@ -1,4 +1,4 @@
-/* Estilos base (aplicam-se a todos os dispositivos) */
+/* ===== ESTILOS GERAIS (APLICÁVEIS A TODOS OS DISPOSITIVOS) ===== */
 .login_main {
   display: flex;
   justify-content: center;
@@ -10,13 +10,6 @@
   box-sizing: border-box;
 }
 
-.login_error {
-  color: #d32f2f;
-  margin: 10px 0;
-  text-align: center;
-  font-size: 14px;
-}
-
 .login_content {
   background: white;
   border-radius: 16px;
@@ -26,7 +19,14 @@
   max-width: 1200px;
 }
 
-/* Estilos para desktop (com imagem) */
+.login_error {
+  color: #d32f2f;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ===== DESKTOP (ACIMA DE 600px) ===== */
 @media (min-width: 601px) {
   .login_content {
     display: flex;
@@ -39,29 +39,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #f5f7ff;
+    background: white; /* Fundo branco */
     background-image: url("/images/ilustracao_login.png");
-    background-size: cover;
+    background-size: contain; /* Ajusta a imagem dentro do container */
     background-position: center;
-    color: white;
-    position: relative;
-  }
-
-  /* Overlay escuro para melhor legibilidade do texto */
-  .login_content_left::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
   }
 
   .login_left_content {
-    position: relative;
-    z-index: 1;
     max-width: 80%;
+    text-align: center;
   }
 
   .login_left_list {
@@ -70,6 +57,7 @@
     padding: 0;
     font-size: 16px;
     line-height: 1.6;
+    color: #333; /* Cor do texto mais visível no branco */
   }
 
   .login_left_list li {
@@ -91,50 +79,30 @@
   }
 }
 
-/* Estilos para mobile (sem imagem e centralizado) */
+/* ===== MOBILE (ATÉ 600px) ===== */
 @media (max-width: 600px) {
   .login_main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     background-color: white;
     padding: 20px;
   }
 
   .login_content {
-    width: 100%;
     max-width: 400px;
-    border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
-  /* Esconde completamente a seção da imagem no mobile */
+  /* Esconde a seção da imagem no mobile */
   .login_content_left {
     display: none;
   }
 
   .login_content_right {
     padding: 30px 20px;
-    width: 100%;
   }
 
-  .login_right_voltar {
-    margin-bottom: 20px;
-    font-size: 13px;
-    text-align: center;
-  }
-
-  .login_right_bemvindo h1 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    text-align: center;
-  }
-
-  /* Ajustes para elementos de formulário */
+  /* Ajustes para melhor usabilidade em mobile */
   .input_container {
     height: 50px;
-    padding: 0 15px;
   }
 
   .login_input {
@@ -145,33 +113,27 @@
   .login_button {
     padding: 14px;
   }
-
-  .login_button {
-    font-size: 16px;
-  }
-
-  .divider {
-    margin: 20px 0;
-  }
-
-  .forgot_password {
-    margin-top: 15px;
-  }
 }
 
-/* Estilos comuns para formulário (ambos dispositivos) */
+/* ===== SEÇÃO DIREITA (FORMULÁRIO - ESTILOS COMUNS) ===== */
 .login_right_voltar {
   display: flex;
   align-items: center;
   gap: 8px;
   color: #555;
   justify-content: center;
+  margin-bottom: 20px;
+  font-size: 13px;
 }
 
 .login_right_bemvindo h1 {
   color: #222;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 24px;
 }
 
+/* Elementos do formulário */
 .login_field {
   margin-bottom: 20px;
 }

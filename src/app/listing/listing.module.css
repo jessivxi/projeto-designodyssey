@@ -415,11 +415,10 @@
 
   .listing_main {
     padding-top: 54px;
+    height: 20%;
+    width: 0%;
     flex-direction: column;
     align-items: center;
-    width: 30vw;
-    min-height: 100vh;
-    box-sizing: border-box;
   }
 
   .listing_hero {
@@ -506,7 +505,7 @@
   .listing_topicos_botao2,
   .listing_topicos_botao3,
   .listing_topicos_botao4 {
-    width: 230px;
+    width: 220px;
     padding: 11px 0;
     font-size: 15px;
     margin: 0 auto;
@@ -531,54 +530,40 @@
 
   .listing_carousel_box1,
   .listing_carousel_box2,
-  .listing_carousel_box3,
-  .listing_carousel_box4,
-  .listing_carousel_box5,
-  .listing_carousel_box6,
-  .listing_carousel_box7,
-  .listing_carousel_box8 {
+  .listing_carousel_box3 {
     width: 85vw;           /* mais largas e centralizadas */
-    max-width: 340px;
-    height: 140px;
+    height: 150px;
     border-radius: 22px;
-    margin: 0 auto;
+    gap: 20px;
+    margin-right:13%;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     display: flex;
     align-items: center;
-    justify-content: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
+  .listing_carousel_box4,
+  .listing_carousel_box5,
+  .listing_carousel_box6,
+  .listing_carousel_box7,
+  .listing_carousel_box8{
+    display: none;
+  }
+
   .text_boxes_1,
   .text_boxes_2,
   .text_boxes_3 {
-    font-size: 14px;
-    text-align: center;
-    padding: 8px 0 0 0;
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: none;
+
   }
 
   .listing_contador_number {
-    padding: 18px 0 0 0;
-    flex-direction: row;
-    justify-content: center;
-    gap: 8px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
+    display: none;
 
-  .listing_numero {
-    font-size: 14px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
+  
+
+  
 }

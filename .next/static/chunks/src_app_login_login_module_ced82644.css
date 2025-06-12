@@ -1,81 +1,11 @@
 /* [project]/src/app/login/login.module.css [app-client] (css) */
-.login-module__WEZH7G__login_header_container {
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-  margin-bottom: 30px;
-  display: flex;
-  position: relative;
-}
-
-.login-module__WEZH7G__login_right_voltar {
-  color: #555;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  text-decoration: none;
-  transition: color .3s;
-  display: flex;
-  position: absolute;
-  left: 0;
-}
-
-.login-module__WEZH7G__login_right_voltar:hover {
-  color: #0096d1;
-}
-
-.login-module__WEZH7G__login_right_bemvindo {
-  text-align: center;
-}
-
-.login-module__WEZH7G__login_right_bemvindo h1 {
-  color: #222;
-  margin: 0;
-  font-size: 24px;
-}
-
-@media (width <= 600px) {
-  .login-module__WEZH7G__login_header_container {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .login-module__WEZH7G__login_right_voltar {
-    align-self: flex-start;
-    margin-bottom: 5px;
-    position: static;
-  }
-
-  .login-module__WEZH7G__login_right_bemvindo h1 {
-    font-size: 22px;
-  }
-}
-
-@media (width >= 601px) {
-  .login-module__WEZH7G__login_right_bemvindo h1 {
-    font-size: 28px;
-  }
-}
-
 .login-module__WEZH7G__login_main {
-  box-sizing: border-box;
   background-color: #f8f9fa;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px;
   font-family: Arial, sans-serif;
   display: flex;
-}
-
-.login-module__WEZH7G__login_content {
-  background: #fff;
-  border-radius: 16px;
-  width: 100%;
-  max-width: 1200px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px #0000001a;
 }
 
 .login-module__WEZH7G__login_error {
@@ -85,101 +15,58 @@
   font-size: 14px;
 }
 
-@media (width >= 601px) {
-  .login-module__WEZH7G__login_content {
-    display: flex;
-  }
-
-  .login-module__WEZH7G__login_content_left {
-    background: #fff url("/images/ilustracao_login.png") center / contain no-repeat;
-    flex-direction: column;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    display: flex;
-  }
-
-  .login-module__WEZH7G__login_left_content {
-    text-align: center;
-    max-width: 80%;
-  }
-
-  .login-module__WEZH7G__login_left_list {
-    color: #333;
-    margin-top: 30px;
-    padding: 0;
-    font-size: 16px;
-    line-height: 1.6;
-    list-style: none;
-  }
-
-  .login-module__WEZH7G__login_left_list li {
-    margin-bottom: 15px;
-    padding-left: 25px;
-    position: relative;
-  }
-
-  .login-module__WEZH7G__login_left_list li:before {
-    content: "✓";
-    color: #0096d1;
-    position: absolute;
-    left: 0;
-  }
-
-  .login-module__WEZH7G__login_content_right {
-    flex: 1;
-    padding: 60px 40px;
-  }
+.login-module__WEZH7G__login_content {
+  background: #fff;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 4px 20px #0000001a;
 }
 
-@media (width <= 600px) {
-  .login-module__WEZH7G__login_main {
-    background-color: #fff;
-    padding: 20px;
-  }
+.login-module__WEZH7G__login_content_left {
+  background: #f5f7ff;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  display: flex;
+}
 
-  .login-module__WEZH7G__login_content {
-    max-width: 400px;
-    box-shadow: 0 2px 10px #0000001a;
-  }
+.login-module__WEZH7G__login_left_list {
+  color: #333;
+  margin-top: 30px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  list-style: inside;
+}
 
-  .login-module__WEZH7G__login_content_left {
-    display: none;
-  }
+.login-module__WEZH7G__login_content_right {
+  flex: 1;
+  padding: 60px 40px;
+}
 
-  .login-module__WEZH7G__login_content_right {
-    padding: 30px 20px;
-  }
-
-  .login-module__WEZH7G__input_container {
-    height: 50px;
-  }
-
-  .login-module__WEZH7G__login_input {
-    font-size: 16px;
-  }
-
-  .login-module__WEZH7G__social_button, .login-module__WEZH7G__login_button {
-    padding: 14px;
-  }
+.login-module__WEZH7G__login_right_top {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .login-module__WEZH7G__login_right_voltar {
   color: #555;
-  justify-content: center;
   align-items: center;
   gap: 8px;
-  margin-bottom: 20px;
-  font-size: 13px;
+  margin-bottom: 30px;
+  font-size: 14px;
   display: flex;
 }
 
 .login-module__WEZH7G__login_right_bemvindo h1 {
   color: #222;
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 24px;
+  margin-bottom: 20px;
+  font-size: 28px;
 }
 
 .login-module__WEZH7G__login_field {
@@ -286,7 +173,7 @@
 }
 
 .login-module__WEZH7G__login_button:hover {
-  background-color: #007bb3;
+  background-color: #0096d1;
 }
 
 .login-module__WEZH7G__forgot_password {
@@ -303,6 +190,12 @@
 .login-module__WEZH7G__forgot_password_link:hover {
   color: #0096d1;
   text-decoration: underline;
+}
+
+@media (width <= 600px) {
+  .login-module__WEZH7G__login-main {
+    display: flex;
+  }
 }
 
 

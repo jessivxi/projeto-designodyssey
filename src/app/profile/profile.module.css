@@ -164,3 +164,28 @@
 
 
 }
+@media (max-width: 600px){
+    .profile_container{
+        display: flex;
+        padding-left: 190px;
+    }
+    .profile_box_photo{
+        display: flex;
+        width: 85%;
+    }
+    .profile_photo{
+        display: flex;
+        height: 50%;
+        width: 55%;
+    }
+    .profile_button{
+        display: flex;
+        
+    }
+    .profile_button_explorer{
+        display: flex;
+        width: 85%;
+    }
+
+ 
+}

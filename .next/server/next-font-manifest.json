@@ -4,6 +4,14 @@
       "static/media/GeistMonoVF-s.p.a9159d35.woff",
       "static/media/GeistVF-s.p.7fe29570.woff"
     ],
+    "[project]/src/app/functioning/page": [
+      "static/media/GeistMonoVF-s.p.a9159d35.woff",
+      "static/media/GeistVF-s.p.7fe29570.woff"
+    ],
+    "[project]/src/app/gig_page/page": [
+      "static/media/GeistMonoVF-s.p.a9159d35.woff",
+      "static/media/GeistVF-s.p.7fe29570.woff"
+    ],
     "[project]/src/app/listing/page": [
       "static/media/GeistMonoVF-s.p.a9159d35.woff",
       "static/media/GeistVF-s.p.7fe29570.woff"
@@ -13,6 +21,10 @@
       "static/media/GeistVF-s.p.7fe29570.woff"
     ],
     "[project]/src/app/page": [
+      "static/media/GeistMonoVF-s.p.a9159d35.woff",
+      "static/media/GeistVF-s.p.7fe29570.woff"
+    ],
+    "[project]/src/app/profile/page": [
       "static/media/GeistMonoVF-s.p.a9159d35.woff",
       "static/media/GeistVF-s.p.7fe29570.woff"
     ]

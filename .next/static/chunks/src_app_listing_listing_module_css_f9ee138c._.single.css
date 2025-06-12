@@ -399,11 +399,10 @@
 
 @media (width <= 600px) {
   .listing-module__2wsz6a__listing_main {
-    box-sizing: border-box;
     flex-direction: column;
     align-items: center;
-    width: 30vw;
-    min-height: 100vh;
+    width: 0%;
+    height: 20%;
     padding-top: 54px;
   }
 
@@ -492,7 +491,7 @@
     border-radius: 18px;
     justify-content: center;
     align-items: center;
-    width: 230px;
+    width: 220px;
     margin: 0 auto;
     padding: 11px 0;
     font-size: 15px;
@@ -510,48 +509,22 @@
     display: flex;
   }
 
-  .listing-module__2wsz6a__listing_carousel_box1, .listing-module__2wsz6a__listing_carousel_box2, .listing-module__2wsz6a__listing_carousel_box3, .listing-module__2wsz6a__listing_carousel_box4, .listing-module__2wsz6a__listing_carousel_box5, .listing-module__2wsz6a__listing_carousel_box6, .listing-module__2wsz6a__listing_carousel_box7, .listing-module__2wsz6a__listing_carousel_box8 {
+  .listing-module__2wsz6a__listing_carousel_box1, .listing-module__2wsz6a__listing_carousel_box2, .listing-module__2wsz6a__listing_carousel_box3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 22px;
-    justify-content: center;
     align-items: center;
+    gap: 20px;
     width: 85vw;
-    max-width: 340px;
-    height: 140px;
-    margin: 0 auto;
+    height: 150px;
+    margin-right: 13%;
     display: flex;
     box-shadow: 0 2px 8px #00000012;
   }
 
-  .listing-module__2wsz6a__text_boxes_1, .listing-module__2wsz6a__text_boxes_2, .listing-module__2wsz6a__text_boxes_3 {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 8px 0 0;
-    font-size: 14px;
-    display: flex;
-  }
-
-  .listing-module__2wsz6a__listing_contador_number {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
-    padding: 18px 0 0;
-    display: flex;
-  }
-
-  .listing-module__2wsz6a__listing_numero {
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: bold;
-    display: flex;
+  .listing-module__2wsz6a__listing_carousel_box4, .listing-module__2wsz6a__listing_carousel_box5, .listing-module__2wsz6a__listing_carousel_box6, .listing-module__2wsz6a__listing_carousel_box7, .listing-module__2wsz6a__listing_carousel_box8, .listing-module__2wsz6a__text_boxes_1, .listing-module__2wsz6a__text_boxes_2, .listing-module__2wsz6a__text_boxes_3, .listing-module__2wsz6a__listing_contador_number {
+    display: none;
   }
 }
 

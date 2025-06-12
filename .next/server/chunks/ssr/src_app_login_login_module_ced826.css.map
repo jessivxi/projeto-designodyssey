@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/login/login.module.css"],"sourcesContent":["@media (max-width: 900px) {\r\n  .login_content {\r\n    flex-direction: column;\r\n    max-width: 100%;\r\n    min-height: 100vh;\r\n  }\r\n  .login_content_left,\r\n  .login_content_right {\r\n    flex: unset;\r\n    width: 100%;\r\n    padding: 32px 16px;\r\n    border-radius: 0;\r\n  }\r\n  .login_content_left {\r\n    border-bottom: 1px solid #eee;\r\n    border-right: none;\r\n  }\r\n  .login_content_right {\r\n    padding-top: 24px;\r\n  }\r\n}\r\n\r\n@media (max-width: 600px) {\r\n  .login_main {\r\n    padding: 0 4vw;\r\n  }\r\n  .login_content {\r\n    box-shadow: none;\r\n    border-radius: 0;\r\n  }\r\n  .login_content_left,\r\n  .login_content_right {\r\n    padding: 20px 0;\r\n  }\r\n  .login_right_top {\r\n    max-width: 100%;\r\n  }\r\n  .login_button {\r\n    font-size: 15px;\r\n    padding: 12px;\r\n  }\r\n  .login_left_list {\r\n    font-size: 15px;\r\n  }\r\n}\r\n"],"names":[],"mappings":"AAAA;EACE;;;;;;EAKA;;;;;;;EAOA;;;;;EAIA;;;;;AAKF;EACE;;;;EAGA;;;;;EAIA;;;;EAIA;;;;EAGA;;;;;EAIA"}},
-    {"offset": {"line": 52, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

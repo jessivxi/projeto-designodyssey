@@ -1,3 +1,5 @@
+
+
 .hub_main {
   display: flex;
   justify-content: center;
@@ -20,6 +22,7 @@
   height: 65vh;
   width: 100%;
   padding: 0px 8% 0 8%;
+  animation: fadeIn 1s ease;
 }
 
 .hub_hero_text {
@@ -80,6 +83,7 @@
   -moz-border-radius: 90px;
   -ms-border-radius: 90px;
   -o-border-radius: 90px;
+  animation: fadeIn 1s ease;
 }
 
 .about_box_title {
@@ -139,11 +143,11 @@
 
 .box_home_1 {
   background-color: black;
-  background-image: url("./../../../images/fotos/web_design.jpg");
+  background-image: url("./../../../images/fotos/wedesign.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0px 100px 30px rgba(134, 134, 134, 0.514);
+  box-shadow: inset 0px 100px 30px  rgba(35, 44, 56, 0.658);
   color: white;
   height: 100%;
   min-width: 13vw;
@@ -153,15 +157,17 @@
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+  animation: fadeIn 1s ease;
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s;
 }
 
 .box_home_2 {
   background-color: black;
-  background-image: url("./../../../images/fotos/graphic_design.jpg");
+  background-image: url("./../../../images/fotos/grapic.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0px 100px 30px rgba(134, 134, 134, 0.514);
+  box-shadow: inset 0px 100px 30px  rgba(35, 44, 56, 0.658);
   color: white;
   height: 100%;
   min-width: 13vw;
@@ -171,15 +177,17 @@
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+  animation: fadeIn 1s ease;
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s;
 }
 
 .box_home_3 {
   background-color: black;
-  background-image: url("./../../../images/fotos/branding_design.jpg");
+  background-image: url("./../../../images/fotos/brading.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0px 100px 30px rgba(134, 134, 134, 0.514);
+  box-shadow: inset 0px 100px 30px  rgba(35, 44, 56, 0.658);
   color: white;
   height: 100%;
   min-width: 13vw;
@@ -189,15 +197,17 @@
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+  animation: fadeIn 1s ease;
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s;
 }
 
 .box_home_4 {
   background-color: black;
-  background-image: url("./../../../images/fotos/digital_art.jpg");
+  background-image: url("./../../../images/fotos/art_digital.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0px 100px 30px rgba(134, 134, 134, 0.514);
+  box-shadow: inset 0px 100px 30px  rgba(35, 44, 56, 0.658);
   color: white;
   height: 100%;
   min-width: 13vw;
@@ -207,6 +217,8 @@
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+  animation: fadeIn 1s ease;
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s;
 }
 
 .box1_content_overtitle {
@@ -384,7 +396,7 @@
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
-  background-image: url(../../../images/fotos/design_site.jpg);
+  background-image: url(../../../images/fotos/site.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -444,6 +456,7 @@
 .text_boxes:hover {
   color: #0096d1;
 }
+
 
 /* Responsividade para celulares */
 @media (max-width: 600px) {
@@ -572,3 +585,4 @@
     border-radius: 20px;
   }
 }
+

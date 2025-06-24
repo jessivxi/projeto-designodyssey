@@ -127,27 +127,21 @@
 /* Responsividade para celulares */
 @media (max-width: 600px) {
     .functioning_main {
-        margin-bottom: 9vh;
+        margin-bottom: 3vh; /* Reduz o espaço inferior */
         padding: 0 2vw;
     }
     .functioning_content {
         width: 100%;
-        min-height: 50vh;
+        min-height: 50px; /* Remove altura mínima para não criar espaço vazio */
+        margin-bottom: 0;  /* Garante que não haja espaço extra */
+        padding: 0;
     }
     .functioning_content_box {
-        width: 80%;           /* Mais larga */
-        min-height: 360px;    /* Mais alta */
-        height: auto;         /* Altura automática se o conteúdo crescer */
-        border-radius: 24px;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        display: none;
     }
     .functioning_content_title {
         width: 100%;
-        line-height: 1.5rem;
-        font-size: 25px;
+        font-size: 45px;
         padding-bottom: 19px;
     }
     .functioning_content_text {
@@ -159,7 +153,7 @@
         height: 42px;
     }
     .functioning_apresention_main {
-        margin-top: 5vh;
+        margin-top: 0; /* Remove espaço acima do próximo bloco */
     }
     .functioning_apresention_content {
         width: 80%;

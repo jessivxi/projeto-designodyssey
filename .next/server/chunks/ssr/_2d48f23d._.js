@@ -99,6 +99,7 @@ __turbopack_context__.v({
   "carousel_topicos": "hub-module__LVsAYa__carousel_topicos",
   "carousel_topicos_botao": "hub-module__LVsAYa__carousel_topicos_botao",
   "cor_botao": "hub-module__LVsAYa__cor_botao",
+  "fadeIn": "hub-module__LVsAYa__fadeIn",
   "hero_text_hub": "hub-module__LVsAYa__hero_text_hub",
   "hub_content": "hub-module__LVsAYa__hub_content",
   "hub_hero": "hub-module__LVsAYa__hub_hero",

@@ -256,6 +256,7 @@
   width: 100%;
   height: 65vh;
   padding: 0 8%;
+  animation: 1s hub-module__LVsAYa__fadeIn;
   display: flex;
 }
 
@@ -316,6 +317,7 @@
   width: 65%;
   height: 100%;
   padding: 4%;
+  animation: 1s hub-module__LVsAYa__fadeIn;
   display: flex;
 }
 
@@ -379,7 +381,7 @@
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
   background-color: #000;
-  background-image: url("../media/web_design.676d7a1d.jpg");
+  background-image: url("../media/wedesign.7c3129e2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -389,7 +391,9 @@
   min-width: 13vw;
   height: 100%;
   padding: 20px;
-  box-shadow: inset 0 100px 30px #86868683;
+  transition: transform .3s cubic-bezier(.4, 0, .2, 1), box-shadow .3s;
+  animation: 1s hub-module__LVsAYa__fadeIn;
+  box-shadow: inset 0 100px 30px #232c38a8;
 }
 
 .hub-module__LVsAYa__box_home_2 {
@@ -397,7 +401,7 @@
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
   background-color: #000;
-  background-image: url("../media/graphic_design.fb98a179.jpg");
+  background-image: url("../media/grapic.7e952627.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -407,7 +411,9 @@
   min-width: 13vw;
   height: 100%;
   padding: 20px;
-  box-shadow: inset 0 100px 30px #86868683;
+  transition: transform .3s cubic-bezier(.4, 0, .2, 1), box-shadow .3s;
+  animation: 1s hub-module__LVsAYa__fadeIn;
+  box-shadow: inset 0 100px 30px #232c38a8;
 }
 
 .hub-module__LVsAYa__box_home_3 {
@@ -415,7 +421,7 @@
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
   background-color: #000;
-  background-image: url("../media/branding_design.966658d4.jpg");
+  background-image: url("../media/brading.ff5bc5e0.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -425,7 +431,9 @@
   min-width: 13vw;
   height: 100%;
   padding: 20px;
-  box-shadow: inset 0 100px 30px #86868683;
+  transition: transform .3s cubic-bezier(.4, 0, .2, 1), box-shadow .3s;
+  animation: 1s hub-module__LVsAYa__fadeIn;
+  box-shadow: inset 0 100px 30px #232c38a8;
 }
 
 .hub-module__LVsAYa__box_home_4 {
@@ -433,7 +441,7 @@
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
   background-color: #000;
-  background-image: url("../media/digital_art.b3954d19.jpg");
+  background-image: url("../media/art_digital.0cf70852.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -443,7 +451,9 @@
   min-width: 13vw;
   height: 100%;
   padding: 20px;
-  box-shadow: inset 0 100px 30px #86868683;
+  transition: transform .3s cubic-bezier(.4, 0, .2, 1), box-shadow .3s;
+  animation: 1s hub-module__LVsAYa__fadeIn;
+  box-shadow: inset 0 100px 30px #232c38a8;
 }
 
 .hub-module__LVsAYa__box1_content_overtitle {
@@ -611,7 +621,7 @@
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   background-color: #fff;
-  background-image: url("../media/design_site.f8d0aeb3.jpg");
+  background-image: url("../media/site.8fa164a6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid #a8a8a8;
@@ -626,7 +636,7 @@
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   background-color: #fff;
-  background-image: url("../media/design_grafico.67f63ef8.jpg");
+  background-image: url("../media/design_grafico.7e4cc34b.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -642,7 +652,7 @@
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   background-color: #fff;
-  background-image: url("../media/design_logo.840ddc90.jpg");
+  background-image: url("../media/design_logo.a4c105a7.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -658,7 +668,7 @@
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   background-color: #fff;
-  background-image: url("../media/arte_digital.ea8c8223.jpg");
+  background-image: url("../media/arte_digital.39182e1b.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

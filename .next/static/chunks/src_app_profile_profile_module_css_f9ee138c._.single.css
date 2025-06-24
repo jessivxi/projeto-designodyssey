@@ -171,28 +171,99 @@
 
 @media (width <= 600px) {
   .profile-module__5FeCNW__profile_container {
-    padding-left: 190px;
-    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    padding: 0;
   }
 
   .profile-module__5FeCNW__profile_box_photo {
-    width: 85%;
-    display: flex;
+    width: 90vw;
+    min-width: unset;
+    border-radius: 20px;
+    height: auto;
+    margin-top: 4vh;
+    padding: 24px 0 0;
   }
 
   .profile-module__5FeCNW__profile_photo {
-    width: 55%;
-    height: 50%;
-    display: flex;
+    border-radius: 60px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-module__5FeCNW__profile_main {
+    align-items: center;
+    width: 100vw;
+    padding: 0;
   }
 
   .profile-module__5FeCNW__profile_button {
-    display: flex;
+    width: 80vw;
+    min-width: 120px;
+    height: 44px;
+    margin-top: 18px;
+    font-size: 15px;
   }
 
   .profile-module__5FeCNW__profile_button_explorer {
-    width: 85%;
-    display: flex;
+    width: 90vw;
+    height: 44px;
+    margin-top: 18px;
+    font-size: 15px;
+  }
+
+  .profile-module__5FeCNW__profile_right_column {
+    width: 95vw;
+    margin-top: 24px;
+    padding-left: 0;
+  }
+
+  .profile-module__5FeCNW__profile_right_column_text_title, .profile-module__5FeCNW__profile_rigth_column_box_one, .profile-module__5FeCNW__profile_right_column_evaluation {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .profile-module__5FeCNW__profile_rigth_column_box_one {
+    border-radius: 14px;
+    height: auto;
+    min-height: 70px;
+  }
+
+  .profile-module__5FeCNW__profile_rigth_column_box_one_title {
+    padding: 16px 0 0 12px;
+    font-size: 16px;
+  }
+
+  .profile-module__5FeCNW__profile_rigth_column_box_one_text {
+    padding: 0 0 12px 12px;
+    font-size: 14px;
+  }
+
+  .profile-module__5FeCNW__profile_right_column_evaluation {
+    border-radius: 18px;
+    height: auto;
+    min-height: 120px;
+    margin-top: 20px;
+  }
+
+  .profile-module__5FeCNW__profile_rigth_column_evaluation_title {
+    padding: 0 0 18px;
+    font-size: 18px;
+  }
+
+  .profile-module__5FeCNW__profile_right_column_evaluation_text {
+    padding: 12px 0 0;
+    font-size: 14px;
+  }
+
+  .profile-module__5FeCNW__profile_link_freelancer {
+    word-break: break-word;
+    width: 90vw;
+    padding: 18px 0 0;
+    font-size: 14px;
   }
 }
 

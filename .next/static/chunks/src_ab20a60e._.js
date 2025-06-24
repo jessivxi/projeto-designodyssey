@@ -57,7 +57,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v("/_next/static/media/person_login.bb567e88.svg");}}),
+__turbopack_context__.v("/_next/static/media/person_login.5850a1a9.svg");}}),
 "[project]/src/images/icones/person_login.svg.mjs { IMAGE => \"[project]/src/images/icones/person_login.svg (static in ecmascript)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 

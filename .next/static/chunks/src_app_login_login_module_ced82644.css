@@ -196,6 +196,10 @@
   .login-module__WEZH7G__login-main {
     display: flex;
   }
+
+  .login-module__WEZH7G__login_content_left {
+    display: none;
+  }
 }
 
 

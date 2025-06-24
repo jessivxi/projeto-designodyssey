@@ -202,4 +202,7 @@
   .login-main{
     display: flex;
   }
+  .login_content_left {
+    display: none;
+  }
 }

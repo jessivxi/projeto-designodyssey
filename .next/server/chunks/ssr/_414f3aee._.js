@@ -96,7 +96,8 @@ function listing() {
                 fileName: "[project]/src/app/listing/page.tsx",
                 lineNumber: 14,
                 columnNumber: 13
-            }, this)
+            }, this),
+            "."
         ]
     }, void 0, true);
 }

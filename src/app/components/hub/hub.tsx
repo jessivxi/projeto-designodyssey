@@ -15,7 +15,6 @@ import artedigital from '@/images/fotos/arte_digital.jpg'
 function Hub() {
     return (
         <>
-        <Header/>
             <div className={styles.main}>
         <div className={styles.searchBarMain}>
             <Image src={gato_arroba} height={100} width={100} alt="gatobonito"></Image> 

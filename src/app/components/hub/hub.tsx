@@ -13,9 +13,8 @@ import artedigital from '@/images/fotos/arte_digital.jpg'
 
 
 function Hub() {
-    <Header/>
     return (
-    <div className={styles.main}>
+            <div className={styles.main}>
         <div className={styles.searchBarMain}>
             <Image src={gato_arroba} height={100} width={100} alt="gatobonito"></Image> 
             <h1>DesignOdyssey</h1>
@@ -47,7 +46,7 @@ function Hub() {
             <h1>A solução rápida e fácil para você</h1>
             <span>Bem-vindo à nossa plataforma, projetada para conectar você com designers de forma prática e segura. Aqui você pode publicar gratuitamente suas necessidades de design, sejam elas para interfaces de sites, logotipos, design de interiores,  ilustrações ou outros projetos criativo.</span>
             <span>Nosso modelo permite que profissionais interessados ​​entrem em contato diretamente com você, promovendo uma comunicação transparente e objetiva. E o melhor: o pagamento só é realizado após a sua aprovação do trabalho final, garantindo que você esteja completamente satisfeito com o resultado.</span>
-            <div className={styles.botão}>Experimente agora</div>
+            <a href="login" className={styles.botão}>Experimente agora</a>
         </div>
         <div className={styles.positiveCards}>
             <div className={styles.card1}>
@@ -67,25 +66,26 @@ function Hub() {
             <h1>Gráficos e Designs para fazer você se destacar.</h1>
             <span>Explorar Gráficos e Design</span>
             <div className={styles.categoriesBox}>
-                <div className={styles.categories}>
+                <a href="/interface" className={styles.categories}>
                     <Image src={site} height={250} width={250} alt='interface'></Image>
                     <span>Interface</span>
-                </div>
-                <div className={styles.categories}>
-                    <Image src={web} height={250} width={250} alt='interface'></Image>
+                </a>
+                <a href="/design-grafico" className={styles.categories}>
+                    <Image src={web} height={250} width={250} alt='design gráfico'></Image>
                     <span>Design Gráfico</span>
-                </div>
-                <div className={styles.categories}>
-                    <Image src={logo} height={250} width={250} alt='interface'></Image>
+                </a>
+                <a href="/listing" className={styles.categories}>
+                    <Image src={logo} height={250} width={250} alt='logotipo'></Image>
                     <span>Logotipo</span>
-                </div>
-                <div className={styles.categories}>
-                    <Image src={artedigital} height={250} width={250} alt='interface'></Image>
+                </a>
+                <a href="/arte-digital" className={styles.categories}>
+                    <Image src={artedigital} height={250} width={250} alt='arte digital'></Image>
                     <span>Arte Digital</span>
-                </div>
+                </a>
             </div>
-        </div>
-    </div>
+            </div>
+            </div>
+        </>
     );
 }
 

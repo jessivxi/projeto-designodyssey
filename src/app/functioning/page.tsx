@@ -1,7 +1,5 @@
 import styles from './functioning.module.css';
 import Link from 'next/link';
-import Header from '../components/header/header';
-import Footer from '../components/footer/footer';
 import Image from 'next/image';
 import taxa from '../../images/icones/taxa.svg';
 import flower1 from '../../images/icones/flower1.svg';
@@ -12,7 +10,6 @@ import chat from '../../images/icones/chat-fill.svg';
 function Functioning() {
     return (
         <>
-            <Header/>
             <main className={styles.functioning_main}>
                 {/* Seção de Boas-Vindas */}
                 <section className={styles.functioning_content}>
@@ -70,7 +67,6 @@ function Functioning() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

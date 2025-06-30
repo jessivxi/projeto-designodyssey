@@ -1,8 +1,5 @@
 import styles from "./gig_page.module.css"
 
-import Header from "../components/header/header";
-import Footer from "../components/footer/footer";
-
 import Image from "next/image";;
 import Link from "next/link"
 
@@ -20,7 +17,6 @@ export const metadata = {
 export default function Product() {
     return (
         <>
-            <Header/>
             <div className={styles.page_wrapper}>
                 <div className={styles.page}>
                     <main className={styles.main}>
@@ -307,7 +303,6 @@ export default function Product() {
                     </aside>
                 </div>
             </div>
-            <Footer />
         </>
     )
 };

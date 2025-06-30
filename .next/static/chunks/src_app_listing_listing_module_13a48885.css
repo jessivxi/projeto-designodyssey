@@ -1,0 +1,119 @@
+/* [project]/src/app/listing/listing.module.css [app-client] (css) */
+.listing-module__2wsz6a__main {
+  width: 80%;
+  max-width: 1000px;
+  height: fit-content;
+  min-height: 1000px;
+  margin: auto;
+}
+
+.listing-module__2wsz6a__top {
+  flex-direction: column;
+  width: 100%;
+  margin: 60px 0 80px;
+  display: flex;
+}
+
+.listing-module__2wsz6a__top h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.listing-module__2wsz6a__top span {
+  font-size: 18px;
+}
+
+.listing-module__2wsz6a__botoesTopMain {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 30px auto;
+  display: flex;
+}
+
+.listing-module__2wsz6a__botaoTop {
+  cursor: pointer;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 0 13px 0 12px;
+  display: flex;
+  box-shadow: 0 0 1px 1px #00000036;
+}
+
+.listing-module__2wsz6a__botaoTop span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.listing-module__2wsz6a__botaoTop:hover {
+  color: #fff;
+  background-color: #0096d1;
+}
+
+.listing-module__2wsz6a__resultText {
+  color: #00000048;
+}
+
+.listing-module__2wsz6a__contentMain {
+  flex-direction: column;
+  gap: 40px;
+  padding: 10px;
+  display: flex;
+}
+
+.listing-module__2wsz6a__contentBoxes {
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.listing-module__2wsz6a__contentBox {
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  width: 300px;
+  display: flex;
+}
+
+.listing-module__2wsz6a__contentBox img {
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid #00000057;
+  border-radius: 40px;
+  width: 250px;
+  height: 250px;
+}
+
+.listing-module__2wsz6a__contentBox h1 {
+  color: #8080809f;
+  font-weight: bold;
+}
+
+.listing-module__2wsz6a__contentBox span {
+  font-weight: bold;
+}
+
+.listing-module__2wsz6a__pagination {
+  justify-content: center;
+  gap: 10px;
+  display: flex;
+}
+
+.listing-module__2wsz6a__pagination span {
+  cursor: pointer;
+}
+
+.listing-module__2wsz6a__pagination span:first-child {
+  font-weight: bold;
+}
+
+
+/*# sourceMappingURL=src_app_listing_listing_module_13a48885.css.map*/

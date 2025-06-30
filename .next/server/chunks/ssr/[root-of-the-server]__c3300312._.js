@@ -412,6 +412,7 @@ function Header() {
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.v({
+  "footer_logo_container": "footer-module__1jeW9a__footer_logo_container",
   "footer_main": "footer-module__1jeW9a__footer_main",
   "footer_social_container": "footer-module__1jeW9a__footer_social_container",
   "footer_text": "footer-module__1jeW9a__footer_text",

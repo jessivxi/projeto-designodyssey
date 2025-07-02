@@ -5,5 +5,6 @@
   "/listing/page": "app/listing/page.js",
   "/login/page": "app/login/page.js",
   "/page": "app/page.js",
-  "/profile/page": "app/profile/page.js"
+  "/profile/page": "app/profile/page.js",
+  "/profile_freelancer/page": "app/profile_freelancer/page.js"
 }

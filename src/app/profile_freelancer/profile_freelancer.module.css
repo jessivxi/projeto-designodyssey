@@ -181,6 +181,94 @@
 }
 .profile_link_freelancer:hover{
     color:#0096D1 ;
-
-
+}
+@media (max-width: 600px){
+    .profile_container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0;
+        width: 100vw;
+        height: auto;
+    }
+    .profile_box_photo {
+        width: 60vw;
+        min-width: unset;
+        height: auto;
+        margin-top: 4vh;
+        padding: 24px 0 0 0;
+        border-radius: 30px;
+    }
+    .profile_photo {
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+    }
+    .profile_main {
+        width: 100vw;
+        padding: 0 0 0 0;
+        align-items: center;
+    }
+    .profile_button {
+        min-width: 120px;
+        height: 44px;
+        font-size: 15px;
+        margin-top: 18px;
+        margin-bottom: 40px;
+    }
+    .profile_button_explorer {
+        width: 60vw;
+        font-size: 15px;
+        height: 44px;
+        margin-top: 18px;
+    }
+    .profile_right_column {
+        width: 65vw;
+        padding-left: 0;
+        margin-top: 24px;
+    }
+    .profile_right_column_text_title,
+    .profile_rigth_column_box_one,
+    .profile_right_column_evaluation {
+        width: 100%;
+        margin-top: 19px;
+        font-size: 16px;
+    }
+    .profile_rigth_column_box_one {
+        height: auto;
+        min-height: 95px;
+        border-radius: 14px;
+    }
+    .profile_rigth_column_box_one_title {
+        font-size: 15px;
+        padding: 16px 0 5 20px;
+    }
+    .profile_rigth_column_box_one_text {
+        padding: 0 0 12px 20px;
+        font-size: 14px;
+    }
+    .profile_right_column_evaluation {
+        height: 170px;
+        min-height: 120px;
+        border-radius: 18px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .profile_rigth_column_evaluation_title {
+        font-size: 18px;
+        padding: 0 0 18px 0;
+    }
+    .profile_right_column_evaluation_text {
+        padding: 12px 0 0 0;
+        font-size: 14px;
+    }
+    .profile_link_freelancer {
+        width: 60vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        padding: 18px 0 0 0;
+        word-break: break-word;
+    }
 }

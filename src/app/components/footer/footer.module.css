@@ -1,7 +1,6 @@
 .footer_main {
   position: relative; /* Mantém o posicionamento relativo */
   bottom: 25px;
-  background-color: rgba(255, 255, 255, 0.9);
   padding: 4px 10px;
   font-weight: bold;
   font-size: 15px;

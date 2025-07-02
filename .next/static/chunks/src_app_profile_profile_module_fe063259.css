@@ -180,9 +180,9 @@
   }
 
   .profile-module__5FeCNW__profile_box_photo {
-    width: 90vw;
+    width: 60vw;
     min-width: unset;
-    border-radius: 20px;
+    border-radius: 30px;
     height: auto;
     margin-top: 4vh;
     padding: 24px 0 0;
@@ -201,52 +201,54 @@
   }
 
   .profile-module__5FeCNW__profile_button {
-    width: 80vw;
     min-width: 120px;
     height: 44px;
     margin-top: 18px;
+    margin-bottom: 40px;
     font-size: 15px;
   }
 
   .profile-module__5FeCNW__profile_button_explorer {
-    width: 90vw;
+    width: 60vw;
     height: 44px;
     margin-top: 18px;
     font-size: 15px;
   }
 
   .profile-module__5FeCNW__profile_right_column {
-    width: 95vw;
+    width: 65vw;
     margin-top: 24px;
     padding-left: 0;
   }
 
   .profile-module__5FeCNW__profile_right_column_text_title, .profile-module__5FeCNW__profile_rigth_column_box_one, .profile-module__5FeCNW__profile_right_column_evaluation {
     width: 100%;
-    margin-top: 16px;
+    margin-top: 19px;
+    font-size: 16px;
   }
 
   .profile-module__5FeCNW__profile_rigth_column_box_one {
     border-radius: 14px;
     height: auto;
-    min-height: 70px;
+    min-height: 95px;
   }
 
   .profile-module__5FeCNW__profile_rigth_column_box_one_title {
-    padding: 16px 0 0 12px;
-    font-size: 16px;
+    padding: 16px 0 5px 20px;
+    font-size: 15px;
   }
 
   .profile-module__5FeCNW__profile_rigth_column_box_one_text {
-    padding: 0 0 12px 12px;
+    padding: 0 0 12px 20px;
     font-size: 14px;
   }
 
   .profile-module__5FeCNW__profile_right_column_evaluation {
     border-radius: 18px;
-    height: auto;
+    height: 170px;
     min-height: 120px;
     margin-top: 20px;
+    margin-bottom: 40px;
   }
 
   .profile-module__5FeCNW__profile_rigth_column_evaluation_title {
@@ -260,8 +262,11 @@
   }
 
   .profile-module__5FeCNW__profile_link_freelancer {
+    text-align: center;
     word-break: break-word;
-    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
     padding: 18px 0 0;
     font-size: 14px;
   }

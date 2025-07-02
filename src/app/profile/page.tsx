@@ -9,7 +9,6 @@ import chat from './../../images/icones/chat-fill.svg';
 function Profile() {
     return (
         <>
-            <Header />
             <div className={styles.profile_container}>
                 <div className={styles.profile_main}>
                     <div className={styles.profile_box_photo}>
@@ -55,7 +54,6 @@ function Profile() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     );
 }

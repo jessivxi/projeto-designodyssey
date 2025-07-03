@@ -236,7 +236,7 @@
     }
     .profile_rigth_column_box_one {
         height: auto;
-        min-height: 95px;
+        min-height: 210px;
         border-radius: 14px;
     }
     .profile_rigth_column_box_one_title {
@@ -248,7 +248,7 @@
         font-size: 14px;
     }
     .profile_right_column_evaluation {
-        height: 170px;
+        height: 200px;
         min-height: 120px;
         border-radius: 18px;
         margin-top: 20px;

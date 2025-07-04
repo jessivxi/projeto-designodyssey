@@ -22,7 +22,7 @@ function Profile_freelancer() {
                         <div className={styles.profile_information_text}>
                             <p className={styles.profile_information_date}>Entrou em outubro de 2024</p>
                             <p className={styles.profile_information_Location}>Localização</p>
-                            <p className={styles.profile_information_lenguages}>Idiomas</p>
+                            <p className={styles.profile_information_type}>Designer</p>
                         </div>
                         <button className={styles.profile_button}>Editar Perfil</button>
                     </div>

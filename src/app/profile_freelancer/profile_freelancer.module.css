@@ -60,10 +60,18 @@
 }
 
 .profile_information_date,
-.profile_information_Location,
-.profile_information_lenguages {
+.profile_information_Location {
     font-size: 15px;
     color: #7a7a7a;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.profile_information_type {
+    font-size: 15px;
+    color: #0096D1;
+    justify-content: center;
+    text-align: center;
     margin-bottom: 10px;
 }
 
@@ -175,9 +183,11 @@
     display: flex;
     padding: 30px 0px 0px 0px;
     width: 370px;
+    justify-content: center;
+    text-align: center;
     font-size: 15px;
     cursor: pointer;
-    line-break: loose;
+    line-break: loose
 }
 .profile_link_freelancer:hover{
     color:#0096D1 ;
@@ -231,8 +241,9 @@
     .profile_rigth_column_box_one,
     .profile_right_column_evaluation {
         width: 100%;
+        justify-content: center;
         margin-top: 19px;
-        font-size: 16px;
+        font-size: 15px;
     }
     .profile_rigth_column_box_one {
         height: auto;

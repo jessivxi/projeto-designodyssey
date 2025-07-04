@@ -279,3 +279,115 @@
     color: white;
     gap: 1rem;
 }
+@media (max-width: 768px) {
+    .page {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    
+    .main, .sidebar_outer_wrapper {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .main_product_picture {
+        height: 250px;
+    }
+    
+    .wpl_review_box {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .sidebar_outer_wrapper {
+        padding: 20px 0;
+    }
+    
+    .sidebar_description, .sidebar_contact {
+        width: 90%;
+    }
+    /* Adicione isso ao seu CSS existente */
+
+/* Tornar textos mais legíveis em mobile */
+@media (max-width: 480px) {
+    .main_title {
+        font-size: 1.5rem;
+    }
+    
+    .pd_title {
+        font-size: 1.3rem;
+    }
+    
+    .history_text, .rating_trans_fix {
+        font-size: 0.9rem;
+    }
+    
+    .what_people_like {
+        font-size: 1.1rem;
+    }
+}
+    .wpl_uc_name {
+        font-size: 0.8rem;
+    }
+    
+    .wpl_uc_country {
+        font-size: 0.7rem;
+    }
+    
+    .wpl_rating_stars {
+        font-size: 1rem;
+    }
+    
+    .sidebar_button {
+        font-size: 0.9rem;
+    }
+   
+    @media (max-width: 768px) {
+    .wpl_review_box {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+        min-height: auto;
+        max-height: none;
+    }
+
+    .wpl_upper_content {
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+
+    .wpl_uc_name {
+        font-size: 1rem;
+        font-weight: bold;
+        width: 100%;
+        order: 1;
+    }
+
+    .wpl_uc_country {
+        order: 2;
+        font-size: 0.9rem;
+    }
+
+    .wpl_rating_stars {
+        order: 3;
+        position: static;
+        font-size: 1rem;
+    }
+
+    .wpl_uc_separation {
+        display: none; /* Remove a barra separadora no mobile */
+    }
+
+    .wpl_middle_content {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .underline_seemore {
+        display: block;
+        margin-top: 8px;
+        font-size: 0.9rem;
+    }
+}
+}
+

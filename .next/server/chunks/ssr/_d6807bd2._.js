@@ -34,8 +34,8 @@ __turbopack_context__.v({
   "profile_container": "profile-module__5FeCNW__profile_container",
   "profile_information_Location": "profile-module__5FeCNW__profile_information_Location",
   "profile_information_date": "profile-module__5FeCNW__profile_information_date",
-  "profile_information_lenguages": "profile-module__5FeCNW__profile_information_lenguages",
   "profile_information_text": "profile-module__5FeCNW__profile_information_text",
+  "profile_information_type": "profile-module__5FeCNW__profile_information_type",
   "profile_link_freelancer": "profile-module__5FeCNW__profile_link_freelancer",
   "profile_main": "profile-module__5FeCNW__profile_main",
   "profile_name": "profile-module__5FeCNW__profile_name",
@@ -150,15 +150,15 @@ function Profile() {
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$profile$2f$profile$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].profile_information_Location,
-                                            children: "Localização"
+                                            children: "Taubate-sp"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/profile/page.tsx",
                                             lineNumber: 22,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$profile$2f$profile$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].profile_information_lenguages,
-                                            children: "Idiomas"
+                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$profile$2f$profile$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].profile_information_type,
+                                            children: "Cliente"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/profile/page.tsx",
                                             lineNumber: 23,
@@ -195,7 +195,7 @@ function Profile() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                             href: "/profile_freelancer",
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$profile$2f$profile$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].profile_link_freelancer,
-                            children: "Você está atualmente no seu perfil de cliente. Clique para alternar para seu perfil de freelancer."
+                            children: "Você está atualmente no seu perfil de CLIENTE. Clique para alternar para seu perfil de freelancer."
                         }, void 0, false, {
                             fileName: "[project]/src/app/profile/page.tsx",
                             lineNumber: 28,

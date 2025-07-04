@@ -60,8 +60,18 @@
   display: flex;
 }
 
-.profile_freelancer-module__HvKjIa__profile_information_date, .profile_freelancer-module__HvKjIa__profile_information_Location, .profile_freelancer-module__HvKjIa__profile_information_lenguages {
+.profile_freelancer-module__HvKjIa__profile_information_date, .profile_freelancer-module__HvKjIa__profile_information_Location {
   color: #7a7a7a;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.profile_freelancer-module__HvKjIa__profile_information_type {
+  color: #0096d1;
+  text-align: center;
+  justify-content: center;
   margin-bottom: 10px;
   font-size: 15px;
 }
@@ -180,8 +190,10 @@
 }
 
 .profile_freelancer-module__HvKjIa__profile_link_freelancer {
+  text-align: center;
   cursor: pointer;
   line-break: loose;
+  justify-content: center;
   width: 370px;
   padding: 30px 0 0;
   font-size: 15px;
@@ -245,9 +257,10 @@
   }
 
   .profile_freelancer-module__HvKjIa__profile_right_column_text_title, .profile_freelancer-module__HvKjIa__profile_rigth_column_box_one, .profile_freelancer-module__HvKjIa__profile_right_column_evaluation {
+    justify-content: center;
     width: 100%;
     margin-top: 19px;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .profile_freelancer-module__HvKjIa__profile_rigth_column_box_one {

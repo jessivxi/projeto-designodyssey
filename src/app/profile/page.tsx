@@ -19,14 +19,14 @@ function Profile() {
                         </div>
                         <div className={styles.profile_information_text}>
                             <p className={styles.profile_information_date}>Entrou em outubro de 2024</p>
-                            <p className={styles.profile_information_Location}>Localização</p>
-                            <p className={styles.profile_information_lenguages}>Idiomas</p>
+                            <p className={styles.profile_information_Location}>Taubate-sp</p>
+                            <p className={styles.profile_information_type}>Cliente</p>
                         </div>
                         <button className={styles.profile_button}>Editar Perfil</button>
                     </div>
                     <button className={styles.profile_button_explorer}>Explorar DesignOdyssey</button>
                     <Link href="/profile_freelancer" className={styles.profile_link_freelancer}>
-                        Você está atualmente no seu perfil de cliente. Clique para alternar para seu perfil de freelancer.
+                        Você está atualmente no seu perfil de CLIENTE. Clique para alternar para seu perfil de freelancer.
                     </Link>
                 </div>
                 <div className={styles.profile_right_column}>

@@ -12,8 +12,8 @@ __turbopack_context__.v({
   "profile_container": "profile_freelancer-module__HvKjIa__profile_container",
   "profile_information_Location": "profile_freelancer-module__HvKjIa__profile_information_Location",
   "profile_information_date": "profile_freelancer-module__HvKjIa__profile_information_date",
-  "profile_information_lenguages": "profile_freelancer-module__HvKjIa__profile_information_lenguages",
   "profile_information_text": "profile_freelancer-module__HvKjIa__profile_information_text",
+  "profile_information_type": "profile_freelancer-module__HvKjIa__profile_information_type",
   "profile_link_freelancer": "profile_freelancer-module__HvKjIa__profile_link_freelancer",
   "profile_main": "profile_freelancer-module__HvKjIa__profile_main",
   "profile_name": "profile_freelancer-module__HvKjIa__profile_name",
@@ -164,8 +164,8 @@ function Profile_freelancer() {
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$profile_freelancer$2f$profile_freelancer$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].profile_information_lenguages,
-                                            children: "Idiomas"
+                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$profile_freelancer$2f$profile_freelancer$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].profile_information_type,
+                                            children: "Designer"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/profile_freelancer/page.tsx",
                                             lineNumber: 25,

@@ -35,21 +35,11 @@
 .navbar a {
     cursor: pointer;
     background-color: transparent;
-    transition: 0.2s ease-out;
-    -webkit-transition: 0.2s ease-out;
-    -moz-transition: 0.2s ease-out;
-    -ms-transition: 0.2s ease-out;
-    -o-transition: 0.2s ease-out;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+
 }
 
 .navbar a:hover {
-    color: white;
-    background-color: #0096D1;
+    border-bottom: 2px solid #0096D1;
 }
 
 .item1 {

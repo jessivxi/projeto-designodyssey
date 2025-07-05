@@ -11,21 +11,6 @@ function Functioning() {
     return (
         <>
             <main className={styles.functioning_main}>
-                {/* Seção de Boas-Vindas */}
-                <section className={styles.functioning_content}>
-                    <div className={styles.functioning_content_box}>
-                        <h1 className={styles.functioning_content_title}>Bem-vindo ao DesignOdyssey!</h1>
-                        <p className={styles.functioning_content_text}>
-                            O DesignOdyssey conecta freelancers de design e clientes de forma simples e eficiente. Freelancers podem divulgar seus serviços especializados, como design de logos, arte digital, design de sites e design gráfico, organizados por categorias.
-                        </p>
-                        <div className={styles.functioning_content_button}>
-                            <Link href="/listing" className={styles.functioning_button}>
-                                Encontre um freelancer
-                            </Link>
-                        </div>
-                    </div>
-                </section>
-
                 {/* Seção para Freelancers - MODIFICADA */}
                 <section className={styles.functioning_apresention_main}>
                     <h1 className={styles.functioning_apresention_texts}>Você quer ser<br></br> um Freelancer?</h1>

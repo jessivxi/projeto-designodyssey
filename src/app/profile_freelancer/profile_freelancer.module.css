@@ -68,9 +68,17 @@
     margin-bottom: 10px;
 }
 .profile_information_type {
-    font-size: 15px;
-    color: #0096D1;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 105px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: auto;
+    color: #f7f7f7;
+    background-image: linear-gradient(150deg,rgb(36, 17, 66), rgb(162, 22, 255));
+    border-radius: 20px;
     text-align: center;
     margin-bottom: 10px;
 }

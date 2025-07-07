@@ -26,7 +26,7 @@ function Profile_freelancer() {
                         </div>
                         <button className={styles.profile_button}>Editar Perfil</button>
                     </div>
-                    <button className={styles.profile_button_explorer}>Explorar DesignOdyssey</button>
+                    <Link href="/"  className={styles.profile_button_explorer}>Explorar DesignOdyssey</Link>
                     <Link href="/profile" className={styles.profile_link_freelancer}>
                         Você está atualmente no seu perfil de Freelancer. Para acessar seu perfil de comprador, clique para alterna o modo de comprador
                     </Link>
@@ -38,9 +38,9 @@ function Profile_freelancer() {
                         </h1>
                     </div>
                     <div className={styles.profile_rigth_column_box_one}>
-                        <div className={styles.profile_right_column_icone_box}>
+                        <Link href='/public_services' className={styles.profile_right_column_icone_box}>
                         <Image src={pincel} height={70} width={80} alt="ícone-tela" /> 
-                        </div>
+                        </Link>
                         <p className={styles.profile_rigth_column_box_one_title}>Publique aqui seus serviços</p>
                         <p className={styles.profile_rigth_column_box_one_text}>DesignOdyssey cobra uma taxa de 5% da suas publicaçoes</p>
                     </div>

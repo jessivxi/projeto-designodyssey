@@ -19,7 +19,7 @@ function listing() {
             <div className={styles.main}>
                 <div className={styles.top}>
                     <h1>Design de Logotipo</h1>
-                    <span>Deixe-nos ajudar a achar o serviço de Designer certo para você!</span>
+                    <p>Deixe-nos ajudar a achar o serviço de Designer certo para você!</p>
                     <div className={styles.botoesTopMain}>
                         <div className={styles.botaoTop}>
                             <span>Design de Site</span>
@@ -36,7 +36,6 @@ function listing() {
                     </div>
                 </div>
                 <div className={styles.contentMain}>
-                    <p className={styles.resultText}>Mais de 5 resultados</p>
                     <div className={styles.contentBoxes}>
                         <div className={styles.contentBox}>
                             <Image src={logo1} height={300} width={300} alt="logo1"/>
@@ -74,27 +73,6 @@ function listing() {
                             <p>Eu criarei um logotipo empresarial minimalista premium.</p>
                             <span>A partir de R$270</span>
                         </div>
-                        <div className={styles.contentBox}>
-                            <Image src={logo7} height={300} width={300} alt="logo1"/>
-                            <h1>Anúncio de Luciana</h1>
-                            <p>Eu criarei um logotipo empresarial minimalista premium.</p>
-                            <span>A partir de R$270</span>
-                        </div>
-                        <div className={styles.contentBox}>
-                            <Image src={logo8} height={300} width={300} alt="logo1"/>
-                            <h1>Anúncio de Luciana</h1>
-                            <p>Eu criarei um logotipo empresarial minimalista premium.</p>
-                            <span>A partir de R$270</span>
-                        </div>
-                    </div>
-                    <div className={styles.pagination}>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                        <span>...</span>
-                        <span>10</span>
-                        <span>{'>'}</span>
-                        <span>{'>>'}</span>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,8 @@
 import styles from './hub.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
+
 import lupa from './../../../images/icones/lupa.svg'
-import gato_arroba from './../../../images/fotos/gato_arroba.png'
 import joinha from './../../../images/icones/joinha.svg'
 import tela from './../../../images/icones/tela.svg'
 import dinheiro from './../../../images/icones/dinheiro.svg'
@@ -16,31 +17,30 @@ function Hub() {
         <>
             <div className={styles.main}>
                 <div className={styles.searchBarMain}>
-                    <Image src={gato_arroba} height={100} width={100} alt="gatobonito"></Image>
                     <h1>DesignOdyssey</h1>
-                    <span>Amplie sua força de trabalho profissional com freelancers</span>
+                    <span>Encontre o serviço de Design ideal imediatamente</span>
                     <div className={styles.searchBar}>
                         <input placeholder='O que você está procurando?'></input>
                         <Image src={lupa} height={25} width={25} alt='lupa'></Image>
                     </div>
                 </div>
                 <div className={styles.topicBoxes}>
-                    <div className={styles.topicBox1}>
+                    <Link href='/listing' className={styles.topicBox1}>
                         <span>Construa sua presença online</span>
                         <h1>Web Design</h1>
-                    </div>
-                    <div className={styles.topicBox2}>
+                    </Link>
+                    <Link href='/listing' className={styles.topicBox2}>
                         <span>Crie um visual impactante</span>
                         <h1>Graphic Design</h1>
-                    </div>
-                    <div className={styles.topicBox3}>
+                    </Link>
+                    <Link href='/listing' className={styles.topicBox3}>
                         <span>Defina sua identidade</span>
                         <h1>Branding</h1>
-                    </div>
-                    <div className={styles.topicBox4}>
+                    </Link>
+                    <Link href='/listing' className={styles.topicBox4}>
                         <span>Transforme suas ideias em arte</span>
                         <h1>Digital Art</h1>
-                    </div>
+                    </Link>
                 </div>
                 <div className={styles.aboutContainer}>
                     <div className={styles.aboutMain}>
@@ -70,7 +70,7 @@ function Hub() {
                 </div>
                 <div className={styles.categoriesMain}>
                     <h1>Gráficos e Designs para fazer você se destacar.</h1>
-                    <span>Explorar Gráficos e Design</span>
+                    <p>Explorar Gráficos e Design</p>
                     <div className={styles.categoriesBox}>
                         <a href="/interface" className={styles.categories}>
                             <Image src={site} height={250} width={250} alt='interface'></Image>

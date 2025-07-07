@@ -17,8 +17,9 @@
         font-weight: bold;
     }
 
-    span {
+    p {
         font-size: 18px;
+        color: rgba(0, 0, 0, 0.466);
     }
 }
 
@@ -29,7 +30,6 @@
     align-items: center;
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 30px;
     gap: 50px;
 }
 
@@ -38,20 +38,25 @@
     justify-content: center;
     align-items: center;
     height: 50px;
+    width: 210px;
     padding: 0 13px 0 12px;
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.212);
+    box-shadow: 0 0 6px 0px rgba(64, 63, 65, 0.281);
+    background-color: rgba(236, 236, 236, 0.267);
     border-radius: 40px;
     cursor: pointer;
 
     span {
         font-size: 15px;
-        font-weight: 500;
+        font-weight: bold;
+        background: linear-gradient(to left, rgb(12, 81, 99), rgb(85, 130, 182));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 }
 
 .botaoTop:hover {
-    color: white;
-    background-color: #0096D1;
+    box-shadow: 0 0 16px 0px rgba(59, 127, 230, 0.329);
 }
 
 .resultText {
@@ -71,7 +76,7 @@
     justify-content: center;
     height: fit-content;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     gap: 30px;
     text-align: center;
 }
@@ -81,6 +86,7 @@
     flex-direction: column;
     align-items: center;
     width: 300px;
+    margin-bottom: 20px;
     gap: 7px;
 
     img {
@@ -88,7 +94,7 @@
         width: 250px;
         object-fit: cover;
         object-position: center;
-        border: 1px solid rgba(0, 0, 0, 0.342);
+        border: 1px solid rgba(146, 146, 146, 0.342);
         border-radius: 40px;
     }
 
@@ -102,16 +108,3 @@
     }
 }
 
-.pagination {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-
-    span {
-        cursor: pointer;
-    }
-}
-
-.pagination span:first-child {
-    font-weight: bold;
-}

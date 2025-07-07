@@ -145,7 +145,7 @@
 .register_button {
     width: 100%;
     padding: 14px;
-    background-color: #0096D1;
+    background-image: linear-gradient(to left, rgb(12, 81, 99), rgb(85, 130, 182));
     color: white;
     border: none;
     border-radius: 8px;

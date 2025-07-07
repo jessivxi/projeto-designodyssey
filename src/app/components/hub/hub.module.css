@@ -11,26 +11,31 @@
   flex-direction: column;
   height: 400px;
   width: 100%;
-  margin: 100px 0 100px 0;
+  margin: 50px 0 0px 0;
+
 
   h1 {
-    font-size: 60px;
+    font-size: 50px;
+    text-align: center;
     font-weight: bold;
-    margin-top: 20px;
   }
 
   span {
-    font-size: 25px;
+    font-size: 18px;
     margin-bottom: 35px;
+    background: linear-gradient(to left, rgb(12, 81, 99), rgb(85, 130, 182));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 }
 
 .searchBar {
   display: flex;
   justify-content: space-around;
-  height: 70px;
-  width: 700px;
-  border: 2px solid rgba(0, 0, 0, 0.334);
+  height: 60px;
+  width: 600px;
+  border: 1px solid rgba(34, 32, 32, 0.459);
   border-radius: 40px;
 
   input {
@@ -59,52 +64,48 @@
 .topicBox2,
 .topicBox3,
 .topicBox4 {
-  height: 350px;
+  height: 85px;
   width: 260px;
-  padding: 20px;
+  padding: 20px 0px 0px 20px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.247);
+  background-color: #cecbcb1e;
   border-radius: 30px;
-  box-shadow: inset 0px 100px 30px rgba(0, 0, 0, 0.558);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 
   span {
-    color: white;
+    color: black;
     font-size: 15px;
   }
 
   h1 {
-    color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+    background: linear-gradient(to left, rgb(12, 81, 99), rgb(85, 130, 182));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 }
 
-.topicBox1 {
-  background-image: url("./../../../images/fotos/wedesign.jpg");
-}
-
-.topicBox2 {
-  background-image: url("./../../../images/fotos/grapic.jpg");
-}
-
-.topicBox3 {
-  background-image: url("./../../../images/fotos/brading.jpg");
-}
-
-.topicBox4 {
-  background-image: url("./../../../images/fotos/art_digital.jpg");
+.topicBox1:hover,
+.topicBox2:hover,
+.topicBox3:hover,
+.topicBox4:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 16px 0px rgba(28, 71, 189, 0.247);
 }
 
 .aboutContainer {
   height: fit-content;
-  width: 1100px;
+  width: 1000px;
   margin: auto;
   margin-top: 100px;
   color: white;
-  background-color: black;
-  border-radius: 50px;
+  background-color: #000000;
+  border-radius: 30px;
 }
 
 .aboutMain {
@@ -114,12 +115,12 @@
   gap: 16px;
 
   h1 {
-    font-size: 35px;
+    font-size: 32px;
     font-weight: bold;
   }
 
   span {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -127,11 +128,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 50px;
   width: 180px;
   max-width: 100%;
   font-weight: bold;
-  background-color: #0096D1;
+  font-size: 15px;
+  background-image: linear-gradient(to left, rgb(12, 81, 99), rgb(85, 130, 182));
   border-radius: 30px;
 }
 
@@ -160,13 +162,13 @@
   align-items: center;
   height: 200px;
   min-height: fit-content;
-  width: 360px;
+  width: 300px;
   overflow: hidden;
   gap: 20px;
 
 
   span {
-    font-size: 24px;
+    font-size: 20px;
   }
 
 
@@ -180,14 +182,24 @@
   margin: auto;
 
   h1 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     text-align: center;
   }
 
+  p {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 30px;
+    background: linear-gradient(to left, rgb(12, 81, 99), rgb(85, 130, 182));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
   span {
     display: block;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 30px;
   }
 
@@ -211,8 +223,8 @@
 
 
   img {
-    height: 300px;
-    width: 300px;
+    height: 260px;
+    width: 260px;
     object-fit: cover;
     object-position: center;
     border: 1px solid rgba(125, 125, 125, 0.334);
@@ -222,13 +234,16 @@
 
   span {
     display: block;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: bold;
   }
 }
 
 .categories:hover {
-  color: #0096D1;
+  background: linear-gradient(to left, rgb(12, 81, 99), rgb(85, 130, 182));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 @media (max-width: 380px) {

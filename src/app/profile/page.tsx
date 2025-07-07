@@ -24,7 +24,7 @@ function Profile() {
                         </div>
                         <button className={styles.profile_button}>Editar Perfil</button>
                     </div>
-                    <button className={styles.profile_button_explorer}>Explorar DesignOdyssey</button>
+                    <Link href="/" className={styles.profile_button_explorer}>Explorar DesignOdyssey</Link>
                     <Link href="/profile_freelancer" className={styles.profile_link_freelancer}>
                         Você está atualmente no seu perfil de CLIENTE. Clique para alternar para seu perfil de freelancer.
                     </Link>

@@ -138,11 +138,11 @@
     display: flex;
     font-weight: bold;
     font-size: 17px;
-    padding: 25px 0px 0px 20px;
+    padding: 25px 0px 0px 45px;
 }
 .profile_rigth_column_box_one_text{
     display: flex;
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 45px;
 }
 .profile_right_column_evaluation{
     display: flex;

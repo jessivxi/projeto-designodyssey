@@ -144,8 +144,8 @@ export default function Login() {
                                     </button>
 
                                     <div className={styles.forgot_password}>
-                                        <Link href="/recuperar-senha" className={styles.forgot_password_link}>
-                                            Esqueceu sua senha?
+                                        <Link href="/Register" className={styles.forgot_password_link}>
+                                            Ainda não tem uma conta? Registre-se agora.
                                         </Link>
                                     </div>
                                 </div>

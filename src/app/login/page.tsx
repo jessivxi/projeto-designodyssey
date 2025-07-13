@@ -1,13 +1,11 @@
 'use client'
-
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './login.module.css'
 import { useRouter } from 'next/navigation'
-import { z } from 'zod'
 
-// Ícones e fotos
+// Seus imports originais
 import foto_login from './../../images/fotos/ilustracao_login.png'
 import seta_esquerda_preta from './../../images/icones/seta_esquerda_preta.svg'
 import google from './../../images/icones/google.svg'
@@ -15,18 +13,13 @@ import facebook from './../../images/icones/facebook.svg'
 import envelope from './../../images/icones/envelope.svg'
 import cadeado from './../../images/icones/cadeado.svg'
 
-// Schema de validação com Zod
-const loginSchema = z.object({
-    email: z.string().email('E-mail inválido'),
-    password: z.string().min(1, 'Senha é obrigatória')
-})
-
 export default function Login() {
     const router = useRouter()
     const [isExternalReferrer, setIsExternalReferrer] = useState(false)
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState('')
+    const [isLoading, setIsLoading] = useState(false)
 
     useEffect(() => {
         if (!document.referrer || !document.referrer.includes(window.location.origin)) {
@@ -42,16 +35,46 @@ export default function Login() {
         }
     }
 
-    const handleLogin = (e: React.FormEvent) => {
+    const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault()
-        // Validação com Zod
-        const result = loginSchema.safeParse({ email, password })
-        if (!result.success) {
-            setError(result.error.errors[0].message)
+        setError('')
+        setIsLoading(true)
+
+        // Validação básica dos campos
+        if (!email || !password) {
+            setError('Por favor, preencha todos os campos')
+            setIsLoading(false)
             return
         }
-        setError('')
-        router.push('/profile')
+
+        try {
+            // Chamada para a API de autenticação do Next.js
+            const response = await fetch('/api/auth', {
+                method: 'POST',
+                headers: { 
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ 
+                    email, 
+                    password 
+                }),
+                credentials: 'include' // Importante para manter a sessão
+            })
+
+            const data = await response.json()
+
+            if (response.ok) {
+                // Redireciona para a página de perfil após login bem-sucedido
+                router.push('/profile')
+            } else {
+                setError(data.error || 'Credenciais inválidas')
+            }
+        } catch (err) {
+            setError('Erro ao conectar ao servidor. Tente novamente mais tarde.')
+            console.error('Login error:', err)
+        } finally {
+            setIsLoading(false)
+        }
     }
 
     return (
@@ -74,13 +97,20 @@ export default function Login() {
                             <h1>Bem-vindo de volta!</h1>
                         </div>
 
-                        {/* Opções de login social */}
                         <div className={styles.social_login_options}>
-                            <button className={styles.social_button}>
+                            <button 
+                                type="button" 
+                                className={styles.social_button}
+                                disabled={isLoading}
+                            >
                                 <Image src={google} height={20} width={20} alt='google' />
                                 Entrar com Google
                             </button>
-                            <button className={styles.social_button}>
+                            <button 
+                                type="button" 
+                                className={styles.social_button}
+                                disabled={isLoading}
+                            >
                                 <Image src={facebook} height={20} width={20} alt='facebook' />
                                 Entrar com Facebook
                             </button>
@@ -101,7 +131,9 @@ export default function Login() {
                                             type="email"
                                             placeholder='seu@email.com'
                                             value={email}
-                                            onChange={e => setEmail(e.target.value)}
+                                            onChange={(e) => setEmail(e.target.value)}
+                                            required
+                                            disabled={isLoading}
                                         />
                                         <Image
                                             src={envelope}
@@ -120,9 +152,12 @@ export default function Login() {
                                             id="password"
                                             className={styles.login_input}
                                             type="password"
-                                            placeholder='••••••••'
+                                            placeholder='••••'
                                             value={password}
-                                            onChange={e => setPassword(e.target.value)}
+                                            onChange={(e) => setPassword(e.target.value)}
+                                            required
+                                            minLength={4}
+                                            disabled={isLoading}
                                         />
                                         <Image
                                             src={cadeado}
@@ -139,12 +174,20 @@ export default function Login() {
                                 )}
 
                                 <div className={styles.login_actions}>
-                                    <button type="submit" className={styles.login_button}>
-                                        Login
+                                    <button 
+                                        type="submit" 
+                                        className={styles.login_button}
+                                        disabled={isLoading}
+                                    >
+                                        {isLoading ? 'Carregando...' : 'Login'}
                                     </button>
 
                                     <div className={styles.forgot_password}>
-                                        <Link href="/Register" className={styles.forgot_password_link}>
+                                        <Link 
+                                            href="/Register" 
+                                            className={styles.forgot_password_link}
+                                            onClick={(e) => isLoading && e.preventDefault()}
+                                        >
                                             Ainda não tem uma conta? Registre-se agora.
                                         </Link>
                                     </div>

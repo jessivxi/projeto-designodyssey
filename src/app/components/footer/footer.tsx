@@ -11,29 +11,30 @@ import twitter from './../../../images/icones/twitter.svg'
 
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 function Footer() {
     return (
-        <div className={styles.footer_main}>
-            <div className={styles.footer_logo_container}>
-                <Image src={logo} height={100} width={100} alt="logo"></Image>
+        <div className={styles.main}>
+            <Image src={logo} height={100} width={100} alt="logoSite" />
+            <div className={styles.text}>
+                <span>
+                    © DesignOdyssey Ltda. 2024
+                </span>
             </div>
-            <div className={styles.footer_text}>
-                <span>© DesignOdyssey Internacional Ltda. 2024</span>
-            </div>
-            <div className={styles.footer_social_container}>
-                <div className={styles.footer_social_zapzap}>
-                    <Image src={zapzap} height={30} width={30} alt="zapzap"></Image>
-                </div>
-                <div className={styles.footer_social_instagram}>
-                    <Image src={instagram} height={30} width={30} alt="zapzap"></Image>
-                </div>
-                <div className={styles.footer_social_facebook}>
-                    <Image src={facebook} height={30} width={30} alt="zapzap"></Image>
-                </div>
-                <div className={styles.footer_social_twitter}>
-                    <Image src={twitter} height={30} width={30} alt="zapzap"></Image>
-                </div>
+            <div className={styles.icones}>
+                <Link className={styles.iconeStyle} href="https://wa.me/11945291461">
+                    <Image src={zapzap} height={100} width={100} alt="iconeWhatsapp" />
+                </Link>
+                <Link className={styles.iconeStyle} href="https://wa.me/11945291461">
+                    <Image src={instagram} height={100} width={100} alt="iconeInstagram" />
+                </Link>
+                <Link className={styles.iconeStyle} href="https://wa.me/11945291461">
+                    <Image src={facebook} height={100} width={100} alt="iconeFacebook" />
+                </Link>
+                <Link className={styles.iconeStyle} href="https://wa.me/11945291461">
+                    <Image src={twitter} height={100} width={100} alt="iconeTwitter" />
+                </Link>
             </div>
         </div>
     );

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 30, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Dell/Documents/Curso/projeto-designodyssey/src/app/api/page.tsx"],"sourcesContent":["import { redirect, RedirectType } from 'next/navigation'\r\n\r\nredirect('./auth.js', RedirectType.push)\r\n"],"names":[],"mappings":";AAAA;AAAA;;AAEA,CAAA,GAAA,qLAAA,CAAA,WAAQ,AAAD,EAAE,aAAa,qLAAA,CAAA,eAAY,CAAC,IAAI","debugId":null}}]
+}

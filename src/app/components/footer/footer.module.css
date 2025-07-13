@@ -1,28 +1,47 @@
-.footer_main {
-  position: relative; /* Mantém o posicionamento relativo */
-  bottom: 25px;
-  padding: 4px 10px;
-  font-weight: bold;
-  font-size: 15px;
-  display: flex; /* Ativa Flexbox para alinhamento interno */
-  justify-content: space-between; /* Distribui os elementos */
-  align-items: center; /* Centraliza verticalmente */
-}
-
-.footer_text {
-  position: static; /* Remove o 'absolute' para ficar no fluxo Flexbox */
-  white-space: nowrap; /* Evita quebra de linha */
-  padding: 5px;
-}
-
-.footer_social_container {
+.main {
   display: flex;
-  justify-content: space-around;
-  width: 100px; /* Mantém sua largura original */
-  gap: 5px; /* Espaçamento entre os ícones sociais */
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-end;
+  height: 100px;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.103);
+  padding: 0 30px 0 30px;
+
+  img {
+    height: 50px;
+    width: auto;
+  }
 }
 
-.footer_logo_container {
+.text {
   display: flex;
-  /* Se quiser o logo à esquerda, não precisa de justify-content */
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.icones {
+  display: flex;
+  gap: 10px;
+}
+
+.iconeStyle {
+  img {
+    height: 30px;
+    width: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .main {
+    flex-direction: column;
+    height: 200px;
+    padding: 20px 0 20px 0;
+  }
+
+  .text {
+    position: static;
+  transform: translate(0);
+  }
 }

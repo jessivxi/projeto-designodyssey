@@ -18,13 +18,13 @@ import pessoa from './../../images/icones/pessoa.svg'
 
 // Schema de validação com Zod
 const registerSchema = z.object({
-    name: z.string().min(1, 'Nome é obrigatório'),
+    nome: z.string().min(1, 'Nome é obrigatório'),
     email: z.string().email('E-mail inválido'),
-    password: z.string().min(6, 'A senha deve ter pelo menos 6 caracteres'),
-    confirmPassword: z.string().min(1, 'Confirme sua senha')
-}).refine((data) => data.password === data.confirmPassword, {
+    senha: z.string().min(4, 'A senha deve ter pelo menos 6 caracteres'),
+    confirmSenha: z.string().min(1, 'Confirme sua senha')
+}).refine((data) => data.senha === data.confirmSenha, {
     message: 'As senhas não coincidem.',
-    path: ['confirmPassword'],
+    path: ['confirmSenha'],
 })
 
 export default function Register() {
@@ -32,10 +32,10 @@ export default function Register() {
     const [isExternalReferrer, setIsExternalReferrer] = useState(false);
 
     // Estados para os campos
-    const [name, setName] = useState('');
+    const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] = useState('');
+    const [senha, setSenha] = useState('');
+    const [confirmSenha, setConfirmSenha] = useState('');
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
@@ -52,15 +52,15 @@ export default function Register() {
         }
     };
 
-    const handleRegister = (e: React.FormEvent) => {
+    const handleRegister = async (e: React.FormEvent) => {
         e.preventDefault();
 
         // Validação com Zod
         const result = registerSchema.safeParse({
-            name,
+            nome,
             email,
-            password,
-            confirmPassword
+            senha,
+            confirmSenha
         });
 
         if (!result.success) {
@@ -70,6 +70,21 @@ export default function Register() {
 
         setError(null);
         // Aqui você pode adicionar a lógica para acessar o banco de dados
+        const response = await fetch('/api/registerAPI', {
+                method: 'POST',
+                headers: { 
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    nome,
+                    email, 
+                    senha,
+                    confirmSenha
+                }),
+                credentials: 'include' // Importante para manter a sessão
+        })
+
+        const data = await response.json()
         router.push('/login');
     };
 
@@ -112,14 +127,14 @@ export default function Register() {
                         <form className={styles.register_right_bottom} onSubmit={handleRegister}>
                             <div className={styles.register_credenciais}>
                                 <div className={styles.register_field}>
-                                    <label className='ml-3' htmlFor="name">Nome completo</label>
+                                    <label className='ml-3' htmlFor="nome">Nome completo</label>
                                     <div className={styles.register_input_box}>
                                         <input
                                             className={styles.register_input}
                                             type="text"
                                             placeholder='Seu nome completo'
-                                            value={name}
-                                            onChange={e => setName(e.target.value)}
+                                            value={nome}
+                                            onChange={e => setNome(e.target.value)}
                                         />
                                         <Image src={pessoa} height={20} width={20} alt='icone-pessoa' />
                                     </div>
@@ -140,28 +155,28 @@ export default function Register() {
                                 </div>
 
                                 <div className={styles.register_field}>
-                                    <label className='ml-3' htmlFor="password">Senha</label>
+                                    <label className='ml-3' htmlFor="senha">Senha</label>
                                     <div className={styles.register_input_box}>
                                         <input
                                             className={styles.register_input}
                                             type="password"
-                                            placeholder='••••••••'
-                                            value={password}
-                                            onChange={e => setPassword(e.target.value)}
+                                            placeholder='••••'
+                                            value={senha}
+                                            onChange={e => setSenha(e.target.value)}
                                         />
                                         <Image src={cadeado} height={20} width={20} alt='icone-cadeado' />
                                     </div>
                                 </div>
 
                                 <div className={styles.register_field}>
-                                    <label className='ml-3' htmlFor="confirm-password">Confirmar Senha</label>
+                                    <label className='ml-3' htmlFor="confirm-senha">Confirmar Senha</label>
                                     <div className={styles.register_input_box}>
                                         <input
                                             className={styles.register_input}
                                             type="password"
-                                            placeholder='••••••••'
-                                            value={confirmPassword}
-                                            onChange={e => setConfirmPassword(e.target.value)}
+                                            placeholder='••••'
+                                            value={confirmSenha}
+                                            onChange={e => setConfirmSenha(e.target.value)}
                                         />
                                         <Image src={cadeado} height={20} width={20} alt='icone-cadeado' />
                                     </div>

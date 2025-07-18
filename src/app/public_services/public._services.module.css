@@ -3,6 +3,7 @@
     height: fit-content;
     min-height: 1000px;
     width: 500px;
+    padding-top: 20px;
     margin:auto;
     flex-direction: column;
     gap: 20px;
@@ -102,7 +103,6 @@
 .button{
     width: 90px;
     text-align: center;
-    padding-top: 15px;
     color: white;
     background-color: #110a03;
     border-radius: 10px;
@@ -111,7 +111,6 @@
 .button2{
     width: 90px;
     text-align: center;
-    padding-top: 15px;
     background-color:#7272729d;
     border-radius: 10px;
 }

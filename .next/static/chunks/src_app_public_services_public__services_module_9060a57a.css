@@ -6,6 +6,7 @@
   height: fit-content;
   min-height: 1000px;
   margin: auto;
+  padding-top: 20px;
   display: flex;
 }
 
@@ -101,7 +102,6 @@
   background-color: #110a03;
   border-radius: 10px;
   width: 90px;
-  padding-top: 15px;
 }
 
 .public-_services-module__gca05G__button2 {
@@ -109,7 +109,6 @@
   background-color: #7272729d;
   border-radius: 10px;
   width: 90px;
-  padding-top: 15px;
 }
 
 

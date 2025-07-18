@@ -1,174 +1,188 @@
-'use client'
-import Link from 'next/link'
-import React, { useState } from 'react';
-import styles from './public._services.module.css'
+'use client';
 
-function Public_services() {
+import { useState, ChangeEvent, FormEvent } from 'react';
+import { useRouter } from 'next/navigation';
+import styles from './public._services.module.css';
+
+export default function Public_services() {
+    const router = useRouter();
+
     const [formData, setFormData] = useState({
         title: '',
         description: '',
         category: '',
         basePrice: '',
         packages: '',
-        featured: false,
+        idFreelancer: '', // NOVO campo aqui
     });
-    const [previewImage, setPreviewImage] = useState<string | null>(null);
-    const [errors, setErrors] = useState<Record<string, string>>({});
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-        const { name, value, type } = e.target as HTMLInputElement;
-        const checked = type === 'checkbox' ? (e.target as HTMLInputElement).checked : undefined;
+    const [errors, setErrors] = useState({
+        title: '',
+        description: '',
+        category: '',
+        basePrice: '',
+        idFreelancer: '',
+    });
 
-        setFormData(prev => ({
-            ...prev,
-            [name]: type === 'checkbox' ? checked : value
-        }));
+    const categoryMap: Record<string, number> = {
+        web: 1,
+        grafico: 2,
+        logotipo: 3,
+        'arte digital': 4,
     };
 
-    const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const file = e.target.files?.[0];
-        if (file) {
-            setPreviewImage(URL.createObjectURL(file));
-        }
+    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({ ...prev, [name]: value }));
     };
 
-    const validateForm = () => {
-        const newErrors: Record<string, string> = {};
+    const validate = () => {
+        const e = {
+            title: '',
+            description: '',
+            category: '',
+            basePrice: '',
+            idFreelancer: '',
+        };
 
-        if (!formData.title.trim()) newErrors.title = 'Título é obrigatório';
-        if (!formData.description.trim()) newErrors.description = 'Descrição é obrigatória';
-        if (!formData.category) newErrors.category = 'Selecione uma categoria';
-        if (!formData.basePrice || isNaN(Number(formData.basePrice))) newErrors.basePrice = 'Preço inválido';
+        if (!formData.title.trim()) e.title = 'Título obrigatório';
+        if (!formData.description.trim()) e.description = 'Descrição obrigatória';
+        if (!formData.category) e.category = 'Categoria obrigatória';
+        if (!formData.basePrice || isNaN(Number(formData.basePrice))) e.basePrice = 'Preço inválido';
+        if (!formData.idFreelancer.trim() || isNaN(Number(formData.idFreelancer))) e.idFreelancer = 'ID do freelancer inválido';
 
-        setErrors(newErrors);
-        return Object.keys(newErrors).length === 0;
+        setErrors(e);
+        return Object.values(e).every(err => !err);
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
+        if (!validate()) return;
 
-        if (validateForm()) {
-            // Aqui você faria o submit do formulário
-            console.log('Dados do formulário:', formData);
-            alert('Formulário enviado com sucesso!');
+        const payload = {
+            id_categoria: categoryMap[formData.category],
+            titulo: formData.title,
+            descricao: formData.description,
+            preco_base: Number(formData.basePrice),
+            pacotes: formData.packages || '[]',
+            id_freelancer: Number(formData.idFreelancer),
+        };
+
+        try {
+            const res = await fetch('http://localhost/dashboard/api-designOdyssey/servicos/post.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload),
+            });
+
+            const data = await res.json();
+
+            if (!res.ok) throw new Error(data.erro || 'Erro ao publicar');
+
+            alert('Serviço publicado com sucesso!');
+            router.push('/profile_freelancer');
+        } catch (err: any) {
+            alert(err.message);
         }
     };
 
     return (
-        <>
-            <form className={styles.form} onSubmit={handleSubmit}>
-                <span>Publique seu Serviço</span>
-                <h1>Publique suas ideias e serviços para que os clientes possam visulizar e contratar. </h1>
-                {/* Campo Título */}
-                <div className={styles.formGroup}>
-                    <label className={styles.label}> Titulo</label>
-                    <input
-                        type='text'
-                        name='title'
-                        value={formData.title}
-                        onChange={handleChange}
-                        className={styles.input}
-                        required
-                    />
-                    {errors.title && <span className={styles.error}>{errors.title}</span>}
-                </div>
+        <form onSubmit={handleSubmit} className={styles.form}>
+            <span>Publique seu Serviço</span>
+            <h1>Publique suas ideias e serviços para que os clientes possam visualizar e contratar.</h1>
 
-                {/* Campo Descrição */}
-                <div className={styles.formGroup}>
-                    <label className={styles.label}> Descrição </label>
-                    <textarea
-                        name='description'
-                        value={formData.description}
-                        onChange={handleChange}
-                        className={`${styles.input} ${styles.textarea}`}
-                        required
-                        rows={5}
-                    />
-                    {errors.description && <span className={styles.error}>{errors.description}</span>}
-                </div>
+            {/* Novo campo idFreelancer */}
+            <div className={styles.formGroup}>
+                <label className={styles.label}>ID do Freelancer</label>
+                <input
+                    type="text"
+                    name="idFreelancer"
+                    value={formData.idFreelancer}
+                    onChange={handleChange}
+                    className={styles.input}
+                    placeholder="Digite seu ID de Freelancer"
+                />
+                {errors.idFreelancer && <span className={styles.error}>{errors.idFreelancer}</span>}
+            </div>
+            
+            <div className={styles.formGroup}>
+                <label className={styles.label}>Título</label>
+                <input
+                    type="text"
+                    name="title"
+                    value={formData.title}
+                    onChange={handleChange}
+                    className={styles.input}
+                />
+                {errors.title && <span className={styles.error}>{errors.title}</span>}
+            </div>
 
-                {/* Campo Categoria */}
-                <div className={styles.formGroup}>
-                    <label className={styles.label}>Categoria</label>
-                    <select
-                        name='category'
-                        value={formData.category}
-                        onChange={handleChange}
-                        className={styles.input}
-                        required
-                    >
-                        <option value='' disabled selected>Selecione...</option>
-                        <option value='web'>Web</option>
-                        <option value='grafico'>Grafico</option>
-                        <option value='logotipo'>Logotipo</option>
-                        <option value='arte digital'>Arte digital</option>
-                    </select>
-                    {errors.category && <span className={styles.error}>{errors.category}</span>}
-                </div>
+            <div className={styles.formGroup}>
+                <label className={styles.label}>Descrição</label>
+                <textarea
+                    name="description"
+                    value={formData.description}
+                    onChange={handleChange}
+                    className={`${styles.input} ${styles.textarea}`}
+                    rows={5}
+                />
+                {errors.description && <span className={styles.error}>{errors.description}</span>}
+            </div>
 
-                {/* Campo Preço Base */}
-                <div className={styles.formGroup}>
-                    <label className={styles.label}> Preço
-                    </label>
-                    <input
-                        type='text'
-                        name='basePrice'
-                        value={formData.basePrice}
-                        onChange={handleChange}
-                        className={styles.input}
-                        min='0'
-                        step='0.01'
-                        required
-                    />
-                    {errors.basePrice && <span className={styles.error}>{errors.basePrice}</span>}
-                </div>
+            <div className={styles.formGroup}>
+                <label className={styles.label}>Categoria</label>
+                <select
+                    name="category"
+                    value={formData.category}
+                    onChange={handleChange}
+                    className={styles.input}
+                >
+                    <option value="">Selecione...</option>
+                    <option value="web">Web</option>
+                    <option value="grafico">Gráfico</option>
+                    <option value="logotipo">Logotipo</option>
+                    <option value="arte digital">Arte Digital</option>
+                </select>
+                {errors.category && <span className={styles.error}>{errors.category}</span>}
+            </div>
 
-                {/* Campo Pacotes (JSON) - Opcional */}
-                <div className={styles.formGroup}>
-                    <label className={styles.label}> Pacotes
-                    </label>
-                    <textarea
-                        name='packages'
-                        value={formData.packages}
-                        onChange={handleChange}
-                        className={`${styles.input} ${styles.textarea}`}
-                        rows={3}
-                        placeholder='[{"nome":"Básico","valor":100.00}]'
-                    />
-                </div>
+            <div className={styles.formGroup}>
+                <label className={styles.label}>Preço</label>
+                <input
+                    type="text"
+                    name="basePrice"
+                    value={formData.basePrice}
+                    onChange={handleChange}
+                    className={styles.input}
+                />
+                {errors.basePrice && <span className={styles.error}>{errors.basePrice}</span>}
+            </div>
 
-                <div className={styles.formGroup}>
-                    <label className={styles.label}>Foto</label>
-                    <div className={styles.customFileInput}>
-                        <input
-                            type='file'
-                            accept='image/*'
-                            onChange={handleImageChange}
-                            className={styles.fileInput}
-                            id="file-upload"
-                        />
-                        <label htmlFor="file-upload" className={styles.fileInputLabel}>
-                            Escolher arquivo
-                        </label>
-                    </div>
-                    {previewImage && (
-                        <div className={styles.imagePreview}>
-                            <img src={previewImage} alt='Preview do serviço' />
-                        </div>
-                    )}
-                </div>
+            <div className={styles.formGroup}>
+                <label className={styles.label}>Pacotes</label>
+                <textarea
+                    name="packages"
+                    value={formData.packages}
+                    onChange={handleChange}
+                    className={`${styles.input} ${styles.textarea}`}
+                    rows={3}
+                    placeholder='[{"nome":"Básico","valor":100.00}]'
+                />
+            </div>
 
-                {/* Botões de Ação */}
-                <div className={styles.buttonGroup}>
-                    <Link href='/profile_freelancer' type='button' className={`${styles.button} ${styles.secondaryButton}`}>
-                        Publicar
-                    </Link>
-                    <Link href='/profile_freelancer' type='submit' className={`${styles.button2} ${styles.primaryButton}`}>
-                        Voltar
-                    </Link>
-                </div>
-            </form>
-        </>
-    )
+
+            <div className={styles.buttonGroup}>
+                <button type="submit" className={`${styles.button} ${styles.secondaryButton}`}>
+                    Publicar
+                </button>
+                <button
+                    type="button"
+                    onClick={() => router.push('/profile_freelancer')}
+                    className={`${styles.button2} ${styles.primaryButton}`}
+                >
+                    Voltar
+                </button>
+            </div>
+        </form>
+    );
 }
-export default Public_services;

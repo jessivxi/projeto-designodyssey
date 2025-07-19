@@ -84,11 +84,11 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #9b9b9b56;
+  background: #00709c;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #00709c;
+  background: #025677;
 }

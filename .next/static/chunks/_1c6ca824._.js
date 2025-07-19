@@ -38,6 +38,12 @@ var _s = __turbopack_context__.k.signature();
 ;
 function Public_services() {
     _s();
+    const [users, setUsers] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Public_services.useEffect": ()=>{
+            getId();
+        }
+    }["Public_services.useEffect"], []);
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
         title: '',
@@ -110,6 +116,19 @@ function Public_services() {
             alert(err.message);
         }
     };
+    const getId = async ()=>{
+        try {
+            const resId = await fetch('http://localhost/dashboard/api-designOdyssey/usuarios/get.php', {
+                method: 'GET'
+            });
+            const dataId = await resId.json();
+            if (!resId.ok) throw new Error(dataId.erro || 'Erro ao obter usuários');
+            // Assumindo que a API retorna um array de objetos com id e nome
+            setUsers(dataId);
+        } catch (err) {
+            alert(err.message);
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
         onSubmit: handleSubmit,
         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$public_services$2f$public$2e$_services$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].form,
@@ -118,14 +137,14 @@ function Public_services() {
                 children: "Publique seu Serviço"
             }, void 0, false, {
                 fileName: "[project]/src/app/public_services/page.tsx",
-                lineNumber: 91,
+                lineNumber: 120,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                 children: "Publique suas ideias e serviços para que os clientes possam visualizar e contratar."
             }, void 0, false, {
                 fileName: "[project]/src/app/public_services/page.tsx",
-                lineNumber: 92,
+                lineNumber: 121,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -136,19 +155,34 @@ function Public_services() {
                         children: "ID do Freelancer"
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 96,
+                        lineNumber: 125,
                         columnNumber: 17
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                        type: "text",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                         name: "idFreelancer",
-                        value: formData.idFreelancer,
                         onChange: handleChange,
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$public_services$2f$public$2e$_services$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].input,
-                        placeholder: "Digite seu ID de Freelancer"
-                    }, void 0, false, {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                value: "",
+                                children: "Selecione um freelancer..."
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/public_services/page.tsx",
+                                lineNumber: 127,
+                                columnNumber: 21
+                            }, this),
+                            users.filter((user)=>user.tipo.toLowerCase() === 'designer').map((user)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                    value: user.id,
+                                    children: user.nome
+                                }, user.id, false, {
+                                    fileName: "[project]/src/app/public_services/page.tsx",
+                                    lineNumber: 131,
+                                    columnNumber: 29
+                                }, this))
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 97,
+                        lineNumber: 126,
                         columnNumber: 17
                     }, this),
                     errors.idFreelancer && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -156,13 +190,13 @@ function Public_services() {
                         children: errors.idFreelancer
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 105,
+                        lineNumber: 137,
                         columnNumber: 41
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/public_services/page.tsx",
-                lineNumber: 95,
+                lineNumber: 124,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -173,7 +207,7 @@ function Public_services() {
                         children: "Título"
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 109,
+                        lineNumber: 141,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -184,7 +218,7 @@ function Public_services() {
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$public_services$2f$public$2e$_services$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].input
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 110,
+                        lineNumber: 142,
                         columnNumber: 17
                     }, this),
                     errors.title && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -192,13 +226,13 @@ function Public_services() {
                         children: errors.title
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 117,
+                        lineNumber: 149,
                         columnNumber: 34
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/public_services/page.tsx",
-                lineNumber: 108,
+                lineNumber: 140,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -209,7 +243,7 @@ function Public_services() {
                         children: "Descrição"
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 121,
+                        lineNumber: 153,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -220,7 +254,7 @@ function Public_services() {
                         rows: 5
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 122,
+                        lineNumber: 154,
                         columnNumber: 17
                     }, this),
                     errors.description && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -228,13 +262,13 @@ function Public_services() {
                         children: errors.description
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 129,
+                        lineNumber: 161,
                         columnNumber: 40
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/public_services/page.tsx",
-                lineNumber: 120,
+                lineNumber: 152,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -245,7 +279,7 @@ function Public_services() {
                         children: "Categoria"
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 133,
+                        lineNumber: 165,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -259,7 +293,7 @@ function Public_services() {
                                 children: "Selecione..."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/public_services/page.tsx",
-                                lineNumber: 140,
+                                lineNumber: 172,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -267,7 +301,7 @@ function Public_services() {
                                 children: "Web"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/public_services/page.tsx",
-                                lineNumber: 141,
+                                lineNumber: 173,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -275,7 +309,7 @@ function Public_services() {
                                 children: "Gráfico"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/public_services/page.tsx",
-                                lineNumber: 142,
+                                lineNumber: 174,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -283,7 +317,7 @@ function Public_services() {
                                 children: "Logotipo"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/public_services/page.tsx",
-                                lineNumber: 143,
+                                lineNumber: 175,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -291,13 +325,13 @@ function Public_services() {
                                 children: "Arte Digital"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/public_services/page.tsx",
-                                lineNumber: 144,
+                                lineNumber: 176,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 134,
+                        lineNumber: 166,
                         columnNumber: 17
                     }, this),
                     errors.category && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -305,13 +339,13 @@ function Public_services() {
                         children: errors.category
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 146,
+                        lineNumber: 178,
                         columnNumber: 37
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/public_services/page.tsx",
-                lineNumber: 132,
+                lineNumber: 164,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -322,7 +356,7 @@ function Public_services() {
                         children: "Preço"
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 150,
+                        lineNumber: 182,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -333,7 +367,7 @@ function Public_services() {
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$public_services$2f$public$2e$_services$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].input
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 151,
+                        lineNumber: 183,
                         columnNumber: 17
                     }, this),
                     errors.basePrice && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -341,13 +375,13 @@ function Public_services() {
                         children: errors.basePrice
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 158,
+                        lineNumber: 190,
                         columnNumber: 38
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/public_services/page.tsx",
-                lineNumber: 149,
+                lineNumber: 181,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -358,7 +392,7 @@ function Public_services() {
                         children: "Pacotes"
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 162,
+                        lineNumber: 194,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -370,13 +404,13 @@ function Public_services() {
                         placeholder: '[{"nome":"Básico","valor":100.00}]'
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 163,
+                        lineNumber: 195,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/public_services/page.tsx",
-                lineNumber: 161,
+                lineNumber: 193,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -388,7 +422,7 @@ function Public_services() {
                         children: "Publicar"
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 175,
+                        lineNumber: 207,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -398,23 +432,23 @@ function Public_services() {
                         children: "Voltar"
                     }, void 0, false, {
                         fileName: "[project]/src/app/public_services/page.tsx",
-                        lineNumber: 178,
+                        lineNumber: 210,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/public_services/page.tsx",
-                lineNumber: 174,
+                lineNumber: 206,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/public_services/page.tsx",
-        lineNumber: 90,
+        lineNumber: 119,
         columnNumber: 9
     }, this);
 }
-_s(Public_services, "QmG9xRQNWx74yX6HSdjmPSZ2VLY=", false, function() {
+_s(Public_services, "iSGxZGLFvEvEyK+8p/5tvnev/cY=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];

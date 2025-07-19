@@ -1,10 +1,21 @@
 'use client';
 
-import { useState, ChangeEvent, FormEvent } from 'react';
+import { useState, ChangeEvent, FormEvent, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from './public._services.module.css';
 
 export default function Public_services() {
+    interface User {
+        id: number;
+        nome: string;
+        tipo: string; // Adicionando o campo tipo
+    }
+
+    const [users, setUsers] = useState<User[]>([]);
+
+    useEffect(() => {
+        getId();
+    }, []);
     const router = useRouter();
 
     const [formData, setFormData] = useState({
@@ -86,6 +97,24 @@ export default function Public_services() {
         }
     };
 
+    const getId = async () => {
+        try {
+            const resId = await fetch('http://localhost/dashboard/api-designOdyssey/usuarios/get.php', {
+                method: 'GET'
+            });
+
+            const dataId = await resId.json();
+
+            if (!resId.ok) throw new Error(dataId.erro || 'Erro ao obter usuários');
+
+            // Assumindo que a API retorna um array de objetos com id e nome
+            setUsers(dataId);
+        } catch (err: any) {
+            alert(err.message);
+        }
+    };
+
+
     return (
         <form onSubmit={handleSubmit} className={styles.form}>
             <span>Publique seu Serviço</span>
@@ -94,17 +123,20 @@ export default function Public_services() {
             {/* Novo campo idFreelancer */}
             <div className={styles.formGroup}>
                 <label className={styles.label}>ID do Freelancer</label>
-                <input
-                    type="text"
-                    name="idFreelancer"
-                    value={formData.idFreelancer}
-                    onChange={handleChange}
-                    className={styles.input}
-                    placeholder="Digite seu ID de Freelancer"
-                />
+                <select name="idFreelancer" onChange={handleChange} className={styles.input}>
+                    <option value="">Selecione um freelancer...</option>
+                    {users
+                        .filter(user => user.tipo.toLowerCase() === 'designer')
+                        .map(user => (
+                            <option key={user.id} value={user.id}>
+                                {user.nome}
+                            </option>
+                        ))
+                    }
+                </select>
                 {errors.idFreelancer && <span className={styles.error}>{errors.idFreelancer}</span>}
             </div>
-            
+
             <div className={styles.formGroup}>
                 <label className={styles.label}>Título</label>
                 <input

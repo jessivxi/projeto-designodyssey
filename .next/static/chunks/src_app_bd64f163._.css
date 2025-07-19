@@ -347,6 +347,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 @keyframes enter {
   from {
     opacity: var(--tw-enter-opacity, 1);
@@ -375,12 +379,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #9b9b9b56;
+  background: #00709c;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00709c;
+  background: #025677;
 }
 
 

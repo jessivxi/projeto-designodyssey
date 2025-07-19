@@ -2,8 +2,8 @@
   "pages": {},
   "app": {
     "[project]/src/app/profile_freelancer/page": [
-      "static/media/GeistVF-s.p.7fe29570.woff",
-      "static/media/GeistMonoVF-s.p.a9159d35.woff"
+      "static/media/GeistMonoVF-s.p.a9159d35.woff",
+      "static/media/GeistVF-s.p.7fe29570.woff"
     ]
   },
   "appUsingSizeAdjust": true,

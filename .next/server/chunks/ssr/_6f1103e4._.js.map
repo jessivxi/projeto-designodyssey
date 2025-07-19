@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/jessica.maraujo11/Documents/GitHub/projeto-designodyssey/src/app/layout.tsx"],"sourcesContent":["export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {\r\n  return (\r\n    <html lang=\"en\">\r\n      <head>\r\n        {/* O Next.js automaticamente injeta o metadata aqui */}\r\n      </head>\r\n      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>\r\n        <Header />\r\n        {children}\r\n        <Footer />\r\n      </body>\r\n    </html>\r\n  );\r\n}"],"names":[],"mappings":";;;;;AAAe,SAAS,WAAW,EAAE,QAAQ,EAA2C;IACtF,qBACE,8OAAC;QAAK,MAAK;;0BACT,8OAAC;;;;;0BAGD,8OAAC;gBAAK,WAAW,GAAG,UAAU,QAAQ,CAAC,CAAC,EAAE,UAAU,QAAQ,CAAC,YAAY,CAAC;;kCACxE,8OAAC;;;;;oBACA;kCACD,8OAAC;;;;;;;;;;;;;;;;;AAIT","debugId":null}},
-    {"offset": {"line": 53, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/jessica.maraujo11/Documents/GitHub/projeto-designodyssey/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = require('../../module.compiled').vendored[\n  'react-rsc'\n].ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":";AAAAA,OAAOC,OAAO,GAAGC,QAAQ,4HAAyBC,QAAQ,CACxD,YACD,CAACC,kBAAkB","ignoreList":[0],"debugId":null}}]
-}

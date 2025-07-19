@@ -1,0 +1,16 @@
+{
+  "/api/auth/route": "/api/auth",
+  "/favicon.ico/route": "/favicon.ico",
+  "/api/registerAPI/route": "/api/registerAPI",
+  "/_not-found/page": "/_not-found",
+  "/functioning/page": "/functioning",
+  "/login/page": "/login",
+  "/listing/page": "/listing",
+  "/page": "/",
+  "/public_services/page": "/public_services",
+  "/profile/page": "/profile",
+  "/teste/page": "/teste",
+  "/register/page": "/register",
+  "/profile_freelancer/page": "/profile_freelancer",
+  "/gig_page/page": "/gig_page"
+}

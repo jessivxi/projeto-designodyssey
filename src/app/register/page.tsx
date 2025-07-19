@@ -6,6 +6,7 @@ import Link from 'next/link'
 import styles from './register.module.css'
 import { useRouter } from 'next/navigation'
 import { z } from 'zod'
+// import { z } from 'zod'
 
 // Ícones e fotos
 import foto_login from './../../images/fotos/ilustracao_login.png'

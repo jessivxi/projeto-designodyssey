@@ -1,16 +1,10 @@
 {
   "/api/auth/route": "app/api/auth/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/api/registerAPI/route": "app/api/registerAPI/route.js",
-  "/_not-found/page": "app/_not-found/page.js",
   "/functioning/page": "app/functioning/page.js",
-  "/login/page": "app/login/page.js",
   "/listing/page": "app/listing/page.js",
+  "/login/page": "app/login/page.js",
   "/page": "app/page.js",
-  "/public_services/page": "app/public_services/page.js",
   "/profile/page": "app/profile/page.js",
-  "/teste/page": "app/teste/page.js",
-  "/register/page": "app/register/page.js",
   "/profile_freelancer/page": "app/profile_freelancer/page.js",
-  "/gig_page/page": "app/gig_page/page.js"
+  "/public_services/page": "app/public_services/page.js"
 }

@@ -1,0 +1,157 @@
+/* [project]/src/app/listing/listing.module.css [app-client] (css) */
+.listing-module__2wsz6a__main {
+  box-sizing: border-box;
+  width: 85%;
+  max-width: 1100px;
+  min-height: 100vh;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.listing-module__2wsz6a__top {
+  flex-direction: column;
+  width: 100%;
+  margin: 60px 0 80px 10px;
+  display: flex;
+}
+
+.listing-module__2wsz6a__top h1 {
+  color: #000;
+  letter-spacing: -.5px;
+  max-width: 800px;
+  margin-bottom: 15px;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.listing-module__2wsz6a__top p {
+  color: rgba(0, 0, 0, .6);
+  max-width: 800px;
+  font-size: 1.2rem;
+}
+
+.listing-module__2wsz6a__botoesTopMain {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+  margin-top: 40px;
+  display: flex;
+}
+
+.listing-module__2wsz6a__botaoTop {
+  cursor: pointer;
+  background-color: rgba(241, 241, 241, .66);
+  border: 1px solid rgba(0, 0, 0, .05);
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  min-width: 220px;
+  height: 55px;
+  padding: 0 20px;
+  transition: all .3s;
+  display: flex;
+  box-shadow: 0 4px 12px rgba(64, 63, 65, .15);
+}
+
+.listing-module__2wsz6a__botaoTop span {
+  background: linear-gradient(135deg, #0c5163, #5582b6);
+  color: rgba(0, 0, 0, 0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 1.05rem;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.listing-module__2wsz6a__botaoTop:hover {
+  box-shadow: 0 6px 20px rgba(59, 127, 230, .25);
+}
+
+.listing-module__2wsz6a__contentMain {
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px 0;
+  display: flex;
+}
+
+.listing-module__2wsz6a__contentBoxes {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 40px;
+  width: 100%;
+  margin-bottom: 80px;
+  display: grid;
+}
+
+.listing-module__2wsz6a__contentBox {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  transition: all .3s;
+  display: flex;
+}
+
+.listing-module__2wsz6a__contentBox img {
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgba(0, 0, 0, .05);
+  border-radius: 20px;
+  width: 260px;
+  height: 260px;
+  transition: all .4s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+}
+
+.listing-module__2wsz6a__contentBox h1 {
+  color: #000;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.listing-module__2wsz6a__contentBox span {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.listing-module__2wsz6a__contentBox:hover img {
+  cursor: pointer;
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, .2);
+}
+
+@media (max-width: 768px) {
+  .listing-module__2wsz6a__main {
+    width: 90%;
+    padding: 0 15px;
+  }
+
+  .listing-module__2wsz6a__top {
+    margin: 40px 0 60px;
+  }
+
+  .listing-module__2wsz6a__top h1 {
+    font-size: 2.2rem;
+  }
+
+  .listing-module__2wsz6a__top p {
+    padding: 0 10px;
+    font-size: 1.1rem;
+  }
+
+  .listing-module__2wsz6a__botoesTopMain {
+    gap: 20px;
+  }
+
+  .listing-module__2wsz6a__contentBoxes {
+    grid-template-columns: 1fr;
+  }
+
+  .listing-module__2wsz6a__contentBox img {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+/*# sourceMappingURL=src_app_listing_listing_module_13a48885.css.map*/

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27/06/2025 às 22:23
+-- Tempo de geração: 21/07/2025 às 14:35
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -43,7 +43,8 @@ CREATE TABLE `administradores` (
 --
 
 INSERT INTO `administradores` (`id`, `nome`, `email`, `senha`, `nivel_acesso`, `ultimo_login`, `ip_acesso`, `status`) VALUES
-(1, 'Administrador', 'admin@designodyssey.com', '10888aa951354acf196622be997551360cda76e0e4a62bf4bc282e1628f9009c', 'superadmin', NULL, NULL, 'ativo');
+(7, 'jessi', 'jessi@designodyssey.com', '$2y$10$Ac.yGShkJGq8bhqcaOFhGuLYUpjluiANsXl64ZrJwVCc43ilutyhO', 'superadmin', NULL, NULL, 'ativo'),
+(8, 'designodyssey', 'designodyssey@gmail.com', '$2y$10$01csuoFTfZ3kV7XxhlgRzOF10KiFcb6sXkZ8iW5ZugS7KR7DSgjp2', 'superadmin', NULL, NULL, 'ativo');
 
 -- --------------------------------------------------------
 
@@ -69,17 +70,18 @@ CREATE TABLE `avaliacoes` (
 
 CREATE TABLE `categoria` (
   `id_categoria` int(11) NOT NULL,
-  `nome` varchar(50) DEFAULT NULL,
-  `descricão` text NOT NULL,
-  `icone` varchar(30) NOT NULL
+  `nome` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `categoria`
 --
 
-INSERT INTO `categoria` (`id_categoria`, `nome`, `descricão`, `icone`) VALUES
-(1, 'Logotipo Empresarial Minimalista', 'Design de logotipos clean e profissionais para empresas', '');
+INSERT INTO `categoria` (`id_categoria`, `nome`) VALUES
+(1, 'web'),
+(2, 'grafico'),
+(3, 'logotipo'),
+(4, 'digital');
 
 -- --------------------------------------------------------
 
@@ -88,11 +90,30 @@ INSERT INTO `categoria` (`id_categoria`, `nome`, `descricão`, `icone`) VALUES
 --
 
 CREATE TABLE `perfis` (
-  `id_perfi` int(11) NOT NULL,
+  `id_perfil` int(11) NOT NULL,
   `id_usuarios` int(11) NOT NULL,
   `nome_exibicao` varchar(50) DEFAULT NULL,
-  `foto` varchar(100) NOT NULL,
-  `tipo` enum('cliente','designer') NOT NULL
+  `foto` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `perfis`
+--
+
+INSERT INTO `perfis` (`id_perfil`, `id_usuarios`, `nome_exibicao`, `foto`) VALUES
+(3, 1, 'Luisa Mel', 'luisaMel.png');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `rl_usuarios_perfis`
+--
+
+CREATE TABLE `rl_usuarios_perfis` (
+  `id` int(11) NOT NULL,
+  `id_usuarios` int(11) NOT NULL,
+  `id_perfis` int(11) NOT NULL,
+  `tipo` enum('designer','cliente') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -107,7 +128,7 @@ CREATE TABLE `servicos` (
   `id_categoria` int(11) NOT NULL,
   `titulo` varchar(100) NOT NULL COMMENT 'Ex: "Criarei um logotipo minimalista"',
   `descricao` text NOT NULL,
-  `categoria` enum('web','grafico','ux_ui','arte_digital') NOT NULL,
+  `categoria` enum('web','grafico','logotipo','digital') NOT NULL,
   `preco_base` decimal(10,2) NOT NULL COMMENT 'Ex: 270.00 (valor mostrado como "A partir de")',
   `pacotes` text DEFAULT NULL COMMENT 'JSON com pacotes de serviço',
   `data_publicacao` datetime DEFAULT current_timestamp(),
@@ -119,7 +140,12 @@ CREATE TABLE `servicos` (
 --
 
 INSERT INTO `servicos` (`id`, `id_freelancer`, `id_categoria`, `titulo`, `descricao`, `categoria`, `preco_base`, `pacotes`, `data_publicacao`, `destaque`) VALUES
-(1, 1, 0, 'Criarei um logotipo empresarial minimalista premium', 'Pacote de logotipo inicial com 1 conceito + arquivos PNG/JPEG + 3 revisões', 'grafico', 270.00, '{\"basico\": {\"preco\": 277.22, \"descricao\": \"1 conceito incluído + 3 revisões\", \"detalhes\": [\"Arquivos PNG/JPEG\", \"Transparência\", \"Entrega em 3 dias\"]}}', '2025-05-27 13:45:29', 0);
+(18, 2, 3, 'Logotipo', 'fsvfsvd', 'logotipo', 500.00, '500', '2025-07-16 05:13:34', 0),
+(19, 1, 3, 'Logotipo', 'fvfv', 'logotipo', 500.00, '23432', '2025-07-16 05:22:32', 0),
+(20, 1, 3, 'Logotipo', 'Logotipo legal', 'logotipo', 500.00, 'Otimos pacotes', '2025-07-17 02:57:05', 0),
+(21, 1, 2, 'Logotipo', 'bugada', 'grafico', 400.00, 'basico', '2025-07-19 03:38:29', 0),
+(28, 1, 3, 'wef8g8', 'iwefg', 'logotipo', 133.00, 'weiyhfbc', '2025-07-19 05:44:36', 0),
+(29, 2, 3, 'Logo profissional de empresa', 'Muito boa', 'logotipo', 1000.00, 'Duas logos ', '2025-07-19 05:49:59', 0);
 
 -- --------------------------------------------------------
 
@@ -130,7 +156,6 @@ INSERT INTO `servicos` (`id`, `id_freelancer`, `id_categoria`, `titulo`, `descri
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `nome` varchar(100) NOT NULL,
-  `apelido` varchar(50) DEFAULT NULL COMMENT '@username',
   `email` varchar(100) NOT NULL,
   `senha` varchar(255) NOT NULL,
   `tipo` enum('designer','cliente') NOT NULL
@@ -140,8 +165,14 @@ CREATE TABLE `usuarios` (
 -- Despejando dados para a tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nome`, `apelido`, `email`, `senha`, `tipo`) VALUES
-(1, 'Luisa M.', 'luisa_design', 'luisa@exemplo.com', '55a5e9e78207b4df8699d60886fa070079463547b095d1a05bc719bb4e6cd251', 'designer');
+INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `tipo`) VALUES
+(1, 'Luisa M.', 'luisa@exemplo.com', '$2y$10$Q4j532l4scjHNOzVe1Xr1ONW2vLQTZcIT3wVmLmKl/uiImEQbUw2S', 'designer'),
+(2, 'João', 'Joao@exemplo.com', '$2y$10$83Gr51xIiP56/kJkEo7zIe95/qvQrm4dnlngrhqlyoAXLyPTLqAIu', 'designer'),
+(3, 'Julia m.', 'ju1lia@exemplo.com', '$2y$10$8YXEyKdLqpaXup3XKrvIyeiuKe7mBAQWZl3LYzzB/03GCxW.EynRO', 'designer'),
+(4, 'Marco', 'Marco@designodyssey.com', '$2y$10$u24zrXZoxIt6PV23wcv0A.GWTfAG5x2pzOifI1isQir5/kmUpYxgu', 'cliente'),
+(5, 'Marco', 'pvzgw2isgood@gmail.com', '$2y$10$duVsOyyuOSDNOKit2BO7JeunHx2CLu9StO/CF1eUdG/Fj.F5SyjPu', 'cliente'),
+(7, 'Luana', 'luanaluisa@exemplo.com', '$2y$10$JiFLc9TNwGQHMdP5niwuZu.xi4V8X3cbRFxiHQJUnLDE7C3./mEVW', 'cliente'),
+(9, 'Helena', 'helena@gmaiil.com', '$2y$10$CDZKqzLLrNVCkKVTPMTv2eQywPbNWq8rK8IvmkGn8TfLmbuAssUYC', 'cliente');
 
 --
 -- Índices para tabelas despejadas
@@ -172,8 +203,15 @@ ALTER TABLE `categoria`
 -- Índices de tabela `perfis`
 --
 ALTER TABLE `perfis`
-  ADD PRIMARY KEY (`id_perfi`),
-  ADD KEY `id_usuarios` (`id_perfi`);
+  ADD PRIMARY KEY (`id_perfil`) USING BTREE,
+  ADD KEY `id_usuarios` (`id_usuarios`);
+
+--
+-- Índices de tabela `rl_usuarios_perfis`
+--
+ALTER TABLE `rl_usuarios_perfis`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id_usuarios` (`id_usuarios`,`id_perfis`);
 
 --
 -- Índices de tabela `servicos`
@@ -188,8 +226,7 @@ ALTER TABLE `servicos`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `email` (`email`),
-  ADD UNIQUE KEY `apelido` (`apelido`);
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- AUTO_INCREMENT para tabelas despejadas
@@ -199,7 +236,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `administradores`
 --
 ALTER TABLE `administradores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de tabela `avaliacoes`
@@ -211,25 +248,31 @@ ALTER TABLE `avaliacoes`
 -- AUTO_INCREMENT de tabela `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de tabela `perfis`
 --
 ALTER TABLE `perfis`
-  MODIFY `id_perfi` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_perfil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT de tabela `rl_usuarios_perfis`
+--
+ALTER TABLE `rl_usuarios_perfis`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `servicos`
 --
 ALTER TABLE `servicos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Restrições para tabelas despejadas
@@ -243,10 +286,17 @@ ALTER TABLE `avaliacoes`
   ADD CONSTRAINT `avaliacoes_ibfk_2` FOREIGN KEY (`id_cliente`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE;
 
 --
+-- Restrições para tabelas `perfis`
+--
+ALTER TABLE `perfis`
+  ADD CONSTRAINT `perfis_ibfk_1` FOREIGN KEY (`id_usuarios`) REFERENCES `usuarios` (`id`);
+
+--
 -- Restrições para tabelas `servicos`
 --
 ALTER TABLE `servicos`
-  ADD CONSTRAINT `servicos_ibfk_1` FOREIGN KEY (`id_freelancer`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `servicos_ibfk_1` FOREIGN KEY (`id_freelancer`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `servicos_ibfk_2` FOREIGN KEY (`id_categoria`) REFERENCES `categoria` (`id_categoria`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

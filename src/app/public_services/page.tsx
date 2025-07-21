@@ -122,9 +122,9 @@ export default function Public_services() {
 
             {/* Novo campo idFreelancer */}
             <div className={styles.formGroup}>
-                <label className={styles.label}>ID do Freelancer</label>
+                <label className={styles.label}>Nome de Design</label>
                 <select name="idFreelancer" onChange={handleChange} className={styles.input}>
-                    <option value="">Selecione um freelancer...</option>
+                    <option value=""></option>
                     {users
                         .filter(user => user.tipo.toLowerCase() === 'designer')
                         .map(user => (
